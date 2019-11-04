@@ -1,0 +1,29 @@
+.headerContainer {
+
+  margin: 0;
+  padding: 0;
+
+  height: max-content;
+
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+
+  overflow: auto;
+
+  .titleContainer {
+    margin: auto 5px auto 0;
+    padding: 0;
+    height: auto;
+    font-size: 24pt;
+
+    p {
+      margin: auto 0;
+      padding: 0;
+    }
+  }
+
+  .linksContainer {
+    margin: auto 5px;
+  }
+}

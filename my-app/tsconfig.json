@@ -26,6 +26,7 @@
     "node_modules"
   ],
   "include": [
-    "src"
+    "src",
+    "../../../.WebStorm2019.2/config/javascript/nodejs/12.13.0/node-typings/node_modules/@types/node/globals.d.ts"
   ]
 }
