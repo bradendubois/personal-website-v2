@@ -22,9 +22,13 @@ code {
   padding: 10px;
 }
 
-.homepageContainer {
+.introContainer {
+  background: #000c21;
+  min-height: 300px;
+}
+.introContainer p {
   margin: 0;
-  padding: 0;
+  color: white;
 }
 
-/*# sourceMappingURL=Homepage.css.map */
+/*# sourceMappingURL=IntroSection.css.map */

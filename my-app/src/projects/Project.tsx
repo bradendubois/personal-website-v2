@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Project.scss';
+import './styles/Project.scss';
 
 // Project components
 import ProjectHeader from "./ProjectHeader";

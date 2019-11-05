@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectLink from "./ProjectLink";
 
-import './ProjectHeader.scss';
+import './styles/ProjectHeader.scss';
 
 function ProjectHeader(props: {title: string; links: {url: string; image: {icon: string; alt: string}}[]}) {
 

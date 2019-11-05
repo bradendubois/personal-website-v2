@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectTag from './ProjectTag';
 
-import './ProjectTags.scss';
+import './styles/ProjectTags.scss';
 
 function ProjectTags(props : {tags: {type: string; display: string;}[]}) {
 

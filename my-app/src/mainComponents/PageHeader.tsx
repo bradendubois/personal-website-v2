@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./PageHeader.scss";
+import "./styles/PageHeader.scss";
 
 interface Section {
     id: string;

@@ -1,6 +1,6 @@
 import React from "react";
 
-import './ProjectLink.scss';
+import './styles/ProjectLink.scss';
 
 let githubLogo = "/GitHub-Mark-Light-64px.png";
 let externalLinkIcon = "/external_link_light.png";

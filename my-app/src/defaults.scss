@@ -1,10 +1,28 @@
 // Montserrat & Open Sans
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+
 
 
 $projectBGColor: #131a2b;
 $navColor: #494949;
+$introColor: #000c21;
+$educationColor: #c1c1c1;
 
 $htmlColor: red;
 $cssColor: blue;

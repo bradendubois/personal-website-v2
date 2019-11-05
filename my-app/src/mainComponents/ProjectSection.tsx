@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from "../projects/Project";
 
-import "./ProjectSection.scss";
+import "./styles/ProjectSection.scss";
 
 import projectData from "../project_test.json";
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import "./ProjectDescription.scss";
+import "./styles/ProjectDescription.scss";
 
 function ProjectDescription(props: {description: string;}) {
     return (

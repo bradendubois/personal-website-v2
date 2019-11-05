@@ -1,9 +1,12 @@
 import React from "react";
 
+import "./styles/IntroSection.scss";
+
 function IntroSection(props: {id: string}) {
+
     return (
-        <div id={props.id}>
-            <p>{introData.greeting}</p>
+        <div className={"introContainer"} id={props.id}>
+            <p>Some text!</p>
         </div>
     )
 }
