@@ -1,13 +1,13 @@
-@import "../colors";
+@import "../defaults.scss";
 
 .container {
   width: 400px;
 
   height: max-content;
-  min-height: 300px;
+
 
   margin: 10px;
-  padding: 5px;
+  padding: 5px 5px 20px 5px;
   border-radius: 4px;
 
   background: $projectBGColor;

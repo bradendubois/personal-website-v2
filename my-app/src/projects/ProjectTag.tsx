@@ -1,8 +1,10 @@
 import React from 'react';
 
-function ProjectTag(props: {tag: string}) {
+import './ProjectTags.scss';
+
+function ProjectTag(props: {type: string, display: string;}) {
     return (
-        <div>{props.tag}</div>
+        <div className={props.type}>{props.display}</div>
     )
 }
 

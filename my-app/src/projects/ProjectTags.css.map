@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"ProjectTags.css"}
+{"version":3,"sourceRoot":"","sources":["../defaults.scss","ProjectTags.scss"],"names":[],"mappings":"AAEQ;ACAR;EACE;EACA;EACA","file":"ProjectTags.css"}

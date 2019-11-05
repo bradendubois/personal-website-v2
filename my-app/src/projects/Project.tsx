@@ -2,14 +2,12 @@ import React from 'react';
 
 import './Project.scss';
 
+// Project components
 import ProjectHeader from "./ProjectHeader";
-import ProjectCenter from "./ProjectCenter";
 import ProjectDescription from "./ProjectDescription";
 import ProjectTags from "./ProjectTags";
 
-// TODO import github_logo from '../images/github_logo.jpg';
-
-function Project(props: {title: string; links: {url: string; image: {path: string; alt: string}}[]; description: string; tags: string[]}) {
+function Project(props: {title: string; links: {url: string; image: {path: string; alt: string}}[]; description: string; tags: {type: string; display: string;}[]}) {
     return (
         <div className={"container"}>
             <ProjectHeader title={props.title} links={props.links}/>

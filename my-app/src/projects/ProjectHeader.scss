@@ -1,13 +1,17 @@
+@import "../defaults.scss";
+
 .headerContainer {
 
   margin: 0;
   padding: 0;
 
-  height: max-content;
+  height: 50px;
 
   display: flex;
   flex-direction: row;
   vertical-align: middle;
+
+  font-family: "Montserrat", monospace;
 
   overflow: auto;
 
@@ -24,6 +28,10 @@
   }
 
   .linksContainer {
-    margin: auto 5px;
+    margin: auto 5px auto auto;
+    padding-top: 5px;
+
+    display: flex;
+    flex-flow: row;
   }
 }

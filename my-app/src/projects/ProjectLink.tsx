@@ -4,7 +4,7 @@ import './ProjectLink.scss';
 
 function ProjectLink(props: {url: string; image: {path: string; alt: string;}}) {
     return (
-        <div>
+        <div className={"projectLink"}>
             <a href={props.url}>
                 <img src={props.image.path} alt={props.image.alt} />
             </a>
