@@ -1,8 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
+* {
+  text-decoration: none;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sectionContainer {
+  padding: 10px;
+}
+
 .tagsContainer {
   margin-top: 40px;
   display: flex;
   flex-direction: row;
+}
+.tagsContainer .tag {
+  outline: 1px solid;
+  -moz-outline-radius: 4px;
+  padding: 3px;
+  margin: 0 5px;
+}
+.tagsContainer .html {
+  outline-color: red;
+}
+.tagsContainer .css {
+  outline-color: blue;
 }
 
 /*# sourceMappingURL=ProjectTags.css.map */

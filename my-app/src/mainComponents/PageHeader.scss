@@ -1,0 +1,43 @@
+@import "../defaults.scss";
+
+.navContainer {
+
+  background: $navColor;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  .navOption {
+
+    flex-grow: 1;
+    transition: 0.2s;
+    padding: auto;
+
+    &:hover {
+      background: darkgrey;
+    }
+
+    &:active {
+      background: #565656;
+    }
+
+    a {
+      flex-grow: 0;
+      width: 50px;
+      margin: 0 auto auto auto;
+
+      p {
+        margin: 5px auto;
+        width: max-content;
+        color: white;
+      }
+
+      &:active {
+        outline: none;
+      }
+    }
+
+  }
+
+}

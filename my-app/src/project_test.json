@@ -1,0 +1,42 @@
+[{
+  "title" : "My Project",
+  "links" : [{
+    "url" : "https://www.bradendubois.dev",
+    "image" : {
+      "icon" : "external",
+      "alt" : "External Link Icon"
+    }
+  }],
+  "description" : "This is a test project; this is some test text to show the flow of a description of a project if the description were relatively long.",
+  "tags" : [
+    {
+      "type": "html",
+      "display": "HTML 5"
+    },
+    {
+      "type": "css",
+      "display": "CSS 3"
+    }
+  ]
+},
+  {
+    "title" : "My Project 2",
+    "links" : [{
+      "url" : "https://www.bradendubois.dev",
+      "image" : {
+        "icon" : "github",
+        "alt" : "Github Logo"
+      }
+    }],
+    "description" : "This is a test project; this is some test text to show the flow of a description of a project if the description were relatively long.",
+    "tags" : [
+      {
+        "type": "html",
+        "display": "HTML 5"
+      },
+      {
+        "type": "css",
+        "display": "CSS 3"
+      }
+    ]
+  }]

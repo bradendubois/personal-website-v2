@@ -1,0 +1,12 @@
+@import "../defaults.scss";
+
+#projectSection {
+  background: #0a1f4a;
+
+
+  .projectContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}

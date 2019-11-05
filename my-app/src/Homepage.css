@@ -10,8 +10,9 @@
   padding: 10px;
 }
 
-.descriptionContainer {
-  font-family: "Montserrat", "Open Sans", monospace;
+.homepageContainer {
+  margin: 0;
+  padding: 0;
 }
 
-/*# sourceMappingURL=ProjectDescription.css.map */
+/*# sourceMappingURL=Homepage.css.map */

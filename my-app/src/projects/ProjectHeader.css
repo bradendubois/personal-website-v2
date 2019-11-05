@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
+* {
+  text-decoration: none;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sectionContainer {
+  padding: 10px;
+}
+
 .headerContainer {
   margin: 0;
   padding: 0;

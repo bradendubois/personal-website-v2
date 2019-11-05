@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
-.container {
+* {
+  text-decoration: none;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sectionContainer {
+  padding: 10px;
+}
+
+.project {
   width: 400px;
   height: max-content;
   margin: 10px;

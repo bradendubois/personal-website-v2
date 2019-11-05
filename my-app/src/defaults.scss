@@ -1,5 +1,22 @@
-
 // Montserrat & Open Sans
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
 
+
+
 $projectBGColor: #131a2b;
+$navColor: #494949;
+
+$htmlColor: red;
+$cssColor: blue;
+
+* {
+  text-decoration: none;
+  scroll-behavior: smooth;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sectionContainer {
+  padding: 10px;
+}

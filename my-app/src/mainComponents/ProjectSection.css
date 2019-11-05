@@ -10,8 +10,13 @@
   padding: 10px;
 }
 
-.descriptionContainer {
-  font-family: "Montserrat", "Open Sans", monospace;
+#projectSection {
+  background: #0a1f4a;
+}
+#projectSection .projectContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-/*# sourceMappingURL=ProjectDescription.css.map */
+/*# sourceMappingURL=ProjectSection.css.map */

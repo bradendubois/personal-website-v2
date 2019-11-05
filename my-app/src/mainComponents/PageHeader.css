@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
+* {
+  text-decoration: none;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sectionContainer {
+  padding: 10px;
+}
+
+.navContainer {
+  background: #494949;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.navContainer .navOption {
+  flex-grow: 1;
+  transition: 0.2s;
+  padding: auto;
+}
+.navContainer .navOption:hover {
+  background: darkgrey;
+}
+.navContainer .navOption:active {
+  background: #565656;
+}
+.navContainer .navOption a {
+  flex-grow: 0;
+  width: 50px;
+  margin: 0 auto auto auto;
+}
+.navContainer .navOption a p {
+  margin: 5px auto;
+  width: max-content;
+  color: white;
+}
+.navContainer .navOption a:active {
+  outline: none;
+}
+
+/*# sourceMappingURL=PageHeader.css.map */

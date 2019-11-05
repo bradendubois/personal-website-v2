@@ -3,7 +3,7 @@ import ProjectLink from "./ProjectLink";
 
 import './ProjectHeader.scss';
 
-function ProjectHeader(props: {title: string; links: {url: string; image: {path: string; alt: string}}[]}) {
+function ProjectHeader(props: {title: string; links: {url: string; image: {icon: string; alt: string}}[]}) {
 
     // Map each link{url, image} to a proper ProjectLink object
     let links = props.links.map((link) => <ProjectLink url={link.url} image={link.image}/>);
