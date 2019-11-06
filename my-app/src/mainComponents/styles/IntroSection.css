@@ -22,11 +22,11 @@ code {
   padding: 10px;
 }
 
-.introContainer {
+#intro {
   background: #000c21;
   min-height: 300px;
 }
-.introContainer p {
+#intro p {
   margin: 0;
   color: white;
 }

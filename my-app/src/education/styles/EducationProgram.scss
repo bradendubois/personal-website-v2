@@ -1,0 +1,93 @@
+@import "../../defaults.scss";
+
+.program {
+
+  margin: auto;
+
+  display: grid;
+  width: 1000px;
+
+  grid-auto-columns: 70px 1fr 1fr 130px;
+  grid-template-rows: max-content max-content;
+
+  grid-gap: 10px;
+
+  overflow: hidden;
+
+  grid-template-areas:
+          "programLogo headerInfo headerInfo timeframeInfo"
+          ". courseInfo detailInfo .";
+
+  @media screen and (max-width: 1000px) {
+    width: 900px;
+
+    grid-auto-columns: 70px 1fr 1fr 130px;
+    grid-template-rows: max-content max-content;
+
+    grid-gap: 10px;
+
+    overflow: hidden;
+
+    grid-template-areas:
+            "programLogo headerInfo headerInfo timeframeInfo"
+            "courseInfo courseInfo detailInfo detailInfo";
+  }
+
+  .programLogo {
+    grid-area: programLogo;
+
+    filter: opacity(80%);
+    transition: 0.2s;
+
+    &:hover {
+      filter: opacity(100%);
+    }
+  }
+
+  .headerInfo {
+    grid-area: headerInfo;
+
+    p {
+      margin: 0 0 3px 0;
+      font-weight: 600;
+    }
+  }
+
+  .timeframeInfo {
+    grid-area: timeframeInfo;
+
+    p {
+      margin: 0 0 3px 0;
+      float: right;
+    }
+  }
+
+  .courseInfo {
+    grid-area: courseInfo;
+
+    .classSetContainer {
+
+      ul {
+        li {
+          p {
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+
+      ul {
+        li {
+          margin: 0;
+          padding: 0;
+
+
+        }
+      }
+    }
+  }
+
+  .detailInfo {
+    grid-area: detailInfo;
+  }
+}

@@ -5,7 +5,7 @@ import "./styles/IntroSection.scss";
 function IntroSection(props: {id: string}) {
 
     return (
-        <div className={"introContainer"} id={props.id}>
+        <div className={"sectionContainer"} id={props.id}>
             <p>Some text!</p>
         </div>
     )
