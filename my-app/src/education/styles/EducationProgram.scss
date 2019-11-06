@@ -1,54 +1,101 @@
 @import "../../defaults.scss";
 
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+
 .program {
 
   margin: auto;
 
   display: grid;
-  width: 1000px;
+  max-width: 1300px;
 
   grid-auto-columns: 70px 1fr 1fr 130px;
-  grid-template-rows: max-content max-content;
+  grid-template-rows: auto max-content max-content;
 
-  grid-gap: 10px;
-
+  grid-row-gap: 25px;
+  grid-column-gap: 40px;
   overflow: hidden;
 
   grid-template-areas:
+          "hr hr hr hr"
           "programLogo headerInfo headerInfo timeframeInfo"
-          ". courseInfo detailInfo .";
+          ". courseInfo detailInfo detailInfo";
 
   @media screen and (max-width: 1000px) {
     width: 900px;
 
     grid-auto-columns: 70px 1fr 1fr 130px;
-    grid-template-rows: max-content max-content;
+    grid-template-rows: auto max-content max-content;
 
     grid-gap: 10px;
 
     overflow: hidden;
 
     grid-template-areas:
+            "hr hr hr hr"
             "programLogo headerInfo headerInfo timeframeInfo"
-            "courseInfo courseInfo detailInfo detailInfo";
+            "courseInfo courseInfo detailInfo detailInfo"
+  }
+
+
+  hr {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 5px;
+
+    color: #cbcbcb;
+    grid-area: hr;
+  }
+
+
+  p {
+    margin: 0;
+  }
+
+  ul {
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+    ul {
+      margin: 0;
+    }
+
+    div {
+      margin: 0;
+    }
   }
 
   .programLogo {
     grid-area: programLogo;
 
-    filter: opacity(80%);
+    filter: opacity(85%);
     transition: 0.2s;
 
     &:hover {
       filter: opacity(100%);
+    }
+
+    a {
+      outline: none;
+    }
+
+    img {
+      max-width: 75px;
+      border-radius: 50%;
     }
   }
 
   .headerInfo {
     grid-area: headerInfo;
 
+    font-size: 14pt;
+
     p {
-      margin: 0 0 3px 0;
+      margin: 0;
+      font-family: "Nunito", "Open Sans", monospace;
       font-weight: 600;
     }
   }
@@ -56,7 +103,18 @@
   .timeframeInfo {
     grid-area: timeframeInfo;
 
+    .timeframe {
+      font-size: 14pt;
+      font-weight: 500;
+    }
+
+    .location {
+      font-style: italic;
+    }
+
     p {
+      font-family: "Montserrat", "Open Sans", monospace;
+
       margin: 0 0 3px 0;
       float: right;
     }
@@ -65,7 +123,18 @@
   .courseInfo {
     grid-area: courseInfo;
 
+    font-family: "Montserrat", "Open Sans", monospace;
+
+    display: flex;
+    flex-direction: column;
+
     .classSetContainer {
+
+      .classSetTitle {
+
+        font-size: 14pt;
+        font-weight: 500;
+      }
 
       ul {
         li {
@@ -75,19 +144,23 @@
           }
         }
       }
-
-      ul {
-        li {
-          margin: 0;
-          padding: 0;
-
-
-        }
-      }
     }
   }
 
   .detailInfo {
     grid-area: detailInfo;
+
+    font-family: "Montserrat", "Open Sans", monospace;
+
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    .detailTitle {
+
+      font-size: 14pt;
+      font-weight: 500;
+    }
   }
 }

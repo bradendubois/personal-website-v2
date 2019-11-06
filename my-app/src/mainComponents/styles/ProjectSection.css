@@ -11,6 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+/* TODO - Get more specific colors */
+/*********** Project Tag Colors ***********/
 * {
   text-decoration: none;
   scroll-behavior: smooth;

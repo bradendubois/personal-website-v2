@@ -2,7 +2,7 @@
 
 .navContainer {
 
-  background: $navColor;
+  background: #f3f3f3;
 
   display: flex;
   flex-direction: row;
@@ -15,14 +15,14 @@
 
     flex-grow: 1;
     transition: 0.2s;
-    padding: auto;
+    padding: 15px;
 
     &:hover {
-      background: darkgrey;
+      background: #e5e5e5;
     }
 
     &:active {
-      background: #565656;
+      background: #dddddd;
     }
 
     a {
@@ -33,7 +33,12 @@
       p {
         margin: 5px auto;
         width: max-content;
-        color: white;
+
+        font-size: 14pt;
+        text-transform: full-width;
+
+        font-family: "Montserrat", sans-serif;
+        color: #4c8ec4;
       }
 
       &:active {

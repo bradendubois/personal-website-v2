@@ -11,6 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+/* TODO - Get more specific colors */
+/*********** Project Tag Colors ***********/
 * {
   text-decoration: none;
   scroll-behavior: smooth;
@@ -23,7 +25,8 @@ code {
 }
 
 #education {
-  background: #c1c1c1;
+  background: #e8e8e8;
+  padding: 50px 0;
 }
 
 /*# sourceMappingURL=EducationSection.css.map */

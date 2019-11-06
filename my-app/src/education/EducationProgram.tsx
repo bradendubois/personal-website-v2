@@ -38,14 +38,15 @@ interface EducationProgramJSON {
 
 function educationImageLookup(logo: string) : string {
 
-    let usaskLogo = "/GitHub-Mark-Light-64px.png";
+    let usaskLogo = "/usask.jpg";
 
     switch (logo) {
         case ("usask"):
             return usaskLogo;
+
         // It'll be an exciting day when there's more cases.
         default:
-            return usaskLogo
+            return usaskLogo;
     }
 }
 
@@ -57,7 +58,7 @@ function EducationProgram(props: {entry: EducationProgramJSON}) {
         <div className={"program"} id={entry.id}>
 
             <div className={"programLogo"}>
-                <a href={entry.institutionLogo.institutionURL}>
+                <a href={entry.institutionLogo.institutionURL} target={"_blank"}>
                     <img
                         src={educationImageLookup(entry.institutionLogo.image)}
                         alt={entry.institutionLogo.alt}
@@ -98,9 +99,7 @@ function EducationProgram(props: {entry: EducationProgramJSON}) {
                                 <div>
                                     <li>{point.entryTitle}</li>
                                     <ul>
-                                        {point.points.map((detailPoint) =>
-                                            (<li>{detailPoint}</li>)
-                                        )}
+                                        {point.points.map((detailPoint) => (<li>{detailPoint}</li>))}
                                     </ul>
                                 </div>
                             ))}
@@ -108,6 +107,7 @@ function EducationProgram(props: {entry: EducationProgramJSON}) {
                     </div>
                 ))}
             </div>
+            <hr />
         </div>
     )
 }

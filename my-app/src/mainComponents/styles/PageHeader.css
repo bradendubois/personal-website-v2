@@ -11,6 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+/* TODO - Get more specific colors */
+/*********** Project Tag Colors ***********/
 * {
   text-decoration: none;
   scroll-behavior: smooth;
@@ -23,7 +25,7 @@ code {
 }
 
 .navContainer {
-  background: #494949;
+  background: #f3f3f3;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -33,13 +35,13 @@ code {
 .navContainer .navOption {
   flex-grow: 1;
   transition: 0.2s;
-  padding: auto;
+  padding: 15px;
 }
 .navContainer .navOption:hover {
-  background: darkgrey;
+  background: #e5e5e5;
 }
 .navContainer .navOption:active {
-  background: #565656;
+  background: #dddddd;
 }
 .navContainer .navOption a {
   flex-grow: 0;
@@ -49,7 +51,10 @@ code {
 .navContainer .navOption a p {
   margin: 5px auto;
   width: max-content;
-  color: white;
+  font-size: 14pt;
+  text-transform: full-width;
+  font-family: "Montserrat", sans-serif;
+  color: #4c8ec4;
 }
 .navContainer .navOption a:active {
   outline: none;

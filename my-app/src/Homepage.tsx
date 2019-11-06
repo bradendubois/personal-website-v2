@@ -16,15 +16,15 @@ function Homepage() {
     let navOptions = [
         {
             id: "intro",
-            display: "About"
+            display: "about"
         },
         {
             id: "education",
-            display: "Education"
+            display: "education"
         },
         {
             id: "projects",
-            display: "Projects"
+            display: "projects"
         }
     ];
 
