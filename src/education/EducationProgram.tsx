@@ -24,13 +24,23 @@ function educationImageLookup(logo: string) : string {
     }
 }
 
+/**
+ * Create the layout of one single educational program (i.e., undergrad, certificate, graduate)
+ * @param props a set of information conforming to the interface defined as EducationProgramInterface
+ */
 function EducationProgram(props: {entry: EducationProgramInterface}) {
 
     let entry = props.entry;
 
     return (
-        <div className={"program"} id={entry.id}>
 
+        // The container for one single program entry
+        <div className={"programContainer"} id={entry.id}>
+
+            { /* hr to separate programs and for style */ }
+            <hr />
+
+            { /* The logo of the institution */ }
             <div className={"programLogo"}>
                 <a href={entry.institutionLogo.institutionURL} target={"_blank"}>
                     <img
@@ -40,18 +50,20 @@ function EducationProgram(props: {entry: EducationProgramInterface}) {
                 </a>
             </div>
 
-            { /* This is the info in the top middle of  */ }
+            { /* This is the main information of the general program */ }
             <div className={"headerInfo"}>
                 <p className={"institution"}>{entry.institution}</p>
                 <p className={"programType"}>{entry.program}</p>
                 <p className={"concentration"}>{entry.concentration}</p>
             </div>
 
-            { /* This is the info in the top-right corner of an entry, year/location  */ }
+            { /* This is the timeframe info of an entry, year/location  */ }
             <div className={"timeframeInfo"}>
                 <p className={"timeframe"}>{entry.startYear} - {entry.endYear}</p>
                 <p className={"location"}>{entry.location}</p>
             </div>
+
+            { /* This is a list(s) of relevant courses taken */ }
             <div className={"courseInfo"}>
 
                 { /* This maps each *set* of classes (CS, PHIL) into a list */ }
@@ -83,6 +95,7 @@ function EducationProgram(props: {entry: EducationProgramInterface}) {
                     <div>
                         <p className={"detailTitle"}>{infoGroup.sectionTitle}</p>
                         <ul>
+                            { /* TODO - Maybe move this area into its own file for simplicity */ }
                             {infoGroup.entry.map((point) => (
                                 <div>
                                     <li>{point.entryTitle}</li>
@@ -95,7 +108,6 @@ function EducationProgram(props: {entry: EducationProgramInterface}) {
                     </div>
                 ))}
             </div>
-            <hr />
         </div>
     )
 }

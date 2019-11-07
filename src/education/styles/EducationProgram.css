@@ -28,7 +28,7 @@ code {
   padding: 10px;
 }
 
-.program {
+.programContainer {
   margin: auto;
   display: grid;
   max-width: 1300px;
@@ -40,108 +40,108 @@ code {
   grid-template-areas: ". hr hr hr" "programLogo headerInfo headerInfo timeframeInfo" ". courseInfo detailInfo detailInfo";
 }
 @media screen and (max-width: 1000px) {
-  .program {
+  .programContainer {
     width: 900px;
     overflow: hidden;
     grid-template-areas: "hr hr hr hr" "programLogo headerInfo headerInfo timeframeInfo" "courseInfo courseInfo detailInfo detailInfo";
   }
 }
-.program hr {
+.programContainer hr {
   width: 100%;
   max-width: 100%;
   margin: 20px 5px;
   color: #cbcbcb;
   grid-area: hr;
 }
-.program p {
+.programContainer p {
   margin: 0;
 }
-.program ul {
+.programContainer ul {
   margin-top: 5px;
   margin-bottom: 15px;
 }
-.program ul ul {
+.programContainer ul ul {
   margin: 0;
 }
-.program ul div {
+.programContainer ul div {
   margin: 0;
 }
-.program .programLogo {
+.programContainer .programLogo {
   grid-area: programLogo;
   filter: opacity(85%);
   transition: 0.2s;
 }
-.program .programLogo:hover {
+.programContainer .programLogo:hover {
   filter: opacity(100%);
 }
-.program .programLogo a {
+.programContainer .programLogo a {
   outline: none;
 }
-.program .programLogo img {
+.programContainer .programLogo img {
   max-width: 75px;
   border-radius: 50%;
 }
-.program .headerInfo {
+.programContainer .headerInfo {
   grid-area: headerInfo;
   padding-left: 10px;
   font-size: 14pt;
 }
-.program .headerInfo p {
+.programContainer .headerInfo p {
   margin: 0;
   font-family: "Nunito", "Open Sans", monospace;
   font-weight: 600;
 }
-.program .timeframeInfo {
+.programContainer .timeframeInfo {
   grid-area: timeframeInfo;
 }
-.program .timeframeInfo .timeframe {
+.programContainer .timeframeInfo .timeframe {
   font-size: 14pt;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
-.program .timeframeInfo .location {
+.programContainer .timeframeInfo .location {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
 }
-.program .timeframeInfo p {
+.programContainer .timeframeInfo p {
   margin: 0 0 3px 0;
   float: right;
 }
-.program .courseInfo {
+.programContainer .courseInfo {
   grid-area: courseInfo;
   font-family: "Montserrat", "Open Sans", monospace;
   display: flex;
   flex-direction: column;
 }
-.program .courseInfo .classSetContainer .classSetTitle {
+.programContainer .courseInfo .classSetContainer .classSetTitle {
   font-size: 14pt;
   font-weight: 500;
 }
-.program .courseInfo .classSetContainer .current {
+.programContainer .courseInfo .classSetContainer .current {
   color: #444444;
 }
-.program .courseInfo .classSetContainer .current p:after {
+.programContainer .courseInfo .classSetContainer .current p:after {
   color: #2a2a2a;
   content: " - in session!";
 }
-.program .courseInfo .classSetContainer .planned {
+.programContainer .courseInfo .classSetContainer .planned {
   color: #7a7a7a;
 }
-.program .courseInfo .classSetContainer .planned p:after {
+.programContainer .courseInfo .classSetContainer .planned p:after {
   content: " - planned!";
 }
-.program .courseInfo .classSetContainer ul li p {
+.programContainer .courseInfo .classSetContainer ul li p {
   margin: 0;
   padding: 0;
 }
-.program .detailInfo {
+.programContainer .detailInfo {
   grid-area: detailInfo;
   font-family: "Montserrat", "Open Sans", monospace;
   max-width: 600px;
   display: flex;
   flex-direction: column;
 }
-.program .detailInfo .detailTitle {
+.programContainer .detailInfo .detailTitle {
   font-size: 14pt;
   font-weight: 500;
 }
