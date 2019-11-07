@@ -1,56 +1,30 @@
 import React from "react";
-
 import "./styles/EducationProgram.scss";
 import ClassEntry from "./ClassEntry";
+import EducationProgramInterface from "./EducationProgramInterface";
 
-interface EducationProgramJSON {
-    id: string;
-    program: string;
-    concentration: string;
-    institution: string;
-    institutionLogo: {
-        image: string;
-        alt: string;
-        institutionURL: string;
-    };
-    startYear: number;
-    endYear: number;
-    location: string;
-    courseSets: {
-        program: string;
-        courseGroups: {
-            status: string;
-            courses: {
-                name: string;
-                courseID: string;
-                description: string;
-            }[];
-        }[];
-    }[],
-    detailSection: {
-        sectionTitle: string;
-        entry: {
-            entryTitle: string;
-            points: string[];
-        }[];
-    }[];
-}
-
+/**
+ * Given an icon name/label, return the institution image/logo
+ * @param logo is the icon/logo descriptor, only "usask" right now
+ */
 function educationImageLookup(logo: string) : string {
 
+    // Only logo right now :)
     let usaskLogo = "/usask.jpg";
 
+    // Switch over the logo given
     switch (logo) {
         case ("usask"):
             return usaskLogo;
 
         // It'll be an exciting day when there's more cases.
+
         default:
             return usaskLogo;
     }
 }
 
-function EducationProgram(props: {entry: EducationProgramJSON}) {
+function EducationProgram(props: {entry: EducationProgramInterface}) {
 
     let entry = props.entry;
 
@@ -65,32 +39,46 @@ function EducationProgram(props: {entry: EducationProgramJSON}) {
                     />
                 </a>
             </div>
+
+            { /* This is the info in the top middle of  */ }
             <div className={"headerInfo"}>
                 <p className={"institution"}>{entry.institution}</p>
                 <p className={"programType"}>{entry.program}</p>
                 <p className={"concentration"}>{entry.concentration}</p>
             </div>
+
+            { /* This is the info in the top-right corner of an entry, year/location  */ }
             <div className={"timeframeInfo"}>
                 <p className={"timeframe"}>{entry.startYear} - {entry.endYear}</p>
                 <p className={"location"}>{entry.location}</p>
             </div>
             <div className={"courseInfo"}>
 
+                { /* This maps each *set* of classes (CS, PHIL) into a list */ }
                 {entry.courseSets.map((classSet) => (
                     <div className={"classSetContainer"}>
+
+                        { /* This is the "title" (usually the major itself)  */ }
                         <p className={"classSetTitle"}>{classSet.program}</p>
-                        {classSet.courseGroups.map((classGroup) => (
-                            <ul className={classGroup.status}>
-                                {classGroup.courses.map((course) => (
-                                    <li><ClassEntry class={course}/></li>
-                                ))}
-                            </ul>
-                        ))}
+
+                        <ul>
+                            { /* This maps each group of classes (groups being *taken*, *during*, etc. */ }
+                            {classSet.courseGroups.map((classGroup) => (
+                                classGroup.courses.map((course) => (
+                                    <li className={classGroup.status}><ClassEntry class={course}/></li>
+                                ))
+                            ))}
+
+                        </ul>
                     </div>
                 ))}
 
             </div>
+
+            { /* This maps each block of information to its own div with a list of the information */ }
             <div className={"detailInfo"}>
+
+                { /* This is each category/group of information (volunteer info, achievements, etc.) */ }
                 {entry.detailSection.map((infoGroup) => (
                     <div>
                         <p className={"detailTitle"}>{infoGroup.sectionTitle}</p>

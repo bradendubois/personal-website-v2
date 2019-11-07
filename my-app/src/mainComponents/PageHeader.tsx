@@ -12,7 +12,9 @@ function PageHeader(props : {page : Section[]}) {
     let tabs = props.page.map((section) => (
         <div className={"navOption"}>
             <a href={"#" + section.id}>
-                <p>{section.display}</p>
+                <div>
+                    <p>{section.display}</p>
+                </div>
             </a>
         </div>));
 

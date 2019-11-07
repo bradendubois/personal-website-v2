@@ -30,15 +30,21 @@
       width: 50px;
       margin: 0 auto auto auto;
 
-      p {
-        margin: 5px auto;
-        width: max-content;
+      div {
 
-        font-size: 14pt;
-        text-transform: full-width;
+        flex-grow: 1;
+        height: 100%;
 
-        font-family: "Montserrat", sans-serif;
-        color: #4c8ec4;
+        p {
+          margin: 5px auto;
+          width: max-content;
+
+          font-size: 14pt;
+          text-transform: full-width;
+
+          font-family: "Montserrat", sans-serif;
+          color: #4c8ec4;
+        }
       }
 
       &:active {

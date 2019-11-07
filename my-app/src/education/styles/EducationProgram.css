@@ -32,19 +32,16 @@ code {
   margin: auto;
   display: grid;
   max-width: 1300px;
-  grid-auto-columns: 70px 1fr 1fr 130px;
+  grid-auto-columns: 70px 1.1fr 1fr 130px;
   grid-template-rows: auto max-content max-content;
   grid-row-gap: 25px;
   grid-column-gap: 40px;
   overflow: hidden;
-  grid-template-areas: "hr hr hr hr" "programLogo headerInfo headerInfo timeframeInfo" ". courseInfo detailInfo detailInfo";
+  grid-template-areas: ". hr hr hr" "programLogo headerInfo headerInfo timeframeInfo" ". courseInfo detailInfo detailInfo";
 }
 @media screen and (max-width: 1000px) {
   .program {
     width: 900px;
-    grid-auto-columns: 70px 1fr 1fr 130px;
-    grid-template-rows: auto max-content max-content;
-    grid-gap: 10px;
     overflow: hidden;
     grid-template-areas: "hr hr hr hr" "programLogo headerInfo headerInfo timeframeInfo" "courseInfo courseInfo detailInfo detailInfo";
   }
@@ -86,6 +83,7 @@ code {
 }
 .program .headerInfo {
   grid-area: headerInfo;
+  padding-left: 10px;
   font-size: 14pt;
 }
 .program .headerInfo p {
@@ -98,13 +96,14 @@ code {
 }
 .program .timeframeInfo .timeframe {
   font-size: 14pt;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 .program .timeframeInfo .location {
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
 }
 .program .timeframeInfo p {
-  font-family: "Montserrat", "Open Sans", monospace;
   margin: 0 0 3px 0;
   float: right;
 }
@@ -117,6 +116,19 @@ code {
 .program .courseInfo .classSetContainer .classSetTitle {
   font-size: 14pt;
   font-weight: 500;
+}
+.program .courseInfo .classSetContainer .current {
+  color: #444444;
+}
+.program .courseInfo .classSetContainer .current p:after {
+  color: #2a2a2a;
+  content: " - in session!";
+}
+.program .courseInfo .classSetContainer .planned {
+  color: #7a7a7a;
+}
+.program .courseInfo .classSetContainer .planned p:after {
+  content: " - planned!";
 }
 .program .courseInfo .classSetContainer ul li p {
   margin: 0;

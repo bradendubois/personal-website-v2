@@ -48,7 +48,11 @@ code {
   width: 50px;
   margin: 0 auto auto auto;
 }
-.navContainer .navOption a p {
+.navContainer .navOption a div {
+  flex-grow: 1;
+  height: 100%;
+}
+.navContainer .navOption a div p {
   margin: 5px auto;
   width: max-content;
   font-size: 14pt;

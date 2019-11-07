@@ -12,7 +12,7 @@
   display: grid;
   max-width: 1300px;
 
-  grid-auto-columns: 70px 1fr 1fr 130px;
+  grid-auto-columns: 70px 1.1fr 1fr 130px;
   grid-template-rows: auto max-content max-content;
 
   grid-row-gap: 25px;
@@ -20,18 +20,13 @@
   overflow: hidden;
 
   grid-template-areas:
-          "hr hr hr hr"
+          ". hr hr hr"
           "programLogo headerInfo headerInfo timeframeInfo"
           ". courseInfo detailInfo detailInfo";
 
   @media screen and (max-width: 1000px) {
+
     width: 900px;
-
-    grid-auto-columns: 70px 1fr 1fr 130px;
-    grid-template-rows: auto max-content max-content;
-
-    grid-gap: 10px;
-
     overflow: hidden;
 
     grid-template-areas:
@@ -91,6 +86,8 @@
   .headerInfo {
     grid-area: headerInfo;
 
+    padding-left: 10px;
+
     font-size: 14pt;
 
     p {
@@ -105,16 +102,16 @@
 
     .timeframe {
       font-size: 14pt;
+      font-family: "Montserrat", sans-serif;
       font-weight: 500;
     }
 
     .location {
+      font-family: "Montserrat", sans-serif;
       font-style: italic;
     }
 
     p {
-      font-family: "Montserrat", "Open Sans", monospace;
-
       margin: 0 0 3px 0;
       float: right;
     }
@@ -134,6 +131,28 @@
 
         font-size: 14pt;
         font-weight: 500;
+      }
+
+      .complete {}
+
+      .current {
+        color: #444444;
+
+        p {
+          &:after {
+            color: #2a2a2a;
+            content: " - in session!";
+          }
+        }
+      }
+
+      .planned {
+        color: #7a7a7a;
+        p {
+          &:after {
+            content: " - planned!";
+          }
+        }
       }
 
       ul {

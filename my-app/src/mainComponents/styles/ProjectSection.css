@@ -24,10 +24,10 @@ code {
   padding: 10px;
 }
 
-#projectSection {
-  background: #0a1f4a;
+#projects {
+  background: #476b86;
 }
-#projectSection .projectContainer {
+#projects .projectContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
