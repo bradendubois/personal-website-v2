@@ -24,9 +24,13 @@ code {
   padding: 20px;
 }
 
-.homepageContainer {
-  margin: 0;
-  padding: 0;
+#projects {
+  background: #476b86;
+}
+#projects .projectContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-/*# sourceMappingURL=Homepage.css.map */
+/*# sourceMappingURL=ProjectSection.css.map */

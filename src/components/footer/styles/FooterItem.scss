@@ -1,0 +1,55 @@
+@import "../../../defaults";
+
+.footerItem {
+
+  outline: 1px solid white;
+
+  margin: auto;
+  padding: 5px;
+  transition: 0.3s;
+  width: 150px;
+
+  &:hover {
+    p {
+      opacity: 1;
+      transition: 0.5s;
+    }
+  }
+
+  a {
+
+    color: lightgrey;
+    margin: 10px;
+
+    &:visited {
+      color: lightgrey;
+    }
+
+    &:hover {
+      color: #bebebe;
+    }
+
+    &:active, &:focus {
+      color: #9c9c9c;
+      outline: none;
+    }
+
+    div {
+      display: flex;
+      flex-flow: row;
+      width: 100px;
+
+      img {
+        height: 32px;
+        width: auto;
+      }
+
+      p {
+        margin: auto 15px;
+        opacity: 0;
+        transition: 0.5s;
+      }
+    }
+  }
+
+}

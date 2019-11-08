@@ -24,9 +24,31 @@ code {
   padding: 20px;
 }
 
-.homepageContainer {
+.headerContainer {
   margin: 0;
   padding: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  font-family: "Montserrat", monospace;
+  overflow: auto;
+}
+.headerContainer .titleContainer {
+  margin: auto 5px auto 0;
+  padding: 0;
+  height: auto;
+  font-size: 24pt;
+}
+.headerContainer .titleContainer p {
+  margin: auto 0;
+  padding: 0;
+}
+.headerContainer .linksContainer {
+  margin: auto 5px auto auto;
+  padding-top: 5px;
+  display: flex;
+  flex-flow: row;
 }
 
-/*# sourceMappingURL=Homepage.css.map */
+/*# sourceMappingURL=ProjectHeader.css.map */

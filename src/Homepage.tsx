@@ -1,13 +1,13 @@
 import React from 'react';
 
 // Page section imports
-import NavBar from "./mainComponents/NavBar";
-import IntroSection from "./mainComponents/IntroSection";
-import ProjectSection from "./mainComponents/ProjectSection";
-import Footer from "./mainComponents/Footer";
+import NavBar from "./main/NavBar";
+import IntroSection from "./main/IntroSection";
+import ProjectSection from "./main/ProjectSection";
+import Footer from "./main/Footer";
 
 import "./Homepage.scss";
-import EducationSection from "./mainComponents/EducationSection";
+import EducationSection from "./main/EducationSection";
 
 function Homepage() {
 
@@ -32,9 +32,9 @@ function Homepage() {
     return (
         <div className={"homepageContainer"}>
             <NavBar page={navOptions}/>
-            <IntroSection id={navOptions[0].id}/>
-            <EducationSection id={navOptions[1].id}/>
-            <ProjectSection id={navOptions[2].id}/>
+            <IntroSection section={navOptions[0]}/>
+            <EducationSection section={navOptions[1]}/>
+            <ProjectSection section={navOptions[2]}/>
             <Footer />
         </div>
     )

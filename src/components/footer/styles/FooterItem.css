@@ -24,9 +24,44 @@ code {
   padding: 20px;
 }
 
-.homepageContainer {
-  margin: 0;
-  padding: 0;
+.footerItem {
+  outline: 1px solid white;
+  margin: auto;
+  padding: 5px;
+  transition: 0.3s;
+  width: 150px;
+}
+.footerItem:hover p {
+  opacity: 1;
+  transition: 0.5s;
+}
+.footerItem a {
+  color: lightgrey;
+  margin: 10px;
+}
+.footerItem a:visited {
+  color: lightgrey;
+}
+.footerItem a:hover {
+  color: #bebebe;
+}
+.footerItem a:active, .footerItem a:focus {
+  color: #9c9c9c;
+  outline: none;
+}
+.footerItem a div {
+  display: flex;
+  flex-flow: row;
+  width: 100px;
+}
+.footerItem a div img {
+  height: 32px;
+  width: auto;
+}
+.footerItem a div p {
+  margin: auto 15px;
+  opacity: 0;
+  transition: 0.5s;
 }
 
-/*# sourceMappingURL=Homepage.css.map */
+/*# sourceMappingURL=FooterItem.css.map */

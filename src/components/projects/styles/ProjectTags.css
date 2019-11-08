@@ -24,9 +24,22 @@ code {
   padding: 20px;
 }
 
-.homepageContainer {
-  margin: 0;
-  padding: 0;
+.tagsContainer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.tagsContainer .tag {
+  outline: 1px solid;
+  -moz-outline-radius: 4px;
+  padding: 3px;
+  margin: 0 5px;
+}
+.tagsContainer .html {
+  outline-color: red;
+}
+.tagsContainer .css {
+  outline-color: blue;
 }
 
-/*# sourceMappingURL=Homepage.css.map */
+/*# sourceMappingURL=ProjectTags.css.map */

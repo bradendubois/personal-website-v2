@@ -24,9 +24,13 @@ code {
   padding: 20px;
 }
 
-.homepageContainer {
-  margin: 0;
-  padding: 0;
+.sectionTitle {
+  margin: 20px auto;
+  font-family: "Montserrat", "Open Sans", monospace;
+  font-weight: 600;
+  font-size: 20pt;
+  text-align: center;
+  text-transform: capitalize;
 }
 
-/*# sourceMappingURL=Homepage.css.map */
+/*# sourceMappingURL=SectionTitle.css.map */

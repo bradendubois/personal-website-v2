@@ -24,9 +24,9 @@ code {
   padding: 20px;
 }
 
-.homepageContainer {
-  margin: 0;
-  padding: 0;
+#education {
+  background: #e8e8e8;
+  padding: 50px 20px;
 }
 
-/*# sourceMappingURL=Homepage.css.map */
+/*# sourceMappingURL=EducationSection.css.map */

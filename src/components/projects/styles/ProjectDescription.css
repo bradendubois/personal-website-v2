@@ -24,9 +24,8 @@ code {
   padding: 20px;
 }
 
-.homepageContainer {
-  margin: 0;
-  padding: 0;
+.descriptionContainer {
+  font-family: "Montserrat", "Open Sans", monospace;
 }
 
-/*# sourceMappingURL=Homepage.css.map */
+/*# sourceMappingURL=ProjectDescription.css.map */
