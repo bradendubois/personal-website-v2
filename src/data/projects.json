@@ -1,34 +1,46 @@
-[{
-  "title" : "My Project",
-  "links" : [{
-    "url" : "https://www.bradendubois.dev",
-    "image" : {
-      "icon" : "external",
-      "alt" : "External Link Icon"
-    }
-  }],
-  "description" : "This is a test project; this is some test text to show the flow of a description of a project if the description were relatively long.",
-  "tags" : [
-    {
-      "type": "html",
-      "display": "HTML 5"
-    },
-    {
-      "type": "css",
-      "display": "CSS 3"
-    }
-  ]
-},
+[
   {
-    "title" : "My Project 2",
-    "links" : [{
-      "url" : "https://www.bradendubois.dev",
-      "image" : {
-        "icon" : "github",
-        "alt" : "Github Logo"
+    "title" : "Arch Config",
+    "links" : [
+      {
+        "url" : "https://github.com/bradendubois/arch-setup",
+        "image" : {
+          "icon" : "github",
+          "alt" : "github"
+        }
       }
-    }],
-    "description" : "This is a test project; this is some test text to show the flow of a description of a project if the description were relatively long.",
+    ],
+    "description" : "Setup/install scripts that I use to set up my terminal and shell and install software.",
+    "tags" : [
+      {
+        "type": "shell",
+        "display": "SHELL / BASH"
+      },
+      {
+        "type": "git",
+        "display": "GIT"
+      }
+    ]
+  },
+  {
+    "title" : "Personal Website (v1)",
+    "links" : [
+      {
+        "url" : "https://www.bradendubois.dev",
+        "image" : {
+          "icon" : "external",
+          "alt" : "my personal website"
+        }
+      },
+      {
+        "url" : "https://www.github.com/bradendubois/personal-website-v1",
+        "image" : {
+          "icon" : "github",
+          "alt" : "github"
+        }
+      }
+    ],
+    "description" : "Made my own personal website, writing my own HTML / CSS / JavaScript with no libraries/frameworks. This is the first website work I've done since high school, so I'm happy with how it turned out. This was also my first foray into learning a bit of JavaScript.",
     "tags" : [
       {
         "type": "html",
@@ -37,6 +49,38 @@
       {
         "type": "css",
         "display": "CSS 3"
+      },
+      {
+        "type": "javascript",
+        "display": "JS"
+      },
+      {
+        "type": "git",
+        "display": "GIT"
       }
     ]
-  }]
+  },
+  {
+    "title" : "Tic-Tac-Toe Bot",
+    "links" : [
+      {
+        "url" : "https://www.github.com/bradendubois/tictactoe",
+        "image" : {
+          "icon" : "github",
+          "alt" : "github"
+        }
+      }
+    ],
+    "description" : "A look at basic approaches to AI, using the classic game of Tic-Tac-Toe. This project was done before taking a Computer Science course on AI at uSask.",
+    "tags" : [
+      {
+        "type": "java",
+        "display": "Java"
+      },
+      {
+        "type": "git",
+        "display": "GIT"
+      }
+    ]
+  }
+]

@@ -15,6 +15,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+html, body {
+  height: 100%;
+}
+
 /* TODO - Get more specific colors */
 /*********** Project Tag Colors ***********/
 * {
@@ -32,12 +36,12 @@ code {
   margin: auto;
   display: grid;
   max-width: 1300px;
-  grid-auto-columns: 70px 1.1fr 1fr 130px;
+  grid-auto-columns: 120px 1.1fr 1fr 120px;
   grid-template-rows: auto max-content max-content;
   grid-row-gap: 25px;
   grid-column-gap: 40px;
   overflow: hidden;
-  grid-template-areas: ". hr hr hr" "programLogo headerInfo headerInfo timeframeInfo" ". courseInfo detailInfo detailInfo";
+  grid-template-areas: ". hr hr ." "programLogo headerInfo headerInfo timeframeInfo" ". courseInfo detailInfo .";
 }
 @media screen and (max-width: 1000px) {
   .programContainer {
@@ -70,6 +74,7 @@ code {
   grid-area: programLogo;
   filter: opacity(85%);
   transition: 0.2s;
+  margin-left: auto;
 }
 .programContainer .programLogo:hover {
   filter: opacity(100%);
@@ -93,6 +98,7 @@ code {
 }
 .programContainer .timeframeInfo {
   grid-area: timeframeInfo;
+  margin-right: auto;
 }
 .programContainer .timeframeInfo .timeframe {
   font-size: 14pt;

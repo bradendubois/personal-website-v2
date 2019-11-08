@@ -11,6 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+html, body {
+  height: 100%;
+}
+
 /* TODO - Get more specific colors */
 /*********** Project Tag Colors ***********/
 * {
@@ -31,6 +35,7 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=ProjectSection.css.map */

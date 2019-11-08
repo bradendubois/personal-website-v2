@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
 
-  height: 50px;
+  height: 100%;
 
   display: flex;
   flex-direction: row;
@@ -18,8 +18,10 @@
   .titleContainer {
     margin: auto 5px auto 0;
     padding: 0;
-    height: auto;
-    font-size: 24pt;
+    flex-wrap: wrap;
+    min-height: 50px;
+    height: max-content;
+    font-size: 22pt;
 
     p {
       margin: auto 0;
@@ -28,7 +30,7 @@
   }
 
   .linksContainer {
-    margin: auto 5px auto auto;
+    margin: 1px 5px auto auto;
     padding-top: 5px;
 
     display: flex;
