@@ -1,13 +1,13 @@
 import React from "react";
 
-import "./styles/PageHeader.scss";
+import "./styles/NavBar.scss";
 
 interface Section {
     id: string;
     display: string;
 }
 
-function PageHeader(props : {page : Section[]}) {
+function NavBar(props : {page : Section[]}) {
 
     let tabs = props.page.map((section) => (
         <div className={"navOption"}>
@@ -25,4 +25,4 @@ function PageHeader(props : {page : Section[]}) {
     )
 }
 
-export default PageHeader;
+export default NavBar;
