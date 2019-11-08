@@ -7,10 +7,12 @@ import NeofetchColors from "./NeofetchColors";
 
 import "./styles/Neofetch";
 
-function Neofetch(props: {image: ImageData; data: string; links: string; colors: string;}) {
+import ImageData from "./NeofetchImage";
+
+function Neofetch(props: {data: string; links: string; colors: string;}) {
     return (
         <div className={"neofetchContainer"}>
-            <NeofetchImage image={props.image} />
+            <NeofetchImage />
             <div>
                 <NeofetchData data={props.data} />
                 <NeofetchLinks links={props.links} />

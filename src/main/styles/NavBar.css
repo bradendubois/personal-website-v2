@@ -25,6 +25,8 @@ code {
 }
 
 .navContainer {
+  position: sticky;
+  top: 0;
   background: #f3f3f3;
   display: flex;
   flex-direction: row;
@@ -32,36 +34,27 @@ code {
   padding: 0;
   margin: 0;
 }
-.navContainer .navOption {
+.navContainer a {
   flex-grow: 1;
+  justify-content: space-evenly;
+  max-width: 300px;
   transition: 0.2s;
   padding: 15px;
 }
-.navContainer .navOption:hover {
+.navContainer a:hover {
   background: #e5e5e5;
 }
-.navContainer .navOption:active {
+.navContainer a:active {
   background: #dddddd;
+  outline: none;
 }
-.navContainer .navOption a {
-  flex-grow: 0;
-  width: 50px;
-  margin: 0 auto auto auto;
-}
-.navContainer .navOption a div {
-  flex-grow: 1;
-  height: 100%;
-}
-.navContainer .navOption a div p {
+.navContainer a .navOption p {
   margin: 5px auto;
   width: max-content;
   font-size: 14pt;
   text-transform: full-width;
   font-family: "Montserrat", sans-serif;
   color: #4c8ec4;
-}
-.navContainer .navOption a:active {
-  outline: none;
 }
 
 /*# sourceMappingURL=NavBar.css.map */

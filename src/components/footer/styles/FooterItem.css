@@ -25,9 +25,8 @@ code {
 }
 
 .footerItem {
-  outline: 1px solid white;
   margin: auto;
-  padding: 5px;
+  padding: 5px 5px 5px 5px;
   transition: 0.3s;
   width: 150px;
 }
@@ -53,6 +52,9 @@ code {
   display: flex;
   flex-flow: row;
   width: 100px;
+}
+.footerItem a div:last-of-type {
+  flex-flow: row-reverse;
 }
 .footerItem a div img {
   height: 32px;

@@ -3,7 +3,7 @@ import EducationProgram from "../components/education/EducationProgram";
 
 import "./styles/EducationSection.scss";
 
-import educationData from "../data/educationData.json";
+import educationData from "../data/education.json";
 import SectionTitle from "../components/SectionTitle";
 
 let programs = educationData.map((item) => <EducationProgram entry={item}/>);

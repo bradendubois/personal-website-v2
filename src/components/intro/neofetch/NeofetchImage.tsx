@@ -7,7 +7,7 @@ interface ImageData {
     alt: string;
 }
 
-function NeofetchImage(props: {image: ImageData}) {
+function NeofetchImage() {
     return (
         <div>
 

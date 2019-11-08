@@ -3,7 +3,7 @@ import Project from "../components/projects/Project";
 
 import "./styles/ProjectSection.scss";
 
-import projectData from "../project_test.json";
+import projectData from "../data/projects.json";
 import SectionTitle from "../components/SectionTitle";
 
 function ProjectSection(props: {section: {id: string, display: string;}}) {

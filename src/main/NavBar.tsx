@@ -10,13 +10,11 @@ interface Section {
 function NavBar(props : {page : Section[]}) {
 
     let tabs = props.page.map((section) => (
-        <div className={"navOption"}>
-            <a href={"#" + section.id}>
-                <div>
-                    <p>{section.display}</p>
-                </div>
-            </a>
-        </div>));
+        <a href={"#" + section.id}>
+            <div className={"navOption"}>
+                <p>{section.display}</p>
+            </div>
+        </a>));
 
     return (
         <div className={"navContainer"}>

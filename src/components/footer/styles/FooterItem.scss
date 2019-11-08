@@ -2,12 +2,11 @@
 
 .footerItem {
 
-  outline: 1px solid white;
-
   margin: auto;
-  padding: 5px;
+  padding: 5px 5px 5px 5px;
   transition: 0.3s;
   width: 150px;
+
 
   &:hover {
     p {
@@ -38,6 +37,10 @@
       display: flex;
       flex-flow: row;
       width: 100px;
+
+      &:last-of-type {
+        flex-flow: row-reverse;
+      }
 
       img {
         height: 32px;
