@@ -2,12 +2,11 @@ import React from "react";
 
 import "./styles/NeofetchImage.scss";
 
-export interface Image {
-    icon: string;
-    alt: string;
-}
 export interface NeofetchImageData {
-    info: Image;
+    info: {
+        icon: string;
+        alt: string;
+    }
     title: string;
 }
 

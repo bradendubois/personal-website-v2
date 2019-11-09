@@ -14,11 +14,11 @@
       },
       "stats": [
         {
-          "key": "host",
+          "key": "Host",
           "value": "Saskatchewan, Canada"
         },
         {
-          "key": "uptime",
+          "key": "Uptime",
           "value": "a few minutes"
         },
         {
@@ -50,14 +50,14 @@
     "resume_links": [
       {
         "display": "pdf",
-        "reference": "linkedin"
+        "reference": "resume_pdf"
       },
       {
-        "display": "pdf",
-        "reference": "linkedin"
+        "display": "docx",
+        "reference": "resume_docx"
       },
       {
-        "display": "pdf",
+        "display": "linkedin",
         "reference": "linkedin"
       }
     ],

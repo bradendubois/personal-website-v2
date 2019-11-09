@@ -11,14 +11,7 @@ function IntroSection(props: {section: {id: string, display: string;}}) {
     return (
         <div className={"sectionContainer"} id={props.section.id}>
             <SectionTitle display={props.section.display}/>
-            <Neofetch
-                image={introData.neofetch.image}
-                title={introData.neofetch.data.title}
-                stats={introData.neofetch.data.stats}
-                resume_links={introData.neofetch.resume_links}
-                working_directory={introData.neofetch.working_directory}
-                colors={introData.neofetch.colors}
-            />
+            <Neofetch neofetchData={introData.neofetch} />
         </div>
     )
 }

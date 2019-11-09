@@ -20,24 +20,17 @@ interface NeofetchInterface {
     colors: string[];
 }
 
-function Neofetch(props: {
-    image: NeofetchImageData;
-    title: { user: string; machine: string; };
-    stats: { key: string; value: string}[];
-    resume_links: NeofetchResumeData[];
-    working_directory: string[];
-    colors: string[];})
-
-    {
+function Neofetch(props: {neofetchData: NeofetchInterface}) {
 
     return (
         <div className={"neofetchContainer"}>
-            <NeofetchImage image={props.image} />
+            <NeofetchImage image={props.neofetchData.image} />
             <div>
-                <NeofetchStats title={props.title} stats={props.stats} />
-                <NeofetchResumeLinks resume_links={props.resume_links} />
-                <NeofetchDirectory directory={props.working_directory} />
+                <NeofetchStats data={props.neofetchData.data} />
+                <NeofetchResumeLinks resume_links={props.neofetchData.resume_links} />
+                <NeofetchColors colors={props.neofetchData.colors}/>
             </div>
+            <NeofetchDirectory directory={props.neofetchData.working_directory} />
         </div>
     )
 }

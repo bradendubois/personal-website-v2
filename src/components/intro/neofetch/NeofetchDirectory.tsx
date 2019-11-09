@@ -4,7 +4,7 @@ function NeofetchDirectory(props: {directory: string[]}) {
     return (
         <div>
             <p>{props.directory.map((dir) => (
-                {dir} + "/"
+                <span><span className={"directory"}>{dir}</span>/</span>
             ))}
             </p>
         </div>
