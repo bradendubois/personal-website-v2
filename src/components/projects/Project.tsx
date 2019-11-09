@@ -3,6 +3,7 @@ import React from 'react';
 import './styles/Project.scss';
 
 // Project components
+import ProjectCover from "./ProjectCover";
 import ProjectHeader from "./ProjectHeader";
 import ProjectDescription from "./ProjectDescription";
 import ProjectTags from "./ProjectTags";
@@ -10,6 +11,10 @@ import ProjectTags from "./ProjectTags";
 // Interface defining the JSON file layout of projects
 interface Project {
     title: string;
+    preview: {
+        icon: string;
+        alt: string;
+    };
     links: {
         url: string;
         image: {
@@ -35,6 +40,7 @@ function Project(props: Project) {
      */
     return (
         <div className={"project"}>
+            <ProjectCover image={props.preview} />
             <ProjectHeader title={props.title} links={props.links}/>
             <ProjectDescription description={props.description}/>
             <ProjectTags tags={props.tags}/>

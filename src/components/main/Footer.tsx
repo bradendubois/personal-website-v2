@@ -1,8 +1,9 @@
 import React from "react";
+import FooterItem from "../footer/FooterItem";
 
 import "./styles/Footer.scss"
-import footerData from "../data/footer.json";
-import FooterItem from "../components/footer/FooterItem";
+
+import footerData from "../../data/footer.json";
 
 function Footer() {
 

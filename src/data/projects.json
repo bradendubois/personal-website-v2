@@ -1,6 +1,10 @@
 [
   {
     "title" : "Arch Config",
+    "preview": {
+      "icon": "test",
+      "alt": "test"
+    },
     "links" : [
       {
         "url" : "https://github.com/bradendubois/arch-setup",
@@ -24,6 +28,10 @@
   },
   {
     "title" : "Personal Website (v1)",
+    "preview": {
+      "icon": "test",
+      "alt": "test"
+    },
     "links" : [
       {
         "url" : "https://www.bradendubois.dev",
@@ -62,6 +70,10 @@
   },
   {
     "title" : "Tic-Tac-Toe Bot",
+    "preview": {
+      "icon": "test",
+      "alt": "test"
+    },
     "links" : [
       {
         "url" : "https://www.github.com/bradendubois/tictactoe",

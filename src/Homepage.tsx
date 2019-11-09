@@ -1,13 +1,13 @@
 import React from 'react';
 
 // Page section imports
-import NavBar from "./main/NavBar";
-import IntroSection from "./main/IntroSection";
-import ProjectSection from "./main/ProjectSection";
-import Footer from "./main/Footer";
+import NavBar from "./components/main/NavBar";
+import IntroSection from "./components/main/IntroSection";
+import ProjectSection from "./components/main/ProjectSection";
+import Footer from "./components/main/Footer";
 
 import "./Homepage.scss";
-import EducationSection from "./main/EducationSection";
+import EducationSection from "./components/main/EducationSection";
 
 function Homepage() {
 

@@ -1,10 +1,12 @@
 import React from 'react';
-import Project from "../components/projects/Project";
+import SectionTitle from "../../components/SectionTitle";
+import Project from "../projects/Project";
+import Trove from "../trove/Trove";
 
 import "./styles/ProjectSection.scss";
 
-import projectData from "../data/projects.json";
-import SectionTitle from "../components/SectionTitle";
+import projectData from "../../data/projects.json";
+
 
 function ProjectSection(props: {section: {id: string, display: string;}}) {
     return (
@@ -13,6 +15,7 @@ function ProjectSection(props: {section: {id: string, display: string;}}) {
             <div className={"projectContainer"}>
                 {projectData.map((item) =>
                     <Project
+                        preview={item.preview}
                         title={item.title}
                         links={item.links}
                         description={item.description}
@@ -20,6 +23,7 @@ function ProjectSection(props: {section: {id: string, display: string;}}) {
                     />
                 )}
             </div>
+            <Trove />
         </div>
     )
 }

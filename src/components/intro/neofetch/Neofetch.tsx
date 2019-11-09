@@ -1,22 +1,48 @@
 import React from "react";
 
 import NeofetchImage from "./NeofetchImage";
-import NeofetchData from "./NeofetchData";
-import NeofetchLinks from "./NeofetchLinks";
+import NeofetchStats from "./NeofetchStats";
+import NeofetchResumeLinks from "./NeofetchResumeLinks";
 import NeofetchColors from "./NeofetchColors";
+import NeofetchDirectory from "./NeofetchDirectory";
 
-import "./styles/Neofetch";
+import "./styles/Neofetch.scss";
 
-import ImageData from "./NeofetchImage";
+import { NeofetchImageData } from "./NeofetchImage";
+import { NeofetchStatData } from "./NeofetchStats";
+import { NeofetchResumeData } from "./NeofetchResumeLinks";
 
-function Neofetch(props: {data: string; links: string; colors: string;}) {
+export function test(s: string) {
+    return "s";
+}
+
+
+interface NeofetchInterface {
+    image: NeofetchImageData;
+    data: NeofetchStatData;
+    resume_links: NeofetchResumeData[];
+    working_directory: string[];
+    colors: string[];
+}
+
+function Neofetch(props: {
+    image: NeofetchImageData;
+    title: { user: string; machine: string; };
+    stats: { key: string; value: string}[];
+    resume_links: NeofetchResumeData[];
+    working_directory: string[];
+    colors: string[];})
+
+    {
+
+
     return (
         <div className={"neofetchContainer"}>
-            <NeofetchImage />
+            <NeofetchImage image={props.image} />
             <div>
-                <NeofetchData data={props.data} />
-                <NeofetchLinks links={props.links} />
-                <NeofetchColors colors={props.colors} />
+                <NeofetchStats title={props.title} stats={props.stats} />
+                <NeofetchResumeLinks resume_links={props.resume_links} />
+                <NeofetchDirectory directory={props.working_directory} />
             </div>
         </div>
     )

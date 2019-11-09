@@ -1,3 +1,67 @@
 {
-  "greeting": "Test! Test!"
+  "neofetch": {
+    "image": {
+      "info": {
+        "icon": "github",
+        "alt": "github"
+      },
+      "title": "some description"
+    },
+    "data": {
+      "title": {
+        "user": "braden",
+        "machine": "earth"
+      },
+      "stats": [
+        {
+          "key": "host",
+          "value": "Saskatchewan, Canada"
+        },
+        {
+          "key": "uptime",
+          "value": "a few minutes"
+        },
+        {
+          "key": "Education",
+          "value": "University of Saskatchewan"
+        },
+        {
+          "key": "Major",
+          "value": "Computer Science & Philosophy"
+        },
+        {
+          "key": "Packages",
+          "value": "206"
+        },
+        {
+          "key": "Resolution",
+          "value": "Corrected to 20/20"
+        },
+        {
+          "key": "CPU",
+          "value": "Brain"
+        },
+        {
+          "key": "GPU",
+          "value": "Eye (x2)"
+        }
+      ]
+    },
+    "resume_links": [
+      {
+        "display": "pdf",
+        "reference": "linkedin"
+      },
+      {
+        "display": "pdf",
+        "reference": "linkedin"
+      },
+      {
+        "display": "pdf",
+        "reference": "linkedin"
+      }
+    ],
+    "working_directory": ["~", "professional", "portfolio"],
+    "colors": ["lightblue", "grey", "orange"]
+  }
 }

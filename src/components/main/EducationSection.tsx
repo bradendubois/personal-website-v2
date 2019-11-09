@@ -1,10 +1,10 @@
 import React from "react";
-import EducationProgram from "../components/education/EducationProgram";
+import EducationProgram from "../education/EducationProgram";
 
 import "./styles/EducationSection.scss";
 
-import educationData from "../data/education.json";
-import SectionTitle from "../components/SectionTitle";
+import educationData from "../../data/education.json";
+import SectionTitle from "../../components/SectionTitle";
 
 let programs = educationData.map((item) => <EducationProgram entry={item}/>);
 
