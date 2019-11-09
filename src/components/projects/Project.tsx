@@ -28,8 +28,6 @@ interface Project {
     }[];
 }
 
-// TODO - Add support for a background image for a project
-
 function Project(props: Project) {
 
     /**
@@ -39,11 +37,13 @@ function Project(props: Project) {
      *  ProjectTags - A list of all the languages/tools used
      */
     return (
-        <div className={"project"}>
-            <ProjectCover image={props.preview} />
-            <ProjectHeader title={props.title} links={props.links}/>
-            <ProjectDescription description={props.description}/>
-            <ProjectTags tags={props.tags}/>
+        <div className={"projectContainer"}>
+            { /* <ProjectCover image={props.preview} /> */ }
+            <div className={"project"}>
+                <ProjectHeader title={props.title} links={props.links}/>
+                <ProjectDescription description={props.description}/>
+                <ProjectTags tags={props.tags}/>
+            </div>
         </div>
     );
 }

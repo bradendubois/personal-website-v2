@@ -31,11 +31,12 @@ html, body {
 #projects {
   background: #476b86;
 }
-#projects .projectContainer {
+#projects .projectsContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 /*# sourceMappingURL=ProjectSection.css.map */

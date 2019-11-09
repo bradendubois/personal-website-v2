@@ -29,6 +29,7 @@ html, body {
 }
 
 .navContainer {
+  z-index: 10;
   position: sticky;
   top: 0;
   background: #f3f3f3;

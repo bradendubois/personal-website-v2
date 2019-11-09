@@ -12,7 +12,7 @@ function ProjectSection(props: {section: {id: string, display: string;}}) {
     return (
         <div className={"sectionContainer"} id={props.section.id}>
             <SectionTitle display={props.section.display}/>
-            <div className={"projectContainer"}>
+            <div className={"projectsContainer"}>
                 {projectData.map((item) =>
                     <Project
                         preview={item.preview}

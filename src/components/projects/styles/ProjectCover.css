@@ -28,18 +28,14 @@ html, body {
   padding: 20px;
 }
 
-.project {
-  width: 400px;
-  height: max-content;
-  margin: 40px auto;
-  padding: 5px 5px 20px 5px;
-  border-radius: 4px;
-  background: #131a2b;
-  color: #e0e0e0;
+.imageContainer {
+  z-index: -5;
+  margin-left: -50px;
+  margin-bottom: -50px;
 }
-.project:hover .imageContainer {
-  margin-left: -100px;
-  margin-bottom: -100px;
+.imageContainer img {
+  height: 200px;
+  width: auto;
 }
 
-/*# sourceMappingURL=Project.css.map */
+/*# sourceMappingURL=ProjectCover.css.map */

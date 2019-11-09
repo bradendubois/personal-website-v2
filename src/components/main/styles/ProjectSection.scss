@@ -3,10 +3,11 @@
 #projects {
   background: #476b86;
 
-  .projectContainer {
+  .projectsContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
   }
 }
