@@ -12,11 +12,6 @@ import { NeofetchImageData } from "./NeofetchImage";
 import { NeofetchStatData } from "./NeofetchStats";
 import { NeofetchResumeData } from "./NeofetchResumeLinks";
 
-export function test(s: string) {
-    return "s";
-}
-
-
 interface NeofetchInterface {
     image: NeofetchImageData;
     data: NeofetchStatData;
@@ -34,7 +29,6 @@ function Neofetch(props: {
     colors: string[];})
 
     {
-
 
     return (
         <div className={"neofetchContainer"}>
