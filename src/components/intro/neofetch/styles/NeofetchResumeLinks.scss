@@ -1,0 +1,15 @@
+.resumeLinksContainer {
+
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+
+  .resumeKey {
+    font-size: 12pt;
+  }
+
+  span {
+    display: flex;
+    flex-direction: row;
+  }
+}

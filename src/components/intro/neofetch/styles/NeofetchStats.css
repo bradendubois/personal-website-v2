@@ -1,3 +1,27 @@
-
+.stats {
+  font-family: "Montserrat", sans-serif;
+}
+.stats .neofetchTitle {
+  padding-top: 10px;
+}
+.stats .neofetchTitle .statDefault {
+  color: white;
+}
+.stats .neofetchTitle .statKey {
+  color: #f35232;
+}
+.stats .neofetchTitle .statValue {
+  color: #ecac31;
+}
+.stats .neofetchStat .statDefault {
+  color: white;
+}
+.stats .neofetchStat .statKey {
+  color: #f35232;
+  font-weight: 600;
+}
+.stats .neofetchStat .statValue {
+  color: #ecac31;
+}
 
 /*# sourceMappingURL=NeofetchStats.css.map */

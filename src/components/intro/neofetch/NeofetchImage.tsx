@@ -12,6 +12,9 @@ export interface NeofetchImageData {
 
 function lookup(icon: string): string {
 
+    let rabbit = "/sunglasses_rabbit_1.jpg";
+    return rabbit;
+
     switch (icon) {
         case ("this"):
             return "this";
@@ -22,8 +25,12 @@ function lookup(icon: string): string {
 
 function NeofetchImage(props: {image: NeofetchImageData}) {
     return (
-        <div>
-            <img src={lookup(props.image.info.icon)} alt={props.image.info.alt}/>
+        <div className={"imageContainer"}>
+            <img
+                src={lookup(props.image.info.icon)}
+                alt={props.image.info.alt}
+                title={props.image.title}
+            />
         </div>
     )
 }

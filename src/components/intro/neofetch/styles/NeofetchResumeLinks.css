@@ -1,3 +1,14 @@
-
+.resumeLinksContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.resumeLinksContainer .resumeKey {
+  font-size: 12pt;
+}
+.resumeLinksContainer span {
+  display: flex;
+  flex-direction: row;
+}
 
 /*# sourceMappingURL=NeofetchResumeLinks.css.map */

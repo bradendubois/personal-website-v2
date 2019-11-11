@@ -15,19 +15,19 @@ export interface NeofetchStatData {
 
 function NeofetchStats(props: {data: NeofetchStatData}) {
     return (
-        <div className={"neofetchStatContainer"}>
+        <div className={"stats"}>
             <p className={"neofetchTitle"}>
                 <span className={"statKey"}>{props.data.title.user}</span>
                 <span className={"statDefault"}>@</span>
                 <span className={"statValue"}>{props.data.title.machine}</span>
             </p>
 
-            <p className={"neofetchSeparator"}>-----------</p>
+            <p className={"neofetchSeparator"}>----------------------</p>
 
             {props.data.stats.map((stat) => (
                 <p className={"neofetchStat"}>
                     <span className={"statKey"}>{stat.key}</span>
-                    <span className={"statDefault"}>: </span>
+                    <span className={"statDefault"}>:&nbsp;&nbsp;</span>
                     <span className={"statValue"} id={stat.key}>{stat.value}</span>
                 </p>
             ))}

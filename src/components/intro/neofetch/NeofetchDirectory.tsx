@@ -1,10 +1,12 @@
 import React from "react";
 
+import "./styles/NeofetchDirectory.scss";
+
 function NeofetchDirectory(props: {directory: string[]}) {
     return (
-        <div>
+        <div className={"directoryContainer"}>
             <p>{props.directory.map((dir) => (
-                <span><span className={"directory"}>{dir}</span>/</span>
+                <span><span className={"directory"}>{dir}</span> / </span>
             ))}
             </p>
         </div>

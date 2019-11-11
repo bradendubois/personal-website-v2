@@ -1,6 +1,22 @@
 @import "../../../../defaults";
 
 .neofetchContainer {
-  margin: 10px;
-  padding: 10px;
+
+  margin: 30px auto;
+  padding: 15px;
+
+  background: #0c1d3b;
+  outline: 1px solid #112a55;
+  -moz-outline-radius: 5px;
+  width: 700px;
+
+  .neofetchMainInfoContainer {
+    display: flex;
+    flex-direction: row;
+
+    .neofetchStatContainer {
+
+      margin: 2px 0 0 20px;
+    }
+  }
 }

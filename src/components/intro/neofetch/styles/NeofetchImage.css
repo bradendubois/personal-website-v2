@@ -1,3 +1,6 @@
-
+.imageContainer img {
+  width: 300px;
+  height: auto;
+}
 
 /*# sourceMappingURL=NeofetchImage.css.map */

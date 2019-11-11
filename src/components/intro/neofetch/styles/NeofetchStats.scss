@@ -1,0 +1,27 @@
+.stats {
+
+  font-family: "Montserrat", sans-serif;
+
+  .neofetchTitle {
+
+    padding-top: 10px;
+
+    .statDefault { color: white; }
+    .statKey { color: #f35232; }
+    .statValue { color: #ecac31; }
+
+
+  }
+
+  .neofetchStat {
+
+    .statDefault { color: white; }
+
+    .statKey {
+      color: #f35232;
+      font-weight: 600;
+    }
+
+    .statValue { color: #ecac31; }
+  }
+}

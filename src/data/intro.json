@@ -5,7 +5,7 @@
         "icon": "github",
         "alt": "github"
       },
-      "title": "some description"
+      "title": "This is probably a photo of a rabbit in sunglasses. If it's not, I got a professional photo of myself done and you missed out on a really cool placeholder."
     },
     "data": {
       "title": {
@@ -61,7 +61,7 @@
         "reference": "linkedin"
       }
     ],
-    "working_directory": ["~", "professional", "portfolio"],
+    "working_directory": ["~", "professional", "portfolio", "neofetch"],
     "colors": ["lightblue", "grey", "orange"]
   }
 }

@@ -24,11 +24,13 @@ function Neofetch(props: {neofetchData: NeofetchInterface}) {
 
     return (
         <div className={"neofetchContainer"}>
-            <NeofetchImage image={props.neofetchData.image} />
-            <div>
-                <NeofetchStats data={props.neofetchData.data} />
-                <NeofetchResumeLinks resume_links={props.neofetchData.resume_links} />
-                <NeofetchColors colors={props.neofetchData.colors}/>
+            <div className={"neofetchMainInfoContainer"}>
+                <NeofetchImage image={props.neofetchData.image} />
+                <div className={"neofetchStatContainer"}>
+                    <NeofetchStats data={props.neofetchData.data} />
+                    <NeofetchResumeLinks resume_links={props.neofetchData.resume_links} />
+                    <NeofetchColors colors={props.neofetchData.colors}/>
+                </div>
             </div>
             <NeofetchDirectory directory={props.neofetchData.working_directory} />
         </div>

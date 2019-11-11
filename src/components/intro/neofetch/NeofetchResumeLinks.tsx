@@ -14,13 +14,20 @@ function lookup(reference: string) {
 }
 
 function NeofetchResumeLinks(props: {resume_links: NeofetchResumeData[]}) {
+
     return (
-        <div>
+        <div className={"resumeLinksContainer"}>
+            <p className={"resumeKey"}>Resume:&nbsp;</p>
+            <p className={"resumeDefault"}>[&nbsp;</p>
             {props.resume_links.map((link) => (
-                <a href={lookup(link.reference)}>
-                    <p>{link.display}</p>
-                </a>
+                <span>
+                    <a href={lookup(link.reference)}>
+                        <p>{link.display}</p>
+                    </a>
+                    <p className={"resumeDefault"}>,&nbsp;</p>
+                </span>
             ))}
+            <p className={"resumeDefault"}>]</p>
         </div>
     )
 }
