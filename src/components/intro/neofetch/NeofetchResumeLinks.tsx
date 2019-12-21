@@ -1,11 +1,15 @@
 import React from "react";
 
 import "./styles/NeofetchResumeLinks.scss";
-import {urlLookup} from "../../../Lookup";
+import {iconLookup, urlLookup} from "../../../Lookup";
 
 export interface NeofetchResumeData {
     display: string;
     reference: string;
+    image: {
+        icon: string;
+        description: string;
+    }
 }
 
 function NeofetchResumeLinks(props: {resume_links: NeofetchResumeData[]}) {
@@ -15,15 +19,19 @@ function NeofetchResumeLinks(props: {resume_links: NeofetchResumeData[]}) {
             <p className={"resumeKey"}>Resume:&nbsp;</p>
             <p className={"resumeDefault"}>[&nbsp;</p>
             {props.resume_links.map((link) => (
-                <span>
+                <div>
                     <a
                         href={urlLookup(link.reference)}
                         target={"_blank"}
                     >
                         <p>{link.display}</p>
                     </a>
-                    <p className={"resumeDefault"}>,&nbsp;</p>
-                </span>
+                    <p className={"resumeDefault"}>,&nbsp;&nbsp;</p>
+                    <img
+                        src={iconLookup(link.image.icon)}
+                        alt={link.image.description}
+                    />
+                </div>
             ))}
             <p className={"resumeDefault"}>]</p>
         </div>

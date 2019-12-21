@@ -14,10 +14,10 @@ function convert(data: {content: string; link: string;}) {
 function Bio(props: {data: {content: string; link: string;}[][]}) {
 
     let bio = props.data.map((section) => (
-        <div>
-            {section.map((sec) => (
-                <p>{convert(sec)}</p>
-            ))}
+        <div className={"bioSection"}>
+            <p>
+                {section.map((sec) => (convert(sec)))}
+            </p>
         </div>
     ));
 

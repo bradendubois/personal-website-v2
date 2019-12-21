@@ -28,4 +28,31 @@ html, body {
   padding: 20px;
 }
 
+.bioContainer {
+  margin: 10px auto;
+  width: auto;
+  max-width: 600px;
+}
+.bioContainer .bioSection {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  justify-content: stretch;
+}
+.bioContainer .bioSection a, .bioContainer .bioSection a:visited {
+  color: #4f87d5;
+  transition: 0.1s;
+}
+.bioContainer .bioSection a:hover {
+  color: #4372b4;
+}
+.bioContainer .bioSection a:active {
+  color: #2c4b77;
+}
+.bioContainer .bioSection p {
+  color: white;
+  transition: 0.3s;
+  font-size: 12pt;
+}
+
 /*# sourceMappingURL=Bio.css.map */

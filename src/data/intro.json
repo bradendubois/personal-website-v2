@@ -50,15 +50,35 @@
     "resume_links": [
       {
         "display": "pdf",
-        "reference": "resume_pdf"
+        "reference": "resume_pdf",
+        "image": {
+          "icon": "pdf-light",
+          "description": "Resume as a pdf file"
+        }
       },
       {
         "display": "docx",
-        "reference": "resume_docx"
+        "reference": "resume_docx",
+        "image": {
+          "icon": "docx",
+          "description": "Resume as a docx file"
+        }
       },
       {
         "display": "linkedin",
-        "reference": "linkedin"
+        "reference": "linkedin",
+        "image": {
+          "icon": "linkedin-light",
+          "description": "LinkedIn Profile"
+        }
+      },
+      {
+        "display": "github",
+        "reference": "github",
+        "image": {
+          "icon": "github",
+          "description": "Github Profile"
+        }
       }
     ],
     "working_directory": ["~", "professional", "portfolio", "neofetch"],
@@ -67,7 +87,7 @@
   "blurb" : [
     [
       {
-        "content": "I'm an undergraduate student at the",
+        "content": "I'm an undergraduate student at the ",
         "link": ""
       },
       {
@@ -75,13 +95,13 @@
         "link": "usask"
       },
       {
-        "content": "pursuing a Double Honours in Computer Science and Philosophy.",
+        "content": " pursuing a B.Sc. Double Honours in Computer Science and Philosophy.",
         "link": ""
       }
     ],
     [
       {
-        "content": "My free time is usually spent",
+        "content": "My free time is usually spent ",
         "link": ""
       },
       {
@@ -89,15 +109,15 @@
         "link": "github"
       },
       {
-        "content": "reading a good book",
+        "content": ", reading, or solving ",
         "link": ""
       },
       {
         "content": "competitive programming problems",
-        "link": "competitive programming"
+        "link": "competitive-programming"
       },
       {
-        "content": "to online judges like",
+        "content": " through online judges, like ",
         "link": ""
       },
       {

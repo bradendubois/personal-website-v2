@@ -4,7 +4,7 @@ import "./styles/SectionTitle.scss";
 
 function SectionTitle(props: {display: string}) {
     return (
-        <p className={"sectionTitle"}>{props.display}</p>
+        <h1 className={"sectionTitle"}>{props.display}</h1>
     )
 }
 

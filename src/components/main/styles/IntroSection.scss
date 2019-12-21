@@ -4,10 +4,26 @@
   background: $introColor;
   min-height: 300px;
 
+  h1 {
+    color: white;
+  }
+
   p {
     margin: 0;
+  }
+}
 
+@media screen and (min-width: 1400px) {
+  .contentContainer {
+    display: flex;
 
-    color: white;
+    .neofetchContainer {
+      margin: 40px auto;
+    }
+
+    .bioContainer {
+      margin: 80px auto auto auto;
+      max-width: 500px;
+    }
   }
 }

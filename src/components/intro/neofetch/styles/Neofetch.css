@@ -35,6 +35,7 @@ html, body {
   outline: 1px solid #112a55;
   -moz-outline-radius: 5px;
   width: 700px;
+  color: white;
 }
 .neofetchContainer .neofetchMainInfoContainer {
   display: flex;

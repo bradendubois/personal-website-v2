@@ -5,10 +5,14 @@ export function iconLookup(name: string) : string {
 
     // TODO - Image lookups should maybe support a light/dark mode check
 
-    let github = "/GitHub-Mark-Light-64px/png";
+    let github = "/GitHub-Mark-Light-64px.png";
     let linkedin = "/linkedin_alt_final.png";
+    let linkedinlight = "/linkedin-light.png";
     let email = "/email_final.png";
     let usask = "/usask.jpg";
+    let pdf = "/pdf-dark.png";
+    let pdflight = "/pdf-light.png";
+    let docx = "/docx-light.png";
 
     // TODO - Find some generic, default for unknown lookups
     let unknown = "";
@@ -18,10 +22,18 @@ export function iconLookup(name: string) : string {
             return github;
         case "linkedin":
             return linkedin;
+        case "linkedin-light":
+            return linkedinlight;
         case "email":
             return email;
         case "usask":
             return usask;
+        case "pdf":
+            return pdf;
+        case "pdf-light":
+            return pdflight;
+        case "docx":
+            return docx;
     }
 
     return unknown;
@@ -38,6 +50,10 @@ export function urlLookup(name: string) : string {
             return linkData.email;
         case ("usask"):
             return linkData.usask;
+        case "competitive-programming":
+            return linkData.github + "/competitive-programming";
+        case "kattis":
+            return linkData.kattis;
 
     }
 
