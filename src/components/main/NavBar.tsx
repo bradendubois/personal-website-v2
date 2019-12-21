@@ -14,6 +14,7 @@ export function navBarHeightAdjust() {
     let navBar = document.getElementById("navBar");
 
     if (navBar == null) {
+        alert("Nope");
         return;
     } else if (navBar.offsetTop == 0) {
         navBar.classList.remove("minimalHeight");
@@ -33,7 +34,10 @@ function NavBar(props : {page : Section[]}) {
         </a>));
 
     return (
-        <div id={"navBar"} className={"navContainer"}>
+        <div
+            id={"navBar"}
+            className={"navContainer"}
+        >
             {tabs}
         </div>
     )

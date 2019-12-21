@@ -28,43 +28,4 @@ html, body {
   padding: 20px;
 }
 
-.navContainer {
-  z-index: 10;
-  position: sticky;
-  top: 0;
-  background: #f3f3f3;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 0;
-  margin: 0;
-}
-.navContainer a {
-  flex-grow: 1;
-  flex-basis: 0;
-  justify-content: space-around;
-  max-width: 300px;
-  transition: 0.2s;
-  padding: 12px;
-}
-.navContainer a:hover {
-  background: #e5e5e5;
-}
-.navContainer a:active {
-  background: #dddddd;
-  outline: none;
-}
-.navContainer a .navOption p {
-  margin: 5px auto;
-  width: max-content;
-  font-size: 14pt;
-  text-transform: full-width;
-  font-family: "Montserrat", sans-serif;
-  color: #4c8ec4;
-}
-
-.minimalHeight {
-  height: 50px;
-}
-
-/*# sourceMappingURL=NavBar.css.map */
+/*# sourceMappingURL=Bio.css.map */

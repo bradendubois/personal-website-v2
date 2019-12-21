@@ -63,5 +63,51 @@
     ],
     "working_directory": ["~", "professional", "portfolio", "neofetch"],
     "colors": ["lightblue", "grey", "orange"]
-  }
+  },
+  "blurb" : [
+    [
+      {
+        "content": "I'm an undergraduate student at the",
+        "link": ""
+      },
+      {
+        "content": "University of Saskatchewan",
+        "link": "usask"
+      },
+      {
+        "content": "pursuing a Double Honours in Computer Science and Philosophy.",
+        "link": ""
+      }
+    ],
+    [
+      {
+        "content": "My free time is usually spent",
+        "link": ""
+      },
+      {
+        "content": "making fun projects",
+        "link": "github"
+      },
+      {
+        "content": "reading a good book",
+        "link": ""
+      },
+      {
+        "content": "competitive programming problems",
+        "link": "competitive programming"
+      },
+      {
+        "content": "to online judges like",
+        "link": ""
+      },
+      {
+        "content": "Kattis",
+        "link": "kattis"
+      },
+      {
+        "content": ".",
+        "link": ""
+      }
+    ]
+  ]
 }
