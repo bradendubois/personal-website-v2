@@ -1,7 +1,7 @@
 import React from "react";
 
 import NeofetchImage from "./NeofetchImage";
-import NeofetchStats from "./NeofetchStats";
+import NeofetchStats, {displayUptime} from "./NeofetchStats";
 import NeofetchResumeLinks from "./NeofetchResumeLinks";
 import NeofetchColors from "./NeofetchColors";
 import NeofetchDirectory from "./NeofetchDirectory";

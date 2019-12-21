@@ -7,6 +7,22 @@ interface Section {
     display: string;
 }
 
+
+// TODO - This event is not firing on scroll
+export function navBarHeightAdjust() {
+
+    let navBar = document.getElementById("navBar");
+
+    if (navBar == null) {
+        return;
+    } else if (navBar.offsetTop == 0) {
+        navBar.classList.remove("minimalHeight");
+    } else {
+        navBar.classList.add("minimalHeight")
+    }
+}
+
+
 function NavBar(props : {page : Section[]}) {
 
     let tabs = props.page.map((section) => (
@@ -17,7 +33,7 @@ function NavBar(props : {page : Section[]}) {
         </a>));
 
     return (
-        <div className={"navContainer"}>
+        <div id={"navBar"} className={"navContainer"}>
             {tabs}
         </div>
     )

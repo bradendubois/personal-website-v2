@@ -3,11 +3,11 @@ import React from 'react';
 // Page section imports
 import NavBar from "./components/main/NavBar";
 import IntroSection from "./components/main/IntroSection";
-import ProjectSection from "./components/main/ProjectSection";
-import Footer from "./components/main/Footer";
-
-import "./Homepage.scss";
 import EducationSection from "./components/main/EducationSection";
+import ProjectSection from "./components/main/ProjectSection";
+
+import Footer from "./components/main/Footer";
+import "./Homepage.scss";
 
 function Homepage() {
 

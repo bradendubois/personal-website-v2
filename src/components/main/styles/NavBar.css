@@ -41,6 +41,7 @@ html, body {
 }
 .navContainer a {
   flex-grow: 1;
+  flex-basis: 0;
   justify-content: space-around;
   max-width: 300px;
   transition: 0.2s;
@@ -60,6 +61,10 @@ html, body {
   text-transform: full-width;
   font-family: "Montserrat", sans-serif;
   color: #4c8ec4;
+}
+
+.minimalHeight {
+  height: 50px;
 }
 
 /*# sourceMappingURL=NavBar.css.map */

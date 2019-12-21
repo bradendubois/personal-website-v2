@@ -20,47 +20,56 @@
             "status": "complete",
             "courses": [
               {
-              "name": "Mathematical Logic and Computing",
-              "courseID": "CMPT 260",
-              "description": "TODO"
+                "name": "Mathematical Logic and Computing",
+                "courseID": "CMPT 260",
+                "description": "TODO"
               },
               {
-              "name": "Developing Object-Oriented Systems",
-              "courseID": "CMPT 270",
-              "description": "TODO"
-            }, {
-              "name": "Programming Principles and Practice",
-              "courseID": "CMPT 214",
-              "description": "TODO"
-            }, {
-              "name": "Computer Organization and Architecture",
-              "courseID": "CMPT 215",
-              "description": "TODO"
-            }, {
-              "name": "Intermediate Data Structures and Algorithms",
-              "courseID": "CMPT 280",
-              "description": "TODO"
-            }, {
-              "name": "Principles of Computer Science",
-              "courseID": "CMPT 145",
-              "description": "TODO"
-            }, {
-              "name": "Intro. to Computer Science",
-              "courseID": "CMPT 141",
-              "description": "TODO"
-            }]
+                "name": "Intro. to Artificial Intelligence",
+                "courseID": "CMPT 317",
+                "description": "TODO"
+              },
+              {
+                "name": "Machines and Algorithms",
+                "courseID": "CMPT 360",
+                "description": "TODO"
+              },
+              {
+                "name": "Intermediate Data Structures and Algorithms",
+                "courseID": "CMPT 280",
+                "description": "TODO"
+              },
+              {
+                "name": "Developing Object-Oriented Systems",
+                "courseID": "CMPT 270",
+                "description": "TODO"
+              },
+              {
+                "name": "Programming Principles and Practice",
+                "courseID": "CMPT 214",
+                "description": "TODO"
+              },
+              {
+                "name": "Computer Organization and Architecture",
+                "courseID": "CMPT 215",
+                "description": "TODO"
+              },
+              {
+                "name": "Principles of Computer Science",
+                "courseID": "CMPT 145",
+                "description": "TODO"
+              },
+              {
+                "name": "Intro. to Computer Science",
+                "courseID": "CMPT 141",
+                "description": "TODO"
+              }
+            ]
           },
           {
             "status": "current",
-            "courses": [{
-              "name": "Intro. to Artificial Intelligence",
-              "courseID": "CMPT 317",
-              "description": "TODO"
-            }, {
-              "name": "Machines and Algorithms",
-              "courseID": "CMPT 360",
-              "description": "TODO"
-            }]
+            "courses": [
+            ]
           },
           {
             "status": "planned",
@@ -101,45 +110,52 @@
         "courseGroups": [
           {
             "status": "complete",
-            "courses": [{
-              "name": "Philosophy of Technology",
-              "courseID": "PHIL 236",
-              "description": "TODO"
-            }, {
-              "name": "Metaethics: Morality, Objectivity, and Identity",
-              "courseID": "PHIL 333",
-              "description": "TODO"
-            }, {
-              "name": "Ethical Theory",
-              "courseID": "PHIL 233",
-              "description": "TODO"
-            }, {
-              "name": "Knowledge, Mind, and Existence",
-              "courseID": "PHIL 120",
-              "description": "TODO"
-            }, {
-              "name": "Philosophy of Emotions",
-              "courseID": "PHIL 298",
-              "description": "TODO"
-            }, {
-              "name": "Intro. to Ethics and Values",
-              "courseID": "PHIL 133",
-              "description": "TODO"
-            }
-            ]
-          },
-          {
-            "status": "current",
-            "courses": [{
-              "name": "Kantian Ethics",
-              "courseID": "PHIL 433",
-              "description": "TODO"
-            },
+            "courses": [
+              {
+                "name": "Philosophy of Technology",
+                "courseID": "PHIL 236",
+                "description": "TODO"
+              },
+              {
+                "name": "Metaethics: Morality, Objectivity, and Identity",
+                "courseID": "PHIL 333",
+                "description": "TODO"
+              },
+              {
+                "name": "Ethical Theory",
+                "courseID": "PHIL 233",
+                "description": "TODO"
+              },
+              {
+                "name": "Kantian Ethics",
+                "courseID": "PHIL 433",
+                "description": "TODO"
+              },
               {
                 "name": "Social and Political Philosophy",
                 "courseID": "PHIL 262",
                 "description": "TODO"
+              },
+              {
+                "name": "Knowledge, Mind, and Existence",
+                "courseID": "PHIL 120",
+                "description": "TODO"
+              },
+              {
+                "name": "Philosophy of Emotions",
+                "courseID": "PHIL 298",
+                "description": "TODO"
+              },
+              {
+                "name": "Intro. to Ethics and Values",
+                "courseID": "PHIL 133",
+                "description": "TODO"
               }
+            ]
+          },
+          {
+            "status": "current",
+            "courses": [
             ]
           },
           {
@@ -243,28 +259,32 @@
         "courseGroups": [
           {
             "status": "complete",
-            "courses": [{
-              "name": "Introduction to Ethics and Values",
-              "courseID": "PHIL 133",
-              "description": "TODO"
-            }, {
-              "name": "Ethical Theory",
-              "courseID": "PHIL 233",
-              "description": "TODO"
-            }, {
-              "name": "Philosophy of Technology",
-              "courseID": "PHIL 236",
-              "description": "TODO"
-            }
-            ]
-          },
-          {
-            "status": "current",
-            "courses": [{
-              "name": "Social and Political Philosophy",
-              "courseID": "PHIL 262",
-              "description": "TODO"
-            }
+            "courses": [
+              {
+                "name": "Introduction to Ethics and Values",
+                "courseID": "PHIL 133",
+                "description": "TODO"
+              },
+              {
+                "name": "Ethical Theory",
+                "courseID": "PHIL 233",
+                "description": "TODO"
+              },
+              {
+                "name": "Philosophy of Technology",
+                "courseID": "PHIL 236",
+                "description": "TODO"
+              },
+              {
+                "name": "Metaethics: Morality, Objectivity, and Identity",
+                "courseID": "PHIL 333",
+                "description": "TODO"
+              },
+              {
+                "name": "Social and Political Philosophy",
+                "courseID": "PHIL 262",
+                "description": "TODO"
+              }
             ]
           }
         ]

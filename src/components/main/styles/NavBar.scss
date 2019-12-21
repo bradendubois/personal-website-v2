@@ -21,6 +21,7 @@
   a {
 
     flex-grow: 1;
+    flex-basis: 0;
     justify-content: space-around;
     max-width: 300px;
     transition: 0.2s;
@@ -49,4 +50,8 @@
       }
     }
   }
+}
+
+.minimalHeight {
+  height: 50px;
 }

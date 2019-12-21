@@ -35,7 +35,7 @@ function EducationProgram(props: {entry: EducationProgramInterface}) {
     return (
 
         // The container for one single program entry
-        <div className={"programContainer"} id={entry.id}>
+        <div className={"programContainer"} id={entry.id} >
 
             { /* hr to separate programs and for style */ }
             <hr />
@@ -73,15 +73,17 @@ function EducationProgram(props: {entry: EducationProgramInterface}) {
                         { /* This is the "title" (usually the major itself)  */ }
                         <p className={"classSetTitle"}>{classSet.program}</p>
 
-                        <ul>
+
                             { /* This maps each group of classes (groups being *taken*, *during*, etc. */ }
                             {classSet.courseGroups.map((classGroup) => (
-                                classGroup.courses.map((course) => (
-                                    <li className={classGroup.status}><ClassEntry class={course}/></li>
-                                ))
+                                <div>
+                                    <ul>
+                                        {classGroup.courses.map((course) => (
+                                            <li className={classGroup.status}><ClassEntry class={course}/></li>
+                                        ))}
+                                    </ul>
+                                </div>
                             ))}
-
-                        </ul>
                     </div>
                 ))}
 
