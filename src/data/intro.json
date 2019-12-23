@@ -109,7 +109,15 @@
         "link": "github"
       },
       {
-        "content": ", reading, or solving ",
+        "content": ", ",
+        "link": ""
+      },
+      {
+        "content": "reading",
+        "link": "reading-list"
+      },
+      {
+        "content": ", or solving ",
         "link": ""
       },
       {
@@ -129,5 +137,23 @@
         "link": ""
       }
     ]
+  ],
+  "readingList" : [
+    {
+      "title": "Zen and the Art of Motorcycle Maintenance",
+      "desc": "NICE STORY"
+    },
+    {
+      "title": "Mismatch",
+      "desc": "Inclusive Design"
+    },
+    {
+      "title": "1984",
+      "desc": "Classic"
+    },
+    {
+      "title": "Do Androids Dream of Electric Sheep?",
+      "desc": "Harrison Ford."
+    }
   ]
 }

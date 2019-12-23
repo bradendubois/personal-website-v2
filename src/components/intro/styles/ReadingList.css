@@ -28,29 +28,36 @@ html, body {
   padding: 20px;
 }
 
-#intro {
-  background: #000c21;
-  min-height: 300px;
+.hidden {
+  display: none;
 }
-#intro h1 {
-  color: white;
+
+.readingListContainer {
+  background-color: white;
+  width: 80%;
+  border-radius: 3px;
+  padding: 15px 15px;
+  margin: 30px auto 10px auto;
 }
-#intro p {
+.readingListContainer * {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  max-width: 700px;
+}
+.readingListContainer h3 {
+  margin: 0 auto;
+}
+.readingListContainer h4 {
+  margin: 20px auto 3px auto;
+}
+.readingListContainer h3, .readingListContainer h4 {
+  font-family: "Montserrat", sans-serif;
+}
+.readingListContainer p {
   margin-top: 0;
-  margin-bottom: 0;
+  padding: 0;
 }
 
-@media screen and (min-width: 1400px) {
-  .contentContainer {
-    display: flex;
-  }
-  .contentContainer .neofetchContainer {
-    margin: 40px auto;
-  }
-  .contentContainer .bioContainer {
-    margin: 80px auto auto auto;
-    max-width: 500px;
-  }
-}
-
-/*# sourceMappingURL=IntroSection.css.map */
+/*# sourceMappingURL=ReadingList.css.map */

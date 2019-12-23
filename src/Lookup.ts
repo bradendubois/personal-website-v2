@@ -54,6 +54,8 @@ export function urlLookup(name: string) : string {
             return linkData.github + "/competitive-programming";
         case "kattis":
             return linkData.kattis;
+        case "reading-list-page":
+            return "reading";
 
     }
 
