@@ -11,13 +11,14 @@ function readingListToggle() {
         else
             list.classList.add("hidden");
     }
+
 }
 
 function convert(data: {content: string; link: string;}) {
     if (data.link == "") return (
         data.content
     ); else if (data.link == "reading-list") return (
-        <a onClick={readingListToggle} href={"#"}>{data.content}</a>
+        <a onClick={readingListToggle} href={"javascript:void();"}>{data.content}</a>
     ); else return (
         <a href={urlLookup(data.link)}>{data.content}</a>
     );
