@@ -1,0 +1,35 @@
+@import "../../../defaults";
+
+.bioContainer {
+
+  margin: 10px auto;
+  width: auto;
+  max-width: 600px;
+
+  .bioSection {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    justify-content: stretch;
+
+    a, a:visited {
+      color: #4f87d5;
+      transition: 0.1s;
+    }
+
+    a:hover {
+      color: #4372b4;
+    }
+
+    a:active {
+      color: #2c4b77;
+    }
+
+    p {
+      color: white;
+      transition: 0.3s;
+
+      font-size: 12pt;
+    }
+  }
+}

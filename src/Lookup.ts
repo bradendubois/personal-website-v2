@@ -1,5 +1,5 @@
 
-import linkData from "./data/lookup.json";
+import linkData from "./json/lookup.json";
 
 export function iconLookup(name: string) : string {
 
@@ -13,6 +13,7 @@ export function iconLookup(name: string) : string {
     let pdf = "/pdf-dark.png";
     let pdflight = "/pdf-light.png";
     let docx = "/docx-light.png";
+    let headshot = "/sunglasses_rabbit_1.jpg";
 
     // TODO - Find some generic, default for unknown lookups
     let unknown = "";
@@ -34,6 +35,8 @@ export function iconLookup(name: string) : string {
             return pdflight;
         case "docx":
             return docx;
+        case "headshot":
+            return headshot;
     }
 
     return unknown;

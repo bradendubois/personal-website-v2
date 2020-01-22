@@ -37,21 +37,36 @@ html, body {
   text-transform: capitalize;
 }
 
-.homepageContainer {
-  margin: 0;
-  padding: 0;
+.hidden {
+  display: none;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 0;
+.readingListContainer {
+  background-color: white;
+  width: 80%;
+  border-radius: 3px;
+  padding: 15px 15px;
+  margin: 30px auto 10px auto;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+.readingListContainer * {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  max-width: 700px;
+}
+.readingListContainer h3 {
+  margin: 0 auto;
+}
+.readingListContainer h4 {
+  margin: 20px auto 3px auto;
+}
+.readingListContainer h3, .readingListContainer h4 {
+  font-family: "Montserrat", sans-serif;
+}
+.readingListContainer p {
+  margin-top: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

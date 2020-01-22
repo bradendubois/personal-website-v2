@@ -37,21 +37,33 @@ html, body {
   text-transform: capitalize;
 }
 
-.homepageContainer {
+.headerContainer {
   margin: 0;
   padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  font-family: "Montserrat", monospace;
+  overflow: auto;
 }
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.headerContainer .titleContainer {
+  margin: auto 5px auto 0;
+  padding: 0;
+  flex-wrap: wrap;
+  min-height: 50px;
+  height: max-content;
+  font-size: 22pt;
+}
+.headerContainer .titleContainer p {
+  margin: auto 0;
   padding: 0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+.headerContainer .linksContainer {
+  margin: 1px 5px auto auto;
+  padding-top: 5px;
+  display: flex;
+  flex-flow: row;
 }
 
 /*# sourceMappingURL=index.css.map */

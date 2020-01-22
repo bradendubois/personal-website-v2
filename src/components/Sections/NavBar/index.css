@@ -37,21 +37,43 @@ html, body {
   text-transform: capitalize;
 }
 
-.homepageContainer {
-  margin: 0;
+.navContainer {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   padding: 0;
+  margin: 0;
+}
+.navContainer a {
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: space-around;
+  max-width: 300px;
+  transition: 0.2s;
+  padding: 12px;
+}
+.navContainer a:hover {
+  background: #e5e5e5;
+}
+.navContainer a:active {
+  background: #dddddd;
+  outline: none;
+}
+.navContainer a .navOption p {
+  margin: 5px auto;
+  width: max-content;
+  font-size: 14pt;
+  text-transform: full-width;
+  font-family: "Montserrat", sans-serif;
+  color: #4c8ec4;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 0;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+.minimalHeight {
+  height: 50px;
 }
 
 /*# sourceMappingURL=index.css.map */

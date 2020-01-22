@@ -1,0 +1,16 @@
+.projectLink {
+  padding: 0;
+  margin: 0 7px auto 0;
+}
+.projectLink a img {
+  height: 24px;
+  width: auto;
+  transition: 0.2s;
+  filter: opacity(80%);
+}
+.projectLink a img:hover {
+  filter: opacity(100%);
+  padding-top: 4px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,12 @@
+@import "../../../defaults";
+
+.imageContainer {
+  z-index: -5;
+  margin-left: -50px;
+  margin-bottom: -50px;
+
+  img {
+    height: 200px;
+    width: auto;
+  }
+}

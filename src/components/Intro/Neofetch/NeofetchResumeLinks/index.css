@@ -1,0 +1,39 @@
+.resumeLinksContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.resumeLinksContainer .resumeKey {
+  color: #00b7b7;
+  font-weight: 600;
+}
+.resumeLinksContainer a, .resumeLinksContainer a + p {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+.resumeLinksContainer a:hover + p + img {
+  opacity: 1;
+}
+.resumeLinksContainer a {
+  color: lightblue;
+  transition: 0.1s;
+}
+.resumeLinksContainer a:hover {
+  color: #90b5c2;
+}
+.resumeLinksContainer a:active {
+  color: #66808a;
+}
+.resumeLinksContainer a:visited {
+  color: #7fa0ac;
+}
+.resumeLinksContainer img {
+  max-width: 30px;
+  margin: 10px auto 0 3px;
+  opacity: 0;
+  transition: 0.3s;
+  display: block;
+}
+
+/*# sourceMappingURL=index.css.map */

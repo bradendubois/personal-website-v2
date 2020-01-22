@@ -37,21 +37,31 @@ html, body {
   text-transform: capitalize;
 }
 
-.homepageContainer {
-  margin: 0;
-  padding: 0;
+.bioContainer {
+  margin: 10px auto;
+  width: auto;
+  max-width: 600px;
 }
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 0;
+.bioContainer .bioSection {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  justify-content: stretch;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+.bioContainer .bioSection a, .bioContainer .bioSection a:visited {
+  color: #4f87d5;
+  transition: 0.1s;
+}
+.bioContainer .bioSection a:hover {
+  color: #4372b4;
+}
+.bioContainer .bioSection a:active {
+  color: #2c4b77;
+}
+.bioContainer .bioSection p {
+  color: white;
+  transition: 0.3s;
+  font-size: 12pt;
 }
 
 /*# sourceMappingURL=index.css.map */

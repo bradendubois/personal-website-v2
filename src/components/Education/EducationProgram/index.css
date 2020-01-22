@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* TODO - Get more specific colors */
+/*********** Project Tag Colors ***********/
+* {
+  text-decoration: none;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sectionContainer {
+  padding: 20px;
+}
+
+.sectionTitle {
+  margin: 20px auto;
+  font-family: "Montserrat", "Open Sans", monospace;
+  font-weight: 600;
+  font-size: 20pt;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.programContainer {
+  margin: auto;
+  display: grid;
+  max-width: 1300px;
+  grid-auto-columns: 120px 1.1fr 1fr 120px;
+  grid-template-rows: auto max-content max-content;
+  grid-row-gap: 25px;
+  grid-column-gap: 40px;
+  overflow: hidden;
+  grid-template-areas: ". hr hr ." "programLogo headerInfo headerInfo timeframeInfo" ". courseInfo detailInfo .";
+}
+@media screen and (max-width: 1000px) {
+  .programContainer {
+    width: 900px;
+    overflow: hidden;
+    grid-template-areas: "hr hr hr hr" "programLogo headerInfo headerInfo timeframeInfo" "courseInfo courseInfo detailInfo detailInfo";
+  }
+}
+.programContainer hr {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px 5px;
+  color: #cbcbcb;
+  grid-area: hr;
+}
+.programContainer p {
+  margin: 0;
+}
+.programContainer ul {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.programContainer ul ul {
+  margin: 0;
+}
+.programContainer ul div {
+  margin: 0;
+}
+.programContainer .programLogo {
+  grid-area: programLogo;
+  filter: opacity(85%);
+  transition: 0.2s;
+  margin-left: auto;
+}
+.programContainer .programLogo:hover {
+  filter: opacity(100%);
+}
+.programContainer .programLogo a {
+  outline: none;
+}
+.programContainer .programLogo img {
+  max-width: 75px;
+  border-radius: 50%;
+}
+.programContainer .headerInfo {
+  grid-area: headerInfo;
+  padding-left: 10px;
+  font-size: 14pt;
+}
+.programContainer .headerInfo p {
+  margin: 0;
+  font-family: "Nunito", "Open Sans", monospace;
+  font-weight: 600;
+}
+.programContainer .timeframeInfo {
+  grid-area: timeframeInfo;
+  margin-right: auto;
+}
+.programContainer .timeframeInfo .timeframe {
+  font-size: 14pt;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.programContainer .timeframeInfo .location {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+.programContainer .timeframeInfo p {
+  margin: 0 0 3px 0;
+  float: right;
+}
+.programContainer .courseInfo {
+  grid-area: courseInfo;
+  font-family: "Montserrat", "Open Sans", monospace;
+  display: flex;
+  flex-direction: column;
+}
+.programContainer .courseInfo .classSetContainer .classSetTitle {
+  font-size: 14pt;
+  font-weight: 500;
+}
+.programContainer .courseInfo .classSetContainer .current {
+  color: #444444;
+}
+.programContainer .courseInfo .classSetContainer .current p:after {
+  color: #2a2a2a;
+  content: " - in session!";
+}
+.programContainer .courseInfo .classSetContainer .planned {
+  color: #7a7a7a;
+}
+.programContainer .courseInfo .classSetContainer .planned p:after {
+  content: " - planned!";
+}
+.programContainer .courseInfo .classSetContainer ul li p {
+  margin: 0;
+  padding: 0;
+}
+.programContainer .detailInfo {
+  grid-area: detailInfo;
+  font-family: "Montserrat", "Open Sans", monospace;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.programContainer .detailInfo .detailTitle {
+  font-size: 14pt;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=index.css.map */

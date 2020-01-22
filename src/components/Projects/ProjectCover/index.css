@@ -37,21 +37,14 @@ html, body {
   text-transform: capitalize;
 }
 
-.homepageContainer {
-  margin: 0;
-  padding: 0;
+.imageContainer {
+  z-index: -5;
+  margin-left: -50px;
+  margin-bottom: -50px;
 }
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 0;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+.imageContainer img {
+  height: 200px;
+  width: auto;
 }
 
 /*# sourceMappingURL=index.css.map */
