@@ -54,7 +54,7 @@ function Index(props: {resume_links: NeofetchResumeData[]}) {
                 </a>
                 <p className={"resumeDefault"}>&nbsp;]</p>
                 <img
-                    src={iconLookup("pdf-light")}
+                    src={iconLookup("github")}
                     alt={"github logo"}
                 />
             </div>

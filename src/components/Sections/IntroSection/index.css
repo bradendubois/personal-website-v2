@@ -51,17 +51,21 @@ html, body {
   margin-bottom: 0;
 }
 
+/*
 @media screen and (min-width: 1400px) {
   .contentContainer {
     display: flex;
-  }
-  .contentContainer .neofetchContainer {
-    margin: 40px auto;
-  }
-  .contentContainer .bioContainer {
-    margin: 80px auto auto auto;
-    max-width: 500px;
+
+    .neofetchContainer {
+      margin: 40px auto;
+    }
+
+    .bioContainer {
+      margin: 80px auto auto auto;
+      max-width: 500px;
+    }
   }
 }
+ */
 
 /*# sourceMappingURL=index.css.map */
