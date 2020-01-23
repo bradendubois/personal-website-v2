@@ -25,7 +25,7 @@ function convert(data: {content: string; link: string;}) {
     );
 }
 
-function Index(props: {data: {content: string; link: string;}[][]}) {
+function Bio(props: {data: {content: string; link: string;}[][]}) {
 
     let bio = props.data.map((section) => (
         <div className={"bioSection"}>
@@ -42,4 +42,4 @@ function Index(props: {data: {content: string; link: string;}[][]}) {
     )
 }
 
-export default Index;
+export default Bio;

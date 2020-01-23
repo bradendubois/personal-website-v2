@@ -1,5 +1,5 @@
 import React from "react";
-import { iconLookup } from "../../../Lookup";
+import { iconLookup } from "../../../../Lookup";
 
 // Style
 import "./index.scss";

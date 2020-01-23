@@ -3,7 +3,7 @@ import React from "react";
 // Style
 import "./index.scss";
 
-function Index(props: {directory: string[]}) {
+function NeofetchDirectory(props: {directory: string[]}) {
     return (
         <div className={"directoryContainer"}>
             <p>{props.directory.map((dir) => (
@@ -14,4 +14,4 @@ function Index(props: {directory: string[]}) {
     )
 }
 
-export default Index;
+export default NeofetchDirectory;

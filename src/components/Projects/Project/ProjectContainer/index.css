@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap");
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -37,33 +39,18 @@ html, body {
   text-transform: capitalize;
 }
 
-.headerContainer {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  vertical-align: middle;
-  font-family: "Montserrat", monospace;
-  overflow: auto;
-}
-.headerContainer .titleContainer {
-  margin: auto 5px auto 0;
-  padding: 0;
-  flex-wrap: wrap;
-  min-height: 50px;
+.project {
+  width: 400px;
   height: max-content;
-  font-size: 22pt;
+  margin: 40px auto;
+  padding: 5px 5px 20px 5px;
+  border-radius: 4px;
+  background: #131a2b;
+  color: #e0e0e0;
 }
-.headerContainer .titleContainer p {
-  margin: auto 0;
-  padding: 0;
-}
-.headerContainer .linksContainer {
-  margin: 1px 5px auto auto;
-  padding-top: 5px;
-  display: flex;
-  flex-flow: row;
+.project:hover .imageContainer {
+  margin-left: -100px;
+  margin-bottom: -100px;
 }
 
 /*# sourceMappingURL=index.css.map */

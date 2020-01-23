@@ -14,7 +14,7 @@ interface Index {
     display: string;
 }
 
-function FooterItem(props: {item: Index}) {
+function Footer(props: {item: Index}) {
     return (
         <div className={"footerItem"}>
             <a href={props.item.link} target={"_blank"}>
@@ -27,4 +27,4 @@ function FooterItem(props: {item: Index}) {
     )
 }
 
-export default FooterItem;
+export default Footer;

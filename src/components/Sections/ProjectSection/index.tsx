@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitle from "../../SectionTitle";
-import ProjectContainer from "../../Projects/ProjectContainer";
+import ProjectContainer from "../../Projects/Project/ProjectContainer";
 import TroveContainer from "../../Trove/TroveContainer";
 import projectData from "../../../json/projects.json";
 
@@ -8,11 +8,12 @@ import projectData from "../../../json/projects.json";
 import "./index.scss";
 
 function ProjectSection(props: {section: {id: string, display: string;}}) {
+
     return (
         <div className={"sectionContainer"} id={props.section.id}>
             <SectionTitle display={props.section.display}/>
             <div className={"projectsContainer"}>
-                {projectData.map((item) =>
+                {projectData.featured.map((item) =>
                     <ProjectContainer
                         preview={item.preview}
                         title={item.title}
