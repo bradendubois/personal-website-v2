@@ -1,0 +1,64 @@
+@import "../../../defaults.scss";
+
+.projects {
+
+  max-width: 1000px;
+  margin: 0 auto;
+
+  grid-area: projects;
+
+  .content {
+
+    hr {
+      margin: 10px auto;
+      border-bottom: 1px solid white;
+    }
+
+    .project {
+
+      border-left: 2px solid white;
+      border-top: 2px solid white;
+      border-top-left-radius: 5px;
+      padding: 10px;
+
+      margin-bottom: 30px;
+
+      font-family: "Montserrat", sans-serif;
+
+      .title {
+        font-size: 20pt;
+        margin: 0 auto 5px 5px;
+      }
+
+      div {
+
+        display: inline-flex;
+
+        margin: 0;
+        padding: 0;
+
+        img {
+          height: 24px;
+          margin: auto 5px;
+        }
+
+        .link {
+          margin: auto 0 auto 5px;
+          font-size: 11pt;
+        }
+      }
+
+      .desc {
+        margin: 3px 5px;
+      }
+
+      ul {
+        margin: 5px auto 0 0;
+
+        list-style-type: circle;
+      }
+    }
+  }
+
+  margin-bottom: 120px;
+}

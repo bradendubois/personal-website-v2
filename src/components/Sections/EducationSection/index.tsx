@@ -5,15 +5,20 @@ import SectionTitle from "../../../components/SectionTitle";
 
 // Style
 import "./index.scss";
+import Undergrad from "../../Education/Undergrad";
+import Certificate from "../../Education/Certificate";
 
-let programs = educationData.map((item) => <EducationProgram entry={item}/>);
+// let programs = educationData.map((item) => <EducationProgram entry={item}/>);
 
 function EducationSection(props: {section: {id: string, display: string;}}) {
     return (
         <div className={"sectionContainer"} id={props.section.id}>
             <SectionTitle display={props.section.display}/>
             <div className={"educationProgramsContainer"}>
-                {programs}
+                <hr className={"separator"}/>
+                <Undergrad />
+                <hr className={"separator"}/>
+                <Certificate />
             </div>
         </div>
     )

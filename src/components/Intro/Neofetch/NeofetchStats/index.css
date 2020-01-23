@@ -8,20 +8,20 @@
   color: white;
 }
 .stats .neofetchTitle .statKey {
-  color: #f35232;
+  color: #8fb1f3;
 }
 .stats .neofetchTitle .statValue {
-  color: #ecac31;
+  color: #75ecea;
 }
 .stats .neofetchStat .statDefault {
   color: white;
 }
 .stats .neofetchStat .statKey {
-  color: #f35232;
+  color: #40f3c1;
   font-weight: 600;
 }
 .stats .neofetchStat .statValue {
-  color: #ecac31;
+  color: #f373b4;
 }
 
 /*# sourceMappingURL=index.css.map */

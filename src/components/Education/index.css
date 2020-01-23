@@ -142,7 +142,7 @@ html, body {
   content: " - in session!";
 }
 .programContainer .courseInfo .classSetContainer .planned {
-  color: #7a7a7a;
+  color: #6e6e6e;
 }
 .programContainer .courseInfo .classSetContainer .planned p:after {
   content: " - planned!";

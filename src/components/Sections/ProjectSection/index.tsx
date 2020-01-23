@@ -6,24 +6,14 @@ import projectData from "../../../json/projects.json";
 
 // Style
 import "./index.scss";
+import Projects from "../../Projects/Projects";
 
 function ProjectSection(props: {section: {id: string, display: string;}}) {
 
     return (
         <div className={"sectionContainer"} id={props.section.id}>
             <SectionTitle display={props.section.display}/>
-            <div className={"projectsContainer"}>
-                {projectData.featured.map((item) =>
-                    <ProjectContainer
-                        preview={item.preview}
-                        title={item.title}
-                        links={item.links}
-                        description={item.description}
-                        tags={item.tags}
-                    />
-                )}
-            </div>
-            <TroveContainer />
+            <Projects />
         </div>
     )
 }

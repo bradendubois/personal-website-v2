@@ -4,7 +4,7 @@ import EducationProgramInterface from "../EducationProgramInterface";
 import { iconLookup } from "../../../Lookup";
 
 // Style
-import "./index.scss";
+import "../index.scss";
 
 
 /**

@@ -39,16 +39,47 @@ html, body {
   text-transform: capitalize;
 }
 
-#projects {
-  background: #111111;
-  color: white;
+.projects {
+  max-width: 1000px;
+  margin: 0 auto;
+  grid-area: projects;
+  margin-bottom: 120px;
 }
-#projects .projectsContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
+.projects .content hr {
+  margin: 10px auto;
+  border-bottom: 1px solid white;
+}
+.projects .content .project {
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  border-top-left-radius: 5px;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.projects .content .project .title {
+  font-size: 20pt;
+  margin: 0 auto 5px 5px;
+}
+.projects .content .project div {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+.projects .content .project div img {
+  height: 24px;
+  margin: auto 5px;
+}
+.projects .content .project div .link {
+  margin: auto 0 auto 5px;
+  font-size: 11pt;
+}
+.projects .content .project .desc {
+  margin: 3px 5px;
+}
+.projects .content .project ul {
+  margin: 5px auto 0 0;
+  list-style-type: circle;
 }
 
 /*# sourceMappingURL=index.css.map */

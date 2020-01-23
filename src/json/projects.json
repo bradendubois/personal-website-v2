@@ -28,7 +28,7 @@
       ]
     },
     {
-      "title": "Personal Website (v1)"
+      "title": "Personal Website (v1)",
       "preview": {
         "icon": "test",
         "alt": "test"
@@ -98,5 +98,8 @@
     }
   ],
   "minor": [
+    {
+
+    }
   ]
 }

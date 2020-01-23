@@ -1,0 +1,56 @@
+@import "../Undergrad/index.scss";
+
+.certificate {
+
+  grid-auto-columns: 75px auto auto;
+  grid-auto-rows: auto auto;
+
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+
+  grid-template-areas:
+          "logo header timeframe"
+          ". phil desc"
+;
+
+  @media screen and (max-width: 800px) {
+    grid-auto-columns: 75px auto;
+    grid-auto-rows: auto auto auto auto;
+
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+
+    grid-template-areas:
+            "logo timeframe"
+            "header header"
+            "phil phil"
+            "desc desc"
+  ;
+  }
+
+  hr {
+    max-width: 80%;
+    margin: 5px auto 5px 0;
+  }
+
+  ul {
+    margin-top: 5px;
+
+    li {
+      font-weight: 300;
+    }
+  }
+
+  li {
+    margin-left: 5px;
+    font-size: 11pt;
+    list-style-type: circle;
+    list-style-position: inside;
+  }
+
+  a { grid-area: logo; }
+  .headerInfo { grid-area: header; }
+  .timeframeInfo { grid-area: timeframe; }
+  .phil { grid-area: phil; }
+  .desc { grid-area: desc; }
+}

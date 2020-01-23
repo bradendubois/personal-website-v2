@@ -57,14 +57,6 @@
         }
       },
       {
-        "display": "docx",
-        "reference": "resume_docx",
-        "image": {
-          "icon": "docx",
-          "description": "Resume as a docx file"
-        }
-      },
-      {
         "display": "linkedin",
         "reference": "linkedin",
         "image": {
@@ -140,20 +132,54 @@
   ],
   "readingList" : [
     {
+      "title": "Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "desc": "I'm currently working through The Restaurant at the End of the Universe, but the series has already earned a spot on this list."
+    },
+    {
       "title": "Zen and the Art of Motorcycle Maintenance",
-      "desc": "NICE STORY"
+      "author": "Robert Pirsig",
+      "desc": "The narrator teaches some Zen philosophy while struggling with schizophrenia; it can definitely be a bit daunting with no background in Zen philosophy, but some motorcycle analogies can go a long way."
     },
     {
       "title": "Mismatch",
-      "desc": "Inclusive Design"
+      "author": "Kat Holmes",
+      "desc": "Kat Holmes explains the concept of inclusive design and various ways it has been systemically forgotten or ignored; it's unbelievable to see its impact in failures in fighter jets and systematic racism through the heights of bridges."
     },
     {
       "title": "1984",
-      "desc": "Classic"
+      "author": "George Orwell",
+      "desc": "A classic, always worth a re-read every so often."
     },
     {
       "title": "Do Androids Dream of Electric Sheep?",
-      "desc": "Harrison Ford."
+      "author": "Philip K. Dick",
+      "desc": "I'm a big fan of cyberpunk, and the book is actually fairly different from the 1982 classic with Harrison Ford."
+    },
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "desc": "It's like Orwell, but upbeat and vaguely psychedelic."
+    },
+    {
+      "title": "At The Existentialist Cafe: Freedom, Being, and Apricot Cocktails",
+      "author": "Sarah Bakewell",
+      "desc": "A timeline of the surgence of existentialism and phenomenology, from Husserl to Sartre."
+    },
+    {
+      "title": "Dawn of the New Everything",
+      "author": "Jaron Lanier",
+      "desc": "One of the pioneers of Virtual Reality, the book alternates between a biography of Lanier's (bizarre) life, and fairly detailed breakdowns of ideas and developments in VR."
+    },
+    {
+      "title": "A Song of Ice and Fire",
+      "author": "George RR Martin",
+      "desc": "Definitively, the best fantasy/sci-fi series. At least we still have the books."
+    },
+    {
+      "title": "Island",
+      "author": "Aldous Huxley",
+      "desc": "Utopian opposite of Brave New World, Island follows a journalist, shipwrecked on an island, and his experiences with its inhabitants."
     }
   ]
 }

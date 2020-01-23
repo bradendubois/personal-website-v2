@@ -1,0 +1,148 @@
+.programContainer {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1100px;
+  outline: 1px solid black;
+  grid-auto-columns: 75px auto auto;
+  grid-auto-rows: auto auto auto auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  grid-template-areas: "logo header timeframe" ". classesTitle classesTitle" ". classes classes" ". achievementsTitle achievementsTitle" ". achievements achievements" ". groupsTitle groupsTitle" ". groups groups";
+}
+.programContainer p, .programContainer ul, .programContainer li {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+.programContainer .container {
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-top-left-radius: 5px;
+  padding: 10px 10px 0 10px;
+  margin-right: 50px;
+}
+.programContainer .subTitle {
+  font-size: 15pt;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.programContainer a {
+  grid-area: logo;
+}
+.programContainer a img {
+  max-height: 72px;
+  border-radius: 50%;
+}
+.programContainer .headerInfo {
+  grid-area: header;
+  margin: auto 0 auto 10px;
+  font-size: 14pt;
+  font-weight: 500;
+}
+.programContainer .headerInfo p {
+  font-family: Montserrat, sans-serif;
+}
+.programContainer .timeframeInfo {
+  grid-area: timeframe;
+  text-align: right;
+  margin: 10px 0 0 auto;
+}
+.programContainer .timeframeInfo .timeframe {
+  font-size: 12pt;
+}
+.programContainer .timeframeInfo .location {
+  font-weight: 300;
+  font-style: italic;
+}
+.programContainer .classesTitle {
+  grid-area: classesTitle;
+}
+.programContainer .cs {
+  grid-area: cs;
+}
+.programContainer .phil {
+  grid-area: phil;
+}
+.programContainer .classes {
+  grid-area: classes;
+  display: flex;
+}
+.programContainer .classes .classSetContainer p {
+  font-size: 13pt;
+}
+.programContainer .classes .classSetContainer hr {
+  width: 80%;
+  margin: 10px auto 10px 3px;
+}
+.programContainer .classes .classSetContainer ul {
+  list-style-position: inside;
+  list-style-type: circle;
+  margin-top: 5px;
+}
+.programContainer .classes .classSetContainer ul li {
+  margin-left: 5px;
+  font-size: 10pt;
+  font-weight: 300;
+}
+.programContainer .achievementsTitle {
+  grid-area: achievementsTitle;
+}
+.programContainer .achievements {
+  grid-area: achievements;
+}
+.programContainer .achievements .entry {
+  display: grid;
+  grid-template-areas: "title time" "desc desc";
+}
+.programContainer .achievements .entry .title {
+  grid-area: title;
+  font-size: 16pt;
+}
+.programContainer .achievements .entry .time {
+  grid-area: time;
+  font-style: italic;
+  margin: auto 0 auto auto;
+}
+.programContainer .achievements .entry .desc {
+  grid-area: desc;
+  font-size: 12pt;
+  margin-top: 5px;
+  font-weight: 300;
+}
+.programContainer .groupsTitle {
+  grid-area: groupsTitle;
+}
+.programContainer .groups {
+  grid-area: groups;
+}
+.programContainer .groups .group {
+  display: grid;
+  grid-template-areas: "title title" "role membership" "ul ul";
+}
+.programContainer .groups .group .title {
+  grid-area: title;
+  font-size: 16pt;
+}
+.programContainer .groups .group .role {
+  grid-area: role;
+}
+.programContainer .groups .group .membership {
+  grid-area: membership;
+  margin: auto 0 auto auto;
+  font-style: italic;
+}
+.programContainer .groups .group ul {
+  grid-area: ul;
+  list-style-position: inside;
+  list-style-type: circle;
+  margin-top: 5px;
+  font-size: 12pt;
+  font-weight: 300;
+}
+.programContainer .groups .group ul li {
+  margin-left: 5px;
+  font-size: 11pt;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=index.css.map */

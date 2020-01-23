@@ -6,6 +6,7 @@ export function iconLookup(name: string) : string {
     // TODO - Image lookups should maybe support a light/dark mode check
 
     let github = "/GitHub-Mark-Light-64px.png";
+    let githubdark = "/GitHub-Mark-64px.png";
     let linkedin = "/linkedin_alt_final.png";
     let linkedinlight = "/linkedin-light.png";
     let email = "/email_final.png";
@@ -21,6 +22,8 @@ export function iconLookup(name: string) : string {
     switch (name) {
         case "github":
             return github;
+        case "github-dark":
+            return githubdark;
         case "linkedin":
             return linkedin;
         case "linkedin-light":
@@ -59,6 +62,8 @@ export function urlLookup(name: string) : string {
             return linkData.kattis;
         case "reading-list-page":
             return "reading";
+        case "resume":
+            return "/resume.pdf"
 
     }
 
