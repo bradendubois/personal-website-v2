@@ -1,7 +1,7 @@
 import React from "react";
 
 import NeofetchImage from "../NeofetchImage";
-import NeofetchStats, { displayUptime } from "../NeofetchStats";
+import NeofetchStats from "../NeofetchStats";
 import NeofetchResumeLinks from "../NeofetchResumeLinks";
 import NeofetchColors from "../NeofetchColors";
 import NeofetchDirectory from "../NeofetchDirectory";
@@ -29,7 +29,10 @@ function NeofetchContainer(props: {neofetchData: NeofetchInterface}) {
             <div className={"neofetchMainInfoContainer"}>
                 <NeofetchImage image={props.neofetchData.image} />
                 <div className={"neofetchStatContainer"}>
-                    <NeofetchStats data={props.neofetchData.data} />
+                    <NeofetchStats
+                        title={props.neofetchData.data.title}
+                        stats={props.neofetchData.data.stats}
+                    />
                     <NeofetchResumeLinks resume_links={props.neofetchData.resume_links} />
                     <NeofetchColors colors={props.neofetchData.colors}/>
                 </div>

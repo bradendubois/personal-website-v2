@@ -13,7 +13,7 @@ export interface NeofetchResumeData {
     }
 }
 
-function Index(props: {resume_links: NeofetchResumeData[]}) {
+function NeofetchResumeLinks(props: {resume_links: NeofetchResumeData[]}) {
 
     return (
         <div className={"resumeLinksContainer"}>
@@ -62,4 +62,4 @@ function Index(props: {resume_links: NeofetchResumeData[]}) {
     )
 }
 
-export default Index;
+export default NeofetchResumeLinks;
