@@ -12,16 +12,23 @@ export interface NeofetchImageData {
     title: string;
 }
 
-function NeofetchImage(props: {image: NeofetchImageData}) {
-    return (
-        <div className={"imageContainer"}>
-            <img
-                src={iconLookup(props.image.info.icon)}
-                alt={props.image.info.alt}
-                title={props.image.title}
-            />
-        </div>
-    )
+class NeofetchImage extends React.Component<NeofetchImageData> {
+
+    constructor(props: NeofetchImageData) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <div className={"imageContainer"}>
+                <img
+                    src={iconLookup(this.props.info.icon)}
+                    alt={this.props.info.alt}
+                    title={this.props.title}
+                />
+            </div>
+        )
+    }
 }
 
 export default NeofetchImage;

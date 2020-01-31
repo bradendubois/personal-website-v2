@@ -1,26 +1,21 @@
 .stats {
+  grid-area: stats;
   font-family: "Montserrat", sans-serif;
 }
 .stats .neofetchTitle {
   padding-top: 10px;
 }
-.stats .neofetchTitle .statDefault {
-  color: white;
-}
-.stats .neofetchTitle .statKey {
+.stats .neofetchTitle .user {
   color: #8fb1f3;
 }
-.stats .neofetchTitle .statValue {
+.stats .neofetchTitle .machine {
   color: #75ecea;
 }
-.stats .neofetchStat .statDefault {
-  color: white;
-}
-.stats .neofetchStat .statKey {
+.stats .neofetchStat .key {
   color: #40f3c1;
   font-weight: 600;
 }
-.stats .neofetchStat .statValue {
+.stats .neofetchStat .value {
   color: #f373b4;
 }
 

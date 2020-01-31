@@ -14,7 +14,7 @@ function IntroSection(props: {section: {id: string, display: string;}}) {
         <div className={"sectionContainer"} id={props.section.id}>
             <SectionTitle display={props.section.display}/>
             <div className={"contentContainer"}>
-                <NeofetchContainer neofetchData={introData.neofetch} />
+                <NeofetchContainer />
                 <Bio data={introData.blurb} />
                 <ReadingList data={introData.readingList}/>
             </div>

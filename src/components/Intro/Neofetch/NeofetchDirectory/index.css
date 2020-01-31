@@ -1,4 +1,5 @@
 .directoryContainer {
+  grid-area: directory;
   margin-top: 10px;
 }
 .directoryContainer .directory {

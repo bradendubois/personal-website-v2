@@ -3,15 +3,23 @@ import React from "react";
 // Style
 import "./index.scss";
 
-function NeofetchDirectory(props: {directory: string[]}) {
-    return (
-        <div className={"directoryContainer"}>
-            <p>{props.directory.map((dir) => (
-                <span><span className={"directory"}>{dir}</span> / </span>
-            ))}
-            </p>
-        </div>
-    )
+class NeofetchDirectory extends React.Component<{directory : string[]}> {
+
+    constructor(props: { directory: string[]}) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <div className={"directoryContainer"}>
+                <p>
+                    {this.props.directory.map((dir) => (
+                        <span><span className={"directory"}>{dir}</span> / </span>
+                    ))}
+                </p>
+            </div>
+        )
+    }
 }
 
 export default NeofetchDirectory;

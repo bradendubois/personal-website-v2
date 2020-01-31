@@ -1,5 +1,5 @@
 .resumeLinksContainer {
-  margin-top: 10px;
+  grid-area: resume;
   display: flex;
   flex-direction: row;
 }
@@ -7,30 +7,29 @@
   color: #00b7b7;
   font-weight: 600;
 }
-.resumeLinksContainer a, .resumeLinksContainer a + p {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
+.resumeLinksContainer .resumeLink {
+  display: flex;
+  flex-direction: column;
 }
-.resumeLinksContainer a:hover + p + img {
+.resumeLinksContainer .resumeLink a:hover + img {
   opacity: 1;
 }
-.resumeLinksContainer a {
+.resumeLinksContainer .resumeLink a {
   color: lightblue;
   transition: 0.1s;
 }
-.resumeLinksContainer a:hover {
+.resumeLinksContainer .resumeLink a:hover {
   color: #90b5c2;
 }
-.resumeLinksContainer a:active {
+.resumeLinksContainer .resumeLink a:active {
   color: #66808a;
 }
-.resumeLinksContainer a:visited {
+.resumeLinksContainer .resumeLink a:visited {
   color: #7fa0ac;
 }
-.resumeLinksContainer img {
+.resumeLinksContainer .resumeLink img {
   max-width: 30px;
-  margin: 10px auto 0 3px;
+  margin: 5px auto 0 auto;
   opacity: 0;
   transition: 0.3s;
   display: block;

@@ -2,7 +2,8 @@
 
 .neofetchContainer {
 
-  margin: 30px auto;
+  margin: 50px auto;
+
   padding: 15px;
 
   background: #0c1d3b;
@@ -12,14 +13,11 @@
 
   color: white;
 
-
-
-  .neofetchMainInfoContainer {
-    display: flex;
-    flex-direction: row;
-
-    .neofetchStatContainer {
-      margin: 2px 0 0 20px;
-    }
-  }
+  display: grid;
+  grid-template-areas:
+          "image stats"
+          "image resume"
+          "image colors"
+          "directory directory"
+  ;
 }

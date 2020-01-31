@@ -26,18 +26,18 @@ class NeofetchStats extends React.Component<NeofetchStatData> {
         return (
             <div className={"stats"}>
                 <p className={"neofetchTitle"}>
-                    <span className={"statKey"} >{this.props.title.user}</span>
-                    <span className={"statDefault"}>@</span>
-                    <span className={"statValue"}>{this.props.title.machine}</span>
+                    <span className={"user"} >{this.props.title.user}</span>
+                    @
+                    <span className={"machine"}>{this.props.title.machine}</span>
                 </p>
 
                 <p className={"neofetchSeparator"}>----------------------</p>
 
                 {this.props.stats.map((stat) => (
                     <p className={"neofetchStat"}>
-                        <span className={"statKey"}>{stat.key}</span>
-                        <span className={"statDefault"}>:&nbsp;</span>
-                        <span className={"statValue"} id={stat.key}>{stat.value}</span>
+                        <span className={"key"}>{stat.key}</span>
+                        :&nbsp;
+                        <span className={"value"} id={stat.key}>{stat.value}</span>
                     </p>
                 ))}
             </div>

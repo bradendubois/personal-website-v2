@@ -8,6 +8,7 @@ function Projects() {
             <h1>Featured</h1>
 
             <div className={"content"}>
+
                 <div className={"project"}>
                     <p className={"title"}>Competitive Programming</p>
                     <div>

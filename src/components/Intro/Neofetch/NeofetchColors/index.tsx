@@ -3,14 +3,18 @@ import React from "react";
 // Style
 import "./index.scss";
 
-function Index(props: {colors: string[];}) {
-    return (
-        <div>
-            {props.colors.map((color) => (
-                <div className={color} />
-            ))}
-        </div>
-    )
+class NeofetchColors extends React.Component<{colors: string[];}> {
+
+    render() {
+
+        return (
+            <div>
+                {this.props.colors.map((color) => (
+                    <div  />
+                ))}
+            </div>
+        )
+    }
 }
 
-export default Index;
+export default NeofetchColors;

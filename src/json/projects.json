@@ -1,21 +1,24 @@
 {
   "featured": [
     {
-      "title": "Arch Config",
-      "preview": {
-        "icon": "usask",
-        "alt": "test"
-      },
-      "links": [
+      "title": "Competitive Programming",
+      "githubProjectTitle": "competitive-programming",
+      "description": "A collection of solutions to competitive programming problems, submitted to online judges, such as Kattis.",
+      "tags": [
         {
-          "url": "https://github.com/bradendubois/arch-setup",
-          "image": {
-            "icon": "github",
-            "alt": "github"
-          }
+          "type": "cpp",
+          "display": "C++"
+        },
+        {
+          "type": "python",
+          "display": "Python"
         }
-      ],
-      "description": "Setup/install scripts that I use to set up my terminal and shell and install software.",
+      ]
+    },
+    {
+      "title": "Arch Setup",
+      "githubProjectTitle": "arch-setup",
+      "description": "Installer scripts to quickly set up an Arch-based distro with my custom terminal/shell scripts and install software from the AUR. Sets up any machine to be suitable for my daily workflow. Predecessor to another project that backs up my workspace, <i>arch-backup</i>.",
       "tags": [
         {
           "type": "shell",
@@ -25,31 +28,13 @@
           "type": "git",
           "display": "GIT"
         }
-      ]
+      ],
+      "imagePreviews" : []
     },
     {
-      "title": "Personal Website (v1)",
-      "preview": {
-        "icon": "test",
-        "alt": "test"
-      },
-      "links": [
-        {
-          "url": "https://www.bradendubois.dev",
-          "image": {
-            "icon": "external",
-            "alt": "my personal website"
-          }
-        },
-        {
-          "url": "https://www.github.com/bradendubois/personal-website-v1",
-          "image": {
-            "icon": "github",
-            "alt": "github"
-          }
-        }
-      ],
-      "description": "Made my own personal website, writing my own HTML / CSS / JavaScript with no libraries/frameworks. This is the first website work I've done since high school, so I'm happy with how it turned out. This was also my first foray into learning a bit of JavaScript.",
+      "title": "Personal Website",
+      "githubProjectTitle": "personal-website-v2",
+      "description": "An overhaul of my personal website/portfolio built in React, used to showcase projects and personal information. Replaces a version built with HTML/CSS/JavaScript without using any libraries or frameworks.",
       "tags": [
         {
           "type": "html",
@@ -57,44 +42,22 @@
         },
         {
           "type": "css",
-          "display": "CSS 3"
+          "display": "CSS / SCSS"
         },
         {
-          "type": "javascript",
-          "display": "JS"
+          "type": "typescript",
+          "display": "TypeScript"
+        },
+        {
+          "type": "react",
+          "display": "React"
         },
         {
           "type": "git",
           "display": "GIT"
-        }
-      ]
-    },
-    {
-      "title": "Tic-Tac-Toe Bot",
-      "preview": {
-        "icon": "test",
-        "alt": "test"
-      },
-      "links": [
-        {
-          "url": "https://www.github.com/bradendubois/tictactoe",
-          "image": {
-            "icon": "github",
-            "alt": "github"
-          }
         }
       ],
-      "description": "A look at basic approaches to AI, using the classic game of Tic-Tac-Toe. This project was done before taking a Computer Science course on AI at uSask.",
-      "tags": [
-        {
-          "type": "java",
-          "display": "Java"
-        },
-        {
-          "type": "git",
-          "display": "GIT"
-        }
-      ]
+      "imagePreviews" : []
     }
   ],
   "minor": [

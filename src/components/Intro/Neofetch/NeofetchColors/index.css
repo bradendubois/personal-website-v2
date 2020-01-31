@@ -1,3 +1,5 @@
-
+.colorContainer {
+  grid-area: colors;
+}
 
 /*# sourceMappingURL=index.css.map */

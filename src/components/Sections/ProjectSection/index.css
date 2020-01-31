@@ -43,12 +43,9 @@ html, body {
   background: #111111;
   color: white;
 }
-#projects .projectsContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
+#projects .projectContainer {
+  max-width: 900px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=index.css.map */

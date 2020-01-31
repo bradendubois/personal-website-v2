@@ -5,11 +5,8 @@
 
   color: white;
 
-  .projectsContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
+  .projectContainer {
+    max-width: 900px;
+    margin: auto;
   }
 }
