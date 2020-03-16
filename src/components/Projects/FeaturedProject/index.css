@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* TODO - Get more specific colors */
+/*********** Project Tag Colors ***********/
+* {
+  text-decoration: none;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sectionContainer {
+  padding: 20px;
+}
+
+.sectionTitle {
+  margin: 20px auto;
+  font-family: "Montserrat", "Open Sans", monospace;
+  font-weight: 600;
+  font-size: 20pt;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.project {
+  max-width: 8000px;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  border-top-left-radius: 5px;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.project .title {
+  font-size: 20pt;
+  margin: 0 auto 5px 5px;
+}
+.project a {
+  font-weight: 500;
+}
+.project a div {
+  transition: 0.3s;
+  padding: 4px;
+  border-radius: 3px;
+  display: inline-flex;
+}
+.project a div img {
+  height: 24px;
+  margin: auto 5px;
+  opacity: 0.8;
+}
+.project a div .link {
+  margin: auto 0 auto 5px;
+  font-size: 11pt;
+  color: white;
+}
+.project a div .link .githubProfileColor {
+  color: #32ceff;
+}
+.project a div .link .projectTitleColor {
+  color: #81ddff;
+}
+.project a div:hover {
+  color: #93d0ff;
+  background: #373737;
+  padding-left: 10px;
+}
+.project a div:hover img {
+  opacity: 1;
+}
+.project .desc {
+  margin: 5px;
+  font-weight: 300;
+}
+.project .tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.project .tagContainer .tag {
+  padding: 4px;
+  font-size: 11pt;
+  margin-right: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+.project .tagContainer .cpp {
+  border-color: purple;
+}
+.project .tagContainer .python {
+  border-color: darkblue;
+}
+.project .tagContainer .shell {
+  border-color: lime;
+}
+.project .tagContainer .git {
+  border-color: orangered;
+}
+.project .tagContainer .html {
+  border-color: orange;
+}
+.project .tagContainer .css {
+  border-color: orange;
+}
+.project .tagContainer .typescript {
+  border-color: lightblue;
+}
+.project .tagContainer .react {
+  border-color: blue;
+}
+
+.projectNew {
+  max-width: 8000px;
+  padding: 10px;
+  border-radius: 1px;
+  background-color: #e8e8e8;
+  box-shadow: 2px 2px #2e2e2e;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.projectNew .title {
+  font-size: 20pt;
+  font-weight: 500;
+  margin: 0 auto 5px 5px;
+}
+.projectNew a {
+  font-weight: 500;
+}
+.projectNew a div {
+  transition: 0.3s;
+  padding: 4px;
+  border-radius: 3px;
+  display: inline-flex;
+}
+.projectNew a div img {
+  height: 24px;
+  margin: auto 5px;
+  transition: 0.3s;
+}
+.projectNew a div .link {
+  margin: auto 0 auto 5px;
+  font-size: 11pt;
+  color: black;
+}
+.projectNew a div .link .githubProfileColor {
+  color: #0d323f;
+}
+.projectNew a div .link .projectTitleColor {
+  color: #17272f;
+}
+.projectNew a div:hover {
+  background: #919191;
+  padding-left: 10px;
+}
+.projectNew a div:hover p, .projectNew a div:hover .githubProfileColor, .projectNew a div:hover .projectTitleColor {
+  color: #ffffff;
+}
+.projectNew a div:hover img {
+  filter: invert(100%);
+}
+.projectNew .desc {
+  margin: 5px;
+  font-weight: 300;
+}
+.projectNew .tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.projectNew .tagContainer .tag {
+  padding: 4px;
+  font-size: 11pt;
+  margin-right: 10px;
+  border: 2px solid;
+  border-radius: 4px;
+}
+.projectNew .tagContainer .cpp {
+  border-color: purple;
+}
+.projectNew .tagContainer .python {
+  border-color: darkblue;
+}
+.projectNew .tagContainer .shell {
+  border-color: lime;
+}
+.projectNew .tagContainer .git {
+  border-color: orangered;
+}
+.projectNew .tagContainer .html {
+  border-color: orange;
+}
+.projectNew .tagContainer .css {
+  border-color: orange;
+}
+.projectNew .tagContainer .typescript {
+  border-color: lightblue;
+}
+.projectNew .tagContainer .react {
+  border-color: blue;
+}
+
+/*# sourceMappingURL=index.css.map */

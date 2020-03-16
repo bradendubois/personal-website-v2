@@ -1,0 +1,72 @@
+@import "../../defaults";
+
+#navBar {
+
+  z-index: 10;
+  transition: 0.3s;
+  position: sticky;
+
+  top: 0;
+
+  // TODO - Shrink when not at top
+
+  background: #f3f3f3;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  padding: 0;
+  margin: 0;
+
+  a {
+
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: space-around;
+    max-width: 300px;
+    transition: 0.2s;
+    padding: 12px;
+
+    &:hover {
+      background: #e5e5e5;
+    }
+
+    &:active {
+      background: #dddddd;
+      outline: none;
+    }
+
+    .navOption {
+
+      p {
+        margin: 5px auto;
+        width: max-content;
+
+        font-size: 14pt;
+        text-transform: full-width;
+
+        font-family: "Montserrat", sans-serif;
+        color: #4c8ec4;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  #navBar {
+
+    a {
+      padding: 5px;
+
+      .navOption {
+
+        p {
+          width: max-content;
+          font-size: 8pt;
+        }
+      }
+    }
+  }
+}

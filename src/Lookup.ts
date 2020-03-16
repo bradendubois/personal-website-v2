@@ -14,7 +14,7 @@ export function iconLookup(name: string) : string {
     let pdf = "/pdf-dark.png";
     let pdflight = "/pdf-light.png";
     let docx = "/docx-light.png";
-    let headshot = "/sunglasses_rabbit_1.jpg";
+    let headshot = "/me.jpg";
 
     // TODO - Find some generic, default for unknown lookups
     let unknown = "";
@@ -62,7 +62,7 @@ export function urlLookup(name: string) : string {
             return linkData.kattis;
         case "reading-list-page":
             return "reading";
-        case "resume":
+        case "resume-pdf":
             return "/resume.pdf"
 
     }

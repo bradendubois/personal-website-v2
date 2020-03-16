@@ -39,71 +39,24 @@ html, body {
   text-transform: capitalize;
 }
 
-.footerContainer {
-  background: #282828;
-}
-.footerContainer div {
+.neofetchContainer {
+  margin: 50px auto;
+  padding: 15px;
+  background: #0c1d3b;
+  outline: 1px solid #112a55;
+  -moz-outline-radius: 5px;
+  max-width: 700px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.footerContainer .footnote {
-  padding: 10px;
-}
-.footerContainer .footnote p {
-  margin: 10px auto;
+  flex-direction: column;
+  flex-grow: 0;
   color: white;
 }
-.footerContainer .footnote p a, .footerContainer .footnote p a:visited {
-  color: lightgrey;
-}
-.footerContainer .footnote p a:hover {
-  color: grey;
-}
-.footerContainer .footnote p a:active, .footerContainer .footnote p a:focus {
-  color: darkgrey;
-}
-
-.footerItem {
-  margin: auto;
-  padding: 5px 5px 5px 5px;
-  transition: 0.3s;
-  width: 150px;
-}
-.footerItem:hover p {
-  opacity: 1;
-  transition: 0.5s;
-}
-.footerItem a {
-  color: lightgrey;
-  margin: 10px;
-}
-.footerItem a:visited {
-  color: lightgrey;
-}
-.footerItem a:hover {
-  color: #bebebe;
-}
-.footerItem a:active, .footerItem a:focus {
-  color: #9c9c9c;
-  outline: none;
-}
-.footerItem a div {
+.neofetchContainer .neofetchMainContent {
   display: flex;
-  flex-flow: row;
-  width: 100px;
-}
-.footerItem a div:last-of-type {
-  flex-flow: row-reverse;
-}
-.footerItem a div img {
-  height: 32px;
-  width: auto;
-}
-.footerItem a div p {
-  margin: auto 15px;
-  opacity: 0;
-  transition: 0.5s;
+  flex-grow: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=index.css.map */

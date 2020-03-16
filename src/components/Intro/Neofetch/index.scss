@@ -1,0 +1,29 @@
+@import "../../../defaults";
+
+.neofetchContainer {
+
+  margin: 50px auto;
+
+  padding: 15px;
+
+  background: #0c1d3b;
+  outline: 1px solid #112a55;
+  -moz-outline-radius: 5px;
+  max-width: 700px;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+
+  color: white;
+
+  .neofetchMainContent {
+
+    display: flex;
+    flex-grow: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+}

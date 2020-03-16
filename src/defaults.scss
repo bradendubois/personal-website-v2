@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -21,9 +22,6 @@ code {
 html, body {
   height: 100%;
 }
-
-
-
 
 $projectBGColor: #131a2b;
 $navColor: #494949;
@@ -82,4 +80,5 @@ $react-color: blue;
 
   text-align: center;
   text-transform: capitalize;
+
 }

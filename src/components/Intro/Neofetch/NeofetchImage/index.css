@@ -1,10 +1,9 @@
 .imageContainer {
-  grid-area: image;
   width: max-content;
   box-shadow: 0 0 5px #081429;
 }
 .imageContainer img {
-  width: 300px;
+  max-width: 300px;
   height: auto;
 }
 

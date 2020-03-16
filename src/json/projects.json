@@ -18,7 +18,7 @@
     {
       "title": "Arch Setup",
       "githubProjectTitle": "arch-setup",
-      "description": "Installer scripts to quickly set up an Arch-based distro with my custom terminal/shell scripts and install software from the AUR. Sets up any machine to be suitable for my daily workflow. Predecessor to another project that backs up my workspace, <i>arch-backup</i>.",
+      "description": "Installer scripts to quickly set up an Arch-based distro with my custom terminal/shell scripts and install software from the AUR. Sets up any machine to be suitable for my daily workflow. Predecessor to another project that backs up my workspace, arch-backup.",
       "tags": [
         {
           "type": "shell",

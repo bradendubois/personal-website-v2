@@ -1,0 +1,63 @@
+.info {
+  font-family: "Montserrat", sans-serif;
+}
+.info .neofetchTitle {
+  padding-top: 10px;
+}
+.info .neofetchTitle .user {
+  color: #8fb1f3;
+}
+.info .neofetchTitle .machine {
+  color: #75ecea;
+}
+.info .neofetchStat .key {
+  color: #40f3c1;
+  font-weight: 600;
+}
+.info .neofetchStat .value {
+  color: #f373b4;
+}
+
+.resumeLinksContainer {
+  margin-top: 30px;
+  grid-area: resume;
+  display: flex;
+  flex-direction: row;
+}
+.resumeLinksContainer .resumeKey {
+  color: #00b7b7;
+  font-weight: 600;
+}
+.resumeLinksContainer .resumeLink {
+  display: flex;
+  flex-direction: column;
+}
+.resumeLinksContainer .resumeLink div {
+  display: flex;
+  flex-direction: row;
+}
+.resumeLinksContainer .resumeLink div:hover + img {
+  opacity: 1;
+}
+.resumeLinksContainer .resumeLink a {
+  color: lightblue;
+  transition: 0.1s;
+}
+.resumeLinksContainer .resumeLink a:hover {
+  color: #90b5c2;
+}
+.resumeLinksContainer .resumeLink a:active {
+  color: #66808a;
+}
+.resumeLinksContainer .resumeLink a:visited {
+  color: #7fa0ac;
+}
+.resumeLinksContainer .resumeLink img {
+  max-width: 30px;
+  margin: 5px auto 0 auto;
+  opacity: 0;
+  transition: 0.3s;
+  display: block;
+}
+
+/*# sourceMappingURL=index.css.map */

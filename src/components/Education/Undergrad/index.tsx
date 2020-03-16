@@ -3,7 +3,6 @@ import {iconLookup, urlLookup} from "../../../Lookup";
 
 // Style
 import "./index.scss";
-import ClassEntry from "../ClassEntry";
 
 function Undergrad() {
     return (
@@ -99,6 +98,7 @@ function Undergrad() {
 
                 <hr />
 
+                {/*
                 <div className={"group"}>
                     <p className={"title"}>uSask Cyber Security Team</p>
                     <p className={"role"}>VP Challenges</p>
@@ -108,7 +108,9 @@ function Undergrad() {
                     </ul>
                 </div>
 
+
                 <hr />
+                */}
 
                 <div className={"group"}>
                     <p className={"title"}>Computer Science Students' Society</p>

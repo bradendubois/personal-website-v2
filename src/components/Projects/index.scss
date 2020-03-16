@@ -1,0 +1,47 @@
+@import "../../defaults";
+
+#projects {
+
+  .sectionTitle {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  background: #99bbd3;
+
+  color: black;
+
+  .projectContainer {
+
+    h2 {
+      margin-left: 20px;
+      font-size: 20pt;
+    }
+
+    max-width: 1200px;
+    margin: auto;
+
+    .projects {
+
+      padding: 20px 0 0 20px;
+
+      /*
+      border-left: 2px solid black;
+      border-top: 2px solid black;
+      border-top-left-radius: 5px;
+      */
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  #projects {
+    .projectContainer {
+      .projects {
+        border: none;
+        padding: 0;
+        margin: 10px auto;
+      }
+    }
+  }
+}
