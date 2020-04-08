@@ -12,24 +12,70 @@
     margin-bottom: 10px;
     justify-content: stretch;
 
-    a, a:visited {
-      color: #4f87d5;
-      transition: 0.1s;
-    }
 
-    a:hover {
-      color: #4372b4;
-    }
-
-    a:active {
-      color: #2c4b77;
-    }
 
     p {
       color: white;
       transition: 0.3s;
 
       font-size: 12pt;
+
+    }
+
+
+    a p, a:visited p {
+      color: #4f87d5;
+      transition: 0.1s;
+    }
+
+    a:hover p {
+      color: #4372b4;
+    }
+
+    a:active p {
+      color: #2c4b77;
     }
   }
+}
+
+@import "../../../defaults";
+
+.hidden {
+  display: none;
+}
+
+.readingListContainer {
+  // display: none;
+  background-color: white;
+  width: 80%;
+  border-radius: 3px;
+  padding: 15px 15px;
+  margin: 30px auto 10px auto;
+
+  * {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    max-width: 700px;
+  }
+
+  h3 {
+    margin: 0 auto;
+  }
+
+  h4 {
+    margin: 20px auto 3px auto;
+  }
+
+  h3, h4 {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  p {
+    margin-top: 0;
+    padding: 0;
+  }
+
+
 }

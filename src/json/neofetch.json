@@ -67,7 +67,7 @@
       "display": "github",
       "reference": "github",
       "image": {
-        "icon": "github",
+        "icon": "github-light",
         "description": "Github Profile"
       }
     }

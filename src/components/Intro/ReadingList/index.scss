@@ -5,37 +5,32 @@
 }
 
 .readingListContainer {
+
+  display: flex;
+  flex-direction: column;
+
+  .book {
+
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .title {
+      font-weight: 600;
+    }
+
+    .by {
+
+    }
+
+    .author {
+      font-style: italic;
+    }
+  }
   // display: none;
   background-color: white;
-  width: 80%;
   border-radius: 3px;
-  padding: 15px 15px;
-  margin: 30px auto 10px auto;
 
-  * {
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    max-width: 700px;
-  }
-
-  h3 {
-    margin: 0 auto;
-  }
-
-  h4 {
-    margin: 20px auto 3px auto;
-  }
-
-  h3, h4 {
-    font-family: "Montserrat", sans-serif;
-  }
-
-  p {
-    margin-top: 0;
-    padding: 0;
-  }
-
-
+  padding: 0;
+  margin: 0;
 }

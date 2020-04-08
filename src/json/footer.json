@@ -5,7 +5,7 @@
         "icon": "linkedin",
         "alt": "linkedin"
       },
-      "link": "https://www.linkedin.com/in/bradendubois",
+      "attrib": "https://www.linkedin.com/in/bradendubois",
       "display": "bradendubois"
     },
     {
@@ -13,7 +13,7 @@
         "icon": "github",
         "alt": "github logo"
       },
-      "link": "https://www.github.com/bradendubois",
+      "attrib": "https://www.github.com/bradendubois",
       "display": "bradendubois"
     },
     {
@@ -21,7 +21,7 @@
         "icon": "email",
         "alt": "email me"
       },
-      "link": "mailto:braden.dubois@usask.ca",
+      "attrib": "mailto:braden.dubois@usask.ca",
       "display": "braden.dubois@usask.ca"
     }
   ]

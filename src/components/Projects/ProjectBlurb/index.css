@@ -41,24 +41,24 @@ html, body {
   text-transform: capitalize;
 }
 
-.neofetchContainer {
-  margin: 50px auto;
-  padding: 15px;
-  background: #0c1d3b;
-  outline: 1px solid #112a55;
-  -moz-outline-radius: 5px;
-  max-width: 700px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 0;
-  color: white;
+.projectBlurbContainer {
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  padding: 10px;
+  background-color: white;
+  border-radius: 3px;
+  font-weight: 300;
+  transition: 0.3s;
 }
-.neofetchContainer .neofetchMainContent {
-  display: flex;
-  flex-grow: 0;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+a, a:visited {
+  color: black;
+  font-weight: 400;
+}
+
+a em, em, em a {
+  font-style: normal;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=index.css.map */

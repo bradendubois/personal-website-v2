@@ -3,106 +3,96 @@
     [
       {
         "content": "I'm an undergraduate student at the ",
-        "link": ""
+        "attrib": ""
       },
       {
         "content": "University of Saskatchewan",
-        "link": "usask"
+        "attrib": "usask"
       },
       {
         "content": " pursuing a B.Sc. (Double Honours) in Computer Science and Philosophy.",
-        "link": ""
+        "attrib": ""
       }
     ],
     [
       {
         "content": "My free time is usually spent ",
-        "link": ""
+        "attrib": ""
       },
       {
         "content": "making fun projects",
-        "link": "github"
+        "attrib": "github"
       },
       {
         "content": ", ",
-        "link": ""
+        "attrib": ""
       },
       {
         "content": "reading",
-        "link": "reading-list"
+        "attrib": "reading-list"
       },
       {
         "content": ", or solving ",
-        "link": ""
+        "attrib": ""
       },
       {
         "content": "competitive programming problems",
-        "link": "competitive-programming"
+        "attrib": "competitive-programming"
       },
       {
         "content": " through online judges, like ",
-        "link": ""
+        "attrib": ""
       },
       {
         "content": "Kattis",
-        "link": "kattis"
+        "attrib": "kattis"
       },
       {
         "content": ".",
-        "link": ""
+        "attrib": ""
       }
     ]
   ],
   "readingList" : [
     {
       "title": "Hitchhiker's Guide to the Galaxy",
-      "author": "Douglas Adams",
-      "desc": "I'm currently working through The Restaurant at the End of the Universe, but the series has already earned a spot on this list."
+      "author": "Douglas Adams"
     },
     {
       "title": "Zen and the Art of Motorcycle Maintenance",
-      "author": "Robert Pirsig",
-      "desc": "The narrator teaches some Zen philosophy while struggling with schizophrenia; it can definitely be a bit daunting with no background in Zen philosophy, but some motorcycle analogies can go a long way."
+      "author": "Robert Pirsig"
     },
     {
       "title": "Mismatch",
-      "author": "Kat Holmes",
-      "desc": "Kat Holmes explains the concept of inclusive design and various ways it has been systemically forgotten or ignored; it's unbelievable to see its impact in failures in fighter jets and systematic racism through the heights of bridges."
+      "author": "Kat Holmes"
     },
     {
       "title": "1984",
-      "author": "George Orwell",
-      "desc": "A classic, always worth a re-read every so often."
+      "author": "George Orwell"
     },
     {
       "title": "Do Androids Dream of Electric Sheep?",
-      "author": "Philip K. Dick",
-      "desc": "I'm a big fan of cyberpunk, and the book is actually fairly different from the 1982 classic with Harrison Ford."
+      "author": "Philip K. Dick"
     },
     {
       "title": "Brave New World",
-      "author": "Aldous Huxley",
-      "desc": "It's like Orwell, but upbeat and vaguely psychedelic."
+      "author": "Aldous Huxley"
     },
     {
       "title": "At The Existentialist Cafe: Freedom, Being, and Apricot Cocktails",
-      "author": "Sarah Bakewell",
-      "desc": "A timeline of the surgence of existentialism and phenomenology, from Husserl to Sartre."
+      "author": "Sarah Bakewell"
     },
     {
       "title": "Dawn of the New Everything",
-      "author": "Jaron Lanier",
-      "desc": "One of the pioneers of Virtual Reality, the book alternates between a biography of Lanier's (bizarre) life, and fairly detailed breakdowns of ideas and developments in VR."
+      "author": "Jaron Lanier"
     },
     {
       "title": "A Song of Ice and Fire",
-      "author": "George RR Martin",
-      "desc": "Definitively, the best fantasy/sci-fi series. At least we still have the books."
+      "author": "George RR Martin"
     },
     {
       "title": "Island",
-      "author": "Aldous Huxley",
-      "desc": "Utopian opposite of Brave New World, Island follows a journalist, shipwrecked on an island, and his experiences with its inhabitants."
+      "author": "Aldous Huxley"
     }
   ]
 }

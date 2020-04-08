@@ -30,3 +30,6 @@ In the project directory, run `npm install` to install packages.
 ### Deployment
 
 See [here](https://facebook.github.io/create-react-app/docs/deployment).
+https://commons.wikimedia.org/wiki/File:Globe_icon.svg
+
+https://commons.wikimedia.org/wiki/File:Terminalicon2.png

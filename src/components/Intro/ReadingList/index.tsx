@@ -1,23 +1,31 @@
+// React imports
 import React from "react";
 
 // Style
 import "./index.scss";
 
-function Index(props : { data:{ title: string; desc: string;}[]}) {
-
-    let readingList = props.data.map((book) => (
-        <span>
-            <h4>·&nbsp;&nbsp;{book.title}&nbsp;&nbsp;·</h4>
-            <p>{book.desc}</p>
-        </span>
-    ));
-
-    return (
-        <div id={"reading-list"} className={"readingListContainer hidden"}>
-            <h3>My Reading List</h3>
-            {readingList}
-        </div>
-    )
+export interface ReadingListProps {
+    books: {
+        title: string;
+        author: string;
+    }[];
 }
 
-export default Index;
+class ReadingList extends React.Component<ReadingListProps> {
+
+    render() {
+        return (
+            <div className={"readingListContainer"}>
+                {this.props.books.map(book => (
+                    <div className={"book"}>
+                        <p className={"title"}>{book.title}</p>
+                        <p className={"by"}>&nbsp;by&nbsp;</p>
+                        <p className={"author"}>{book.author}</p>
+                    </div>
+                ))}
+            </div>
+        )
+    }
+}
+
+export default ReadingList;

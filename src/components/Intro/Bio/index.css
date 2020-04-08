@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap");
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -50,20 +57,90 @@ html, body {
   margin-bottom: 10px;
   justify-content: stretch;
 }
-.bioContainer .bioSection a, .bioContainer .bioSection a:visited {
-  color: #4f87d5;
-  transition: 0.1s;
-}
-.bioContainer .bioSection a:hover {
-  color: #4372b4;
-}
-.bioContainer .bioSection a:active {
-  color: #2c4b77;
-}
 .bioContainer .bioSection p {
   color: white;
   transition: 0.3s;
   font-size: 12pt;
+}
+.bioContainer .bioSection a p, .bioContainer .bioSection a:visited p {
+  color: #4f87d5;
+  transition: 0.1s;
+}
+.bioContainer .bioSection a:hover p {
+  color: #4372b4;
+}
+.bioContainer .bioSection a:active p {
+  color: #2c4b77;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* TODO - Get more specific colors */
+/*********** Project Tag Colors ***********/
+* {
+  text-decoration: none;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sectionContainer {
+  padding: 20px;
+}
+
+.sectionTitle {
+  margin: 20px auto;
+  font-family: "Montserrat", "Open Sans", monospace;
+  font-weight: 600;
+  font-size: 20pt;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.hidden {
+  display: none;
+}
+
+.readingListContainer {
+  background-color: white;
+  width: 80%;
+  border-radius: 3px;
+  padding: 15px 15px;
+  margin: 30px auto 10px auto;
+}
+.readingListContainer * {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  max-width: 700px;
+}
+.readingListContainer h3 {
+  margin: 0 auto;
+}
+.readingListContainer h4 {
+  margin: 20px auto 3px auto;
+}
+.readingListContainer h3, .readingListContainer h4 {
+  font-family: "Montserrat", sans-serif;
+}
+.readingListContainer p {
+  margin-top: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

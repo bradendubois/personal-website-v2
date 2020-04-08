@@ -65,6 +65,15 @@ function Undergrad() {
             <p className={"achievementsTitle subTitle"}>Achievements</p>
 
             <div className={"achievements container"}>
+
+                <div className={"entry"}>
+                    <p className={"title"}>Computer Science USRA</p>
+                    <p className={"time"}>Summer 2020</p>
+                    <p className={"desc"}>Recipient of a Department of Computer Science Undergraduate Student Research Assistant award. Working with <a href={urlLookup("eric")}>Professor Eric Neufeld</a> for the summer of 2020.</p>
+                </div>
+
+                <hr/>
+
                 <div className={"entry"}>
                     <p className={"title"}>Competitive Programming</p>
                     <p className={"time"}>Fall 2019</p>
@@ -129,7 +138,6 @@ function Undergrad() {
                     </ul>
                 </div>
 
-                <hr />
 
             </div>
         </div>

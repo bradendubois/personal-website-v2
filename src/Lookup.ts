@@ -15,15 +15,21 @@ export function iconLookup(name: string) : string {
     let pdflight = "/pdf-light.png";
     let docx = "/docx-light.png";
     let headshot = "/me.jpg";
+    let delta = "/delta_dark.png";
+
+    let terminal = "/terminal.png";
+    let website = "/globe_dark.png";
 
     // TODO - Find some generic, default for unknown lookups
     let unknown = "";
 
     switch (name) {
         case "github":
-            return github;
+            return githubdark;
         case "github-dark":
             return githubdark;
+        case "github-light":
+            return github;
         case "linkedin":
             return linkedin;
         case "linkedin-light":
@@ -40,6 +46,12 @@ export function iconLookup(name: string) : string {
             return docx;
         case "headshot":
             return headshot;
+        case "delta":
+            return delta;
+        case "terminal":
+            return terminal;
+        case "website":
+            return website;
     }
 
     return unknown;
@@ -64,6 +76,8 @@ export function urlLookup(name: string) : string {
             return "reading";
         case "resume-pdf":
             return "/resume.pdf"
+        case "eric":
+            return "https://www.cs.usask.ca/faculty/eric/";
 
     }
 

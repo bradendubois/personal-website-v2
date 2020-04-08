@@ -15,11 +15,10 @@ import "./index.scss";
 
 class Homepage extends React.Component {
 
-    // TODO - find some better way to connect this list with the actual sections; having to specify \\
-    // the actual index feels like poor practice.
+    // TODO - find some better way to connect this list with the actual sections; having to specify
+    //  the actual index feels like poor practice.
 
     render() {
-
 
         let navOptions = [
             {
@@ -41,9 +40,15 @@ class Homepage extends React.Component {
         return (
             <div className={"homepageContainer"}>
                 <NavBar tabs={navOptions}/>
-                <IntroSection section={navOptions[0]}/>
+                <IntroSection
+                    id={navOptions[0].id}
+                    display={navOptions[0].display}
+                />
                 <EducationSection section={navOptions[1]}/>
-                <ProjectSection section={navOptions[2]}/>
+                <ProjectSection
+                    id={navOptions[2].id}
+                    display={navOptions[2].display}
+                />
                 <Footer/>
             </div>
         )
@@ -51,9 +56,5 @@ class Homepage extends React.Component {
 }
 
 
-ReactDOM.render(
-    <Homepage />,
-    document.getElementById('root')
-);
-
+ReactDOM.render(<Homepage />, document.getElementById('root'));
 serviceWorker.unregister();

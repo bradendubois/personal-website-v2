@@ -1,22 +1,33 @@
+// React imports
 import React from "react";
-import SectionTitle from "../SectionTitle";
-import introData from "../../json/intro.json";
-import NeofetchContainer from "./Neofetch";
+
+// Component imports
 import Bio from "./Bio";
-import ReadingList from "./ReadingList";
+import SectionTitle from "../SectionTitle";
+import NeofetchContainer from "./Neofetch";
 
 // Style
 import "./index.scss";
 
-function IntroSection(props: {section: {id: string, display: string;}}) {
+// Data
+import introData from "../../json/intro.json";
+
+interface IntroSectionProps {
+    id: string;
+    display: string;
+}
+
+function IntroSection(props: IntroSectionProps) {
 
     return (
-        <div className={"sectionContainer"} id={props.section.id}>
-            <SectionTitle display={props.section.display}/>
+        <div className={"sectionContainer"} id={props.id}>
+            <SectionTitle display={props.display}/>
             <div className={"contentContainer"}>
                 <NeofetchContainer />
-                <Bio data={introData.blurb} />
-                <ReadingList data={introData.readingList}/>
+                <Bio
+                    bio={introData.blurb}
+                    readingList={introData.readingList}
+                />
             </div>
         </div>
     )

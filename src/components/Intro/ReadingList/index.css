@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap");
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -44,31 +46,23 @@ html, body {
 }
 
 .readingListContainer {
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  width: 80%;
   border-radius: 3px;
-  padding: 15px 15px;
-  margin: 30px auto 10px auto;
-}
-.readingListContainer * {
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0;
-  max-width: 700px;
+  margin: 0;
 }
-.readingListContainer h3 {
-  margin: 0 auto;
+.readingListContainer .book {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.readingListContainer h4 {
-  margin: 20px auto 3px auto;
+.readingListContainer .book .title {
+  font-weight: 600;
 }
-.readingListContainer h3, .readingListContainer h4 {
-  font-family: "Montserrat", sans-serif;
-}
-.readingListContainer p {
-  margin-top: 0;
-  padding: 0;
+.readingListContainer .book .author {
+  font-style: italic;
 }
 
 /*# sourceMappingURL=index.css.map */
