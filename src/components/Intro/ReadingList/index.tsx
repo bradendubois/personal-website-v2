@@ -1,5 +1,5 @@
 // React imports
-import React from "react";
+import React, {Component} from "react";
 
 // Style
 import "./index.scss";
@@ -11,7 +11,7 @@ export interface ReadingListProps {
     }[];
 }
 
-class ReadingList extends React.Component<ReadingListProps> {
+class ReadingList extends Component<ReadingListProps> {
 
     render() {
         return (

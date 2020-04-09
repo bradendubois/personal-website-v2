@@ -1,96 +1,103 @@
-import * as React from "react";
+// React imports
+import React, {Component} from "react";
+
+// Helper functions
+import {iconLookup, urlLookup} from "../../../../Lookup";
 
 // Style
 import "./index.scss";
-import {iconLookup, urlLookup} from "../../../../Lookup";
 
-export interface NeofetchInfoData {
-    title: {
-        user: string;
-        machine: string;
-    };
-    stats: {
-        key: string;
-        value: string;
-    }[];
-    data : {
-        display: string;
-        reference: string;
-        image: {
-            icon: string;
-            description: string;
-        };
-    }[];
+const NeoStat = (left: string, right: string) =>
+    <p className={"neofetchStat"}>
+        <span className={"key"}>{left}</span>
+        :&nbsp;
+        <span className={"value"} id={right}>{right}</span>
+    </p>;
+
+const NeoResumeLinks = () =>
+    <div className={"resumeLinksContainer"}>
+        <p className={"resumeKey"}>Resume</p>
+
+        <p>: [&nbsp;</p>
+
+        <NeoResumeLink
+            icon={"pdf-light"}
+            link={"resume-pdf"}
+            text={"pdf"}
+            alt={"PDF icon"}
+        />
+
+        <p>,&nbsp;</p>
+
+        <NeoResumeLink
+            icon={"linkedin"}
+            link={"linkedin"}
+            text={"LinkedIn"}
+            alt={"LinkedIn icon"}
+        />
+
+        <p>,&nbsp;</p>
+
+        <NeoResumeLink
+            icon={"github"}
+            link={"github"}
+            text={"Github"}
+            alt={"Github icon"}
+        />
+
+        <p>&nbsp;]</p>
+    </div>;
+
+interface ResumeLink {
+    icon: string;
+    link: string;
+    text: string;
+    alt: string;
 }
 
+const NeoResumeLink = (data: ResumeLink) =>
+    <div className={"resumeLink"}>
+        <a
+            href={urlLookup(data.link)}
+            target={"_blank"}
+            rel="noopener noreferrer"
+        >
+            <p>{data.text}</p>
+            <img
+                src={iconLookup(data.icon)}
+                alt={data.alt}
+            />
+        </a>
+    </div>;
 
-class NeofetchInfo extends React.Component<NeofetchInfoData> {
+class NeofetchInfo extends Component {
 
     render() {
 
-        let links = [];
-
-        for (let i = 0; i < this.props.data.length; i++) {
-            links.push(
-                <div className={"resumeLink"}>
-                    <div>
-                        <a
-                            href={urlLookup(this.props.data[i].reference)}
-                            target={"_blank"}
-                        >
-                            <p>{this.props.data[i].display}</p>
-                        </a>
-                        {i < this.props.data.length - 1 ? (<p>,&nbsp;&nbsp;</p>) : null }
-                    </div>
-                    <img
-                        src={iconLookup(this.props.data[i].image.icon)}
-                        alt={this.props.data[i].image.description}
-                    />
-                </div>
-            );
-        }
-
         return (
             <div className={"info"}>
+
                 <p className={"neofetchTitle"}>
-                    <span className={"user"} >{this.props.title.user}</span>
-                    @
-                    <span className={"machine"}>{this.props.title.machine}</span>
+                    <span className={"user"} >braden</span>@<span className={"machine"}>earth</span>
                 </p>
 
                 <p className={"neofetchSeparator"}>----------------------</p>
 
-                {this.props.stats.map((stat) => (
-                    <p className={"neofetchStat"}>
-                        <span className={"key"}>{stat.key}</span>
-                        :&nbsp;
-                        <span className={"value"} id={stat.key}>{stat.value}</span>
-                    </p>
-                ))}
+                {NeoStat("Host", "Saskatchewan, Canada")}
+                {NeoStat("Uptime", NeofetchInfo.calculateUptime(new Date(1999, 7, 13)))}
+                {NeoStat("Education", "University of Saskatchewan")}
+                {NeoStat("Major(s)", "Computer Science, Philosophy")}
+                {NeoStat("Packages", "206")}
+                {NeoStat("Resolution", "Corrected to 20/20")}
+                {NeoStat("CPU", "Brain")}
+                {NeoStat("GPU", "Eye (x2)")}
 
-                <div className={"resumeLinksContainer"}>
-                    <p className={"resumeKey"}>Resume</p>
-
-                    <p className={"resumeDefault"}>: [&nbsp;</p>
-                        {links}
-                    <p className={"resumeDefault"}>&nbsp;]</p>
-                </div>
+                <NeoResumeLinks />
             </div>
         );
     }
 
-    componentDidMount(): void {
-
-        let uptime = document.getElementById("Uptime");
-        if (uptime === null) {
-            console.log("Couldn't get birthday stat.");
-            return;
-        }
-
-        uptime.innerHTML = this.calculateUptime(new Date(1999, 7, 13)).toString();
-    }
-
-    calculateUptime(date: Date) {
+    public static calculateUptime(date: Date) {
         // Should retrieve the current date
         let currentDate = new Date();
 
@@ -111,11 +118,7 @@ class NeofetchInfo extends React.Component<NeofetchInfoData> {
             months += 12;
         }
 
-        // NOTE - This is only used to calculate time since my birthday, and as such there is no correction
-        // for a negative year since this should never occur
-
-        // Return string built from info retrieved
-        return years.toString() + " years, " + months.toString() + (months.toString() === "1" ? " month" : " months");
+        return [years.toString(), "years,", months.toString(), (months.toString() === "1" ? " month" : " months")].join(" ");
     }
 }
 

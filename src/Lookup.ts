@@ -75,10 +75,15 @@ export function urlLookup(name: string) : string {
         case "reading-list-page":
             return "reading";
         case "resume-pdf":
-            return "/resume.pdf"
+            return "/resume.pdf";
         case "eric":
             return "https://www.cs.usask.ca/faculty/eric/";
-
+        case "adventofcode":
+            return "https://adventofcode.com/";
+        case "aur":
+            return "https://aur.archlinux.org/";
+        case "baylor":
+            return "https://icpc.baylor.edu/";
     }
 
     return "";

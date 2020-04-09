@@ -45,7 +45,7 @@ class Project extends Component<ProjectProps, ProjectState> {
      * @param tagName a technology or language
      */
     public static makeTag(tagName: string): ReactElement {
-        return <div className={tagName}>{tagName.toUpperCase()}</div>
+        return <div className={tagName.toLowerCase()}>{tagName}</div>
     }
 
     render() {

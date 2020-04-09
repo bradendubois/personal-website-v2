@@ -9,6 +9,8 @@
   transition: 0.3s;
 
   max-width: 700px;
+  min-width: 300px;
+
   width: 40%;
   background-color: #f5f5f5;
   margin-bottom: 30px;
@@ -42,10 +44,6 @@
 
     .projectIcon {
       animation: pop 2s linear infinite;
-    }
-
-    .repoIcon {
-      animation: spin 5s normal infinite;
     }
   }
 
@@ -86,6 +84,10 @@
 
         .left hr {
           border-color: white;
+        }
+
+        .repoIcon {
+          animation: spin 5s normal infinite;
         }
       }
     }
@@ -135,7 +137,11 @@
         padding: 3px;
 
         border-radius: 4px;
-        border: 2px solid black;
+        border: 1px solid;
+
+        font-size: 10pt;
+        font-family: "Source Code Pro Light", sans-serif;
+        font-weight: 300;
       }
 
       // Languages

@@ -1,5 +1,5 @@
 // React imports
-import React from "react";
+import React, {Component} from "react";
 
 // Component imports
 import Bio from "./Bio";
@@ -17,20 +17,23 @@ interface IntroSectionProps {
     display: string;
 }
 
-function IntroSection(props: IntroSectionProps) {
+class IntroSection extends Component<IntroSectionProps> {
 
-    return (
-        <div className={"sectionContainer"} id={props.id}>
-            <SectionTitle display={props.display}/>
-            <div className={"contentContainer"}>
-                <NeofetchContainer />
-                <Bio
-                    bio={introData.blurb}
-                    readingList={introData.readingList}
-                />
+    render() {
+
+        return (
+            <div className={"sectionContainer"} id={this.props.id}>
+                <SectionTitle display={this.props.display}/>
+                <div className={"contentContainer"}>
+                    <NeofetchContainer/>
+                    <Bio
+                        bio={introData.blurb}
+                        readingList={introData.readingList}
+                    />
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default IntroSection;

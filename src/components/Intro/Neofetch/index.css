@@ -53,6 +53,21 @@ html, body {
   flex-grow: 0;
   color: white;
 }
+.neofetchContainer .imageContainer {
+  width: max-content;
+  box-shadow: 0 0 5px #081429;
+}
+.neofetchContainer .imageContainer img {
+  max-width: 300px;
+  height: auto;
+}
+.neofetchContainer .directoryContainer {
+  grid-area: directory;
+  margin-top: 10px;
+}
+.neofetchContainer .directoryContainer .directory {
+  color: #a2fffc;
+}
 .neofetchContainer .neofetchMainContent {
   display: flex;
   flex-grow: 0;

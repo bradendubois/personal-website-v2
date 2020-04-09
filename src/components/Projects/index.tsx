@@ -1,10 +1,15 @@
+// React imports
 import React, {Component} from 'react';
+
+// Helper functions
+import {urlLookup} from "../../Lookup";
+
+// Component imports
+import Project, {ProjectProps} from "./Project";
 import SectionTitle from "../SectionTitle";
+
 // Style
 import "./index.scss";
-import Project, {ProjectProps} from "./Project";
-import {urlLookup} from "../../Lookup";
-import ProjectBlurb from "./ProjectBlurb";
 
 interface ProjectSectionProps {
     id: string;
@@ -14,6 +19,15 @@ interface ProjectSectionProps {
 interface ProjectSectionState {
     projectsShown: number;
 }
+
+const ProjectBlurb = () =>
+    <div className={"projectBlurbContainer"}>
+        <p>I keep fairly active on
+            my <a href={urlLookup("github")}>Github</a> at <em><a href={urlLookup("github")}>bradendubois</a></em>.
+            I enjoy using my free time working on projects to learn different languages or technologies, and am
+            always happy to <a href={urlLookup("email")}>receive suggestions/requests/ideas</a>. My favorite
+            project/hobby is <a href={urlLookup("baylor")}><em>competitive programming</em></a> at present.</p>
+    </div>;
 
 class ProjectSection extends Component<ProjectSectionProps, ProjectSectionState> {
 
@@ -49,7 +63,7 @@ class ProjectSection extends Component<ProjectSectionProps, ProjectSectionState>
             title: "arch setup",
             host: "github",
             repo: "arch-setup",
-            description: <p>Installer scripts to quickly <em>set up an Arch-based distro</em> with my custom terminal/shell scripts and install software from the <em>AUR</em>. Sets up any machine to be suitable for my daily workflow. Predecessor to another project that backs up my workspace, <em>arch-backup</em>.</p>,
+            description: <p>Installer scripts to quickly <em>set up an Arch-based distro</em> with my custom terminal/shell scripts and install software from the <a href={urlLookup("aur")}>AUR</a>. Sets up any machine to be suitable for my daily workflow. Predecessor to another project that backs up my workspace, <em>arch-backup</em>.</p>,
             tags: ["shell", "git"]
         };
 

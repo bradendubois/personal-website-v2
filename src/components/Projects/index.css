@@ -89,6 +89,26 @@ html, body {
   background-color: #6982cf;
 }
 
+.projectBlurbContainer {
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  padding: 10px;
+  background-color: white;
+  border-radius: 3px;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+a, a:visited {
+  color: black;
+  font-weight: 400;
+}
+
+a em, em, em a {
+  font-style: normal;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 700px) {
   #projects .projectContainer .projects {
     border: none;
