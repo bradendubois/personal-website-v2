@@ -1,31 +1,22 @@
 // React imports
-import React, {Component} from "react";
+import React from "react";
 
 // Style
 import "./index.scss";
 
-export interface ReadingListProps {
-    books: {
-        title: string;
-        author: string;
-    }[];
-}
 
-class ReadingList extends Component<ReadingListProps> {
+const book = (title: string, author: string) =>
+    <div className={"book"}>
+        <p>
+            <span className={"title"}>{title}</span>
+                &nbsp;by&nbsp;
+            <span className={"author"}>{author}</span>
+        </p>
+    </div>;
 
-    render() {
-        return (
-            <div className={"readingListContainer"}>
-                {this.props.books.map(book => (
-                    <div className={"book"}>
-                        <p className={"title"}>{book.title}</p>
-                        <p className={"by"}>&nbsp;by&nbsp;</p>
-                        <p className={"author"}>{book.author}</p>
-                    </div>
-                ))}
-            </div>
-        )
-    }
-}
+const ReadingList = (books: {title: string, author: string}[]) =>
+    <div className={"readingListContainer"}>
+        {books.map(b => book(b.title, b.author))}
+    </div>;
 
 export default ReadingList;

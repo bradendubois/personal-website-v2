@@ -23,6 +23,7 @@ export function iconLookup(name: string) : string {
     // TODO - Find some generic, default for unknown lookups
     let unknown = "";
 
+
     switch (name) {
         case "github":
             return githubdark;

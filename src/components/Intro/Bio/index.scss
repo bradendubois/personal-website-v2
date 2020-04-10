@@ -6,39 +6,33 @@
   width: auto;
   max-width: 600px;
 
-  .bioSection {
+  .blurb {
     display: inline-flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
     justify-content: stretch;
-
-
 
     p {
       color: white;
       transition: 0.3s;
 
       font-size: 12pt;
-
     }
 
-
-    a p, a:visited p {
+    a, a:visited {
       color: #4f87d5;
       transition: 0.1s;
     }
 
-    a:hover p {
+    a:hover {
       color: #4372b4;
     }
 
-    a:active p {
+    a:active {
       color: #2c4b77;
     }
   }
 }
-
-@import "../../../defaults";
 
 .hidden {
   display: none;
@@ -76,6 +70,4 @@
     margin-top: 0;
     padding: 0;
   }
-
-
 }

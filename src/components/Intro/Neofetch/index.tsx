@@ -1,5 +1,5 @@
 // React imports
-import React, {Component} from "react";
+import React from "react";
 
 // Helper functions
 import {iconLookup} from "../../../Lookup";
@@ -9,14 +9,6 @@ import NeofetchInfo from "./NeofetchInfo";
 
 // Style
 import "./index.scss";
-
-export interface NeofetchImageData {
-    info: {
-        icon: string;
-        alt: string;
-    }
-    title: string;
-}
 
 const NeofetchImage = () =>
     <div className={"imageContainer"}>
@@ -36,21 +28,13 @@ const NeofetchDirectory = () =>
         </p>
     </div>;
 
-class NeofetchContainer extends Component {
-
-    render() {
-        return (
-            <div className={"neofetchContainer"}>
-
-                <div className={"neofetchMainContent"}>
-                    <NeofetchImage />
-                    <NeofetchInfo />
-                </div>
-
-                <NeofetchDirectory />
-            </div>
-        )
-    }
-}
+const NeofetchContainer = () =>
+    <div className={"neofetchContainer"}>
+        <div className={"neofetchMainContent"}>
+            {NeofetchImage()}
+            <NeofetchInfo />
+        </div>
+        {NeofetchDirectory()}
+    </div>;
 
 export default NeofetchContainer;

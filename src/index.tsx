@@ -13,48 +13,44 @@ import Footer from "./components/Footer";
 // Style
 import "./index.scss";
 
-class Homepage extends React.Component {
+const navOptions = [
+    {
+        id: "intro",
+        nav: "about",
+        display: "braden dubois"
+    },
+    {
+        id: "education",
+        display: "education"
+    },
+    {
+        id: "projects",
+        display: "projects"
+    }
+];
+
+const Homepage = () =>
 
     // TODO - find some better way to connect this list with the actual sections; having to specify
     //  the actual index feels like poor practice.
 
-    render() {
 
-        let navOptions = [
-            {
-                id: "intro",
-                nav: "about",
-                display: "braden dubois"
-            },
-            {
-                id: "education",
-                display: "education"
-            },
-            {
-                id: "projects",
-                display: "projects"
-            }
-        ];
+    <div className={"homepageContainer"}>
+        <NavBar tabs={navOptions}/>
+
+        {IntroSection(navOptions[0].id, navOptions[0].display)}
+
+        <EducationSection section={navOptions[1]}/>
+        <ProjectSection
+            id={navOptions[2].id}
+            display={navOptions[2].display}
+        />
+        <Footer/>
+    </div>;
 
 
-        return (
-            <div className={"homepageContainer"}>
-                <NavBar tabs={navOptions}/>
-                <IntroSection
-                    id={navOptions[0].id}
-                    display={navOptions[0].display}
-                />
-                <EducationSection section={navOptions[1]}/>
-                <ProjectSection
-                    id={navOptions[2].id}
-                    display={navOptions[2].display}
-                />
-                <Footer/>
-            </div>
-        )
-    }
-}
 
 
-ReactDOM.render(<Homepage />, document.getElementById('root'));
+
+ReactDOM.render(Homepage(), document.getElementById('root'));
 serviceWorker.unregister();

@@ -17,55 +17,26 @@ const NeoStat = (left: string, right: string) =>
 const NeoResumeLinks = () =>
     <div className={"resumeLinksContainer"}>
         <p className={"resumeKey"}>Resume</p>
-
         <p>: [&nbsp;</p>
-
-        <NeoResumeLink
-            icon={"pdf-light"}
-            link={"resume-pdf"}
-            text={"pdf"}
-            alt={"PDF icon"}
-        />
-
-        <p>,&nbsp;</p>
-
-        <NeoResumeLink
-            icon={"linkedin"}
-            link={"linkedin"}
-            text={"LinkedIn"}
-            alt={"LinkedIn icon"}
-        />
-
-        <p>,&nbsp;</p>
-
-        <NeoResumeLink
-            icon={"github"}
-            link={"github"}
-            text={"Github"}
-            alt={"Github icon"}
-        />
-
+            {NeoResumeLink("pdf-light", "resume-pdf", "pdf", "PDF icon")}
+                <p>,&nbsp;</p>
+            {NeoResumeLink("linkedin-light", "linkedin", "LinkedIn", "LinkedIn icon")}
+                <p>,&nbsp;</p>
+            {NeoResumeLink("github-light", "github", "Github", "Github icon")}
         <p>&nbsp;]</p>
     </div>;
 
-interface ResumeLink {
-    icon: string;
-    link: string;
-    text: string;
-    alt: string;
-}
-
-const NeoResumeLink = (data: ResumeLink) =>
+const NeoResumeLink = (icon: string, link: string, text: string, alt: string) =>
     <div className={"resumeLink"}>
         <a
-            href={urlLookup(data.link)}
+            href={urlLookup(link)}
             target={"_blank"}
             rel="noopener noreferrer"
         >
-            <p>{data.text}</p>
+            <p>{text}</p>
             <img
-                src={iconLookup(data.icon)}
-                alt={data.alt}
+                src={iconLookup(icon)}
+                alt={alt}
             />
         </a>
     </div>;

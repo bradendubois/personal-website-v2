@@ -1,5 +1,5 @@
 // React imports
-import React, {ReactElement} from "react";
+import React, {ReactElement, useState} from "react";
 import {urlLookup} from "../../../Lookup";
 
 // Component import
@@ -8,91 +8,39 @@ import ReadingList from "../ReadingList";
 // Style
 import "./index.scss";
 
-interface Sentence {
-    content: string;
-    attrib?: string;
-}
+let books: {title: string, author: string}[] = [
+    {title: "Hitchhiker's Guide to the Galaxy", author: "Douglas Adams"},
+    {title: "Zen and the Art of Motorcycle Maintenance", author: "Robert Pirsig"},
+    {title: "Mismatch", author: "Kat Holmes"},
+    {title: "1984", author: "George Orwell"},
+    {title: "Do Androids Dream of Electric Sheep?", author: "Philip K. Dick"},
+    {title: "Brave New World", author: "Aldous Huxley"},
+    {title: "At The Existentialist Cafe: Freedom, Being, and Apricot Cocktails", author: "Sarah Bakewell"},
+    {title: "Dawn of the New Everything", author: "Jaron Lanier"},
+    {title: "A Song of Ice and Fire", author: "George RR Martin"},
+    {title: "Island", author: "Aldous Huxley"}
+];
 
-interface BioProps {
-    bio: Sentence[][];
-    readingList: {
-        title: string;
-        author: string;
-    }[];
-}
+const Bio = () => {
 
-interface BioState {
-    displayReadingList: boolean;
-}
+    const [displayReadingList, setDisplayReadingList] = useState(false);
+    const blurb: ReactElement = <p>I'm an undergraduate student at
+        the <a href={urlLookup("usask")}>University of Saskatchewan</a> pursuing a B.Sc. (Double Honours) in
+        Computer Science and Philosophy. My free time is usually
+        spent <a href={urlLookup("competitive-programming")}>making fun projects</a>
+        , <a
+            href={"javascript:void();"}
+            onClick={() => setDisplayReadingList(!displayReadingList)}>reading</a>, or solving <a>competitive
+            programming problems</a> through online judges, like <a>Kattis</a>.</p>;
 
-class Bio extends React.Component<BioProps, BioState> {
-
-    // Store the parsed and cleaned the JSON bio data
-    public readonly cleanedData: ReactElement[];
-
-    constructor(props: BioProps) {
-        super(props);
-
-        this.state = {
-            displayReadingList: false
-        };
-
-        // Function binding
-        this.toggleDisplayReadingList = this.toggleDisplayReadingList.bind(this);
-
-        // Parse the raw bio data
-        this.cleanedData = this.props.bio.map((paragraph) => (
-            <div className={"bioSection"}>
-                {this.convert(paragraph)}
+    return (
+        <div className={"bioContainer"}>
+            <div className={"blurb"}>
+                {blurb}
             </div>
-        ));
-
-    }
-
-    /**
-     * Converts the raw JSON I've stored my bio in into proper React Elements
-     * @param paragraph a list of text in JSON
-     */
-    private convert(paragraph: Sentence[]): ReactElement[]  {
-        let cleanedParagraph: ReactElement[] = [];
-
-        for (let sentence of paragraph) {
-
-            // Optional attrib denotes a clickable *thing*
-            if (!sentence.attrib)
-                cleanedParagraph.push(<p>{sentence.content}&nbsp;</p>);
-            // Special case, show my reading list!
-            else if (sentence.attrib === "reading-list")
-                cleanedParagraph.push(<a
-                    onClick={this.toggleDisplayReadingList}
-                    href={"javascript:void();"}
-                ><p>{sentence.content}&nbsp;</p>
-                </a>);
-            // Regular link
-            else
-                cleanedParagraph.push(<a
-                    href={urlLookup(sentence.attrib)}
-                ><p>{sentence.content}&nbsp;</p>
-                </a>);
-
-        } return cleanedParagraph;
-    }
-
-    /**
-     * Toggle the visibility of my reading list
-     */
-    public toggleDisplayReadingList() {
-        this.setState({displayReadingList: !this.state.displayReadingList});
-    }
-
-    render() {
-        return (
-            <div className={"bioContainer"}>
-                {this.cleanedData}
-                {this.state.displayReadingList ? <ReadingList books={this.props.readingList} /> : null}
-            </div>
-        )
-    }
-}
+            {displayReadingList && ReadingList(books)}
+        </div>
+    )
+};
 
 export default Bio;
