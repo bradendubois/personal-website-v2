@@ -1,5 +1,5 @@
 import React from "react";
-import {iconLookup, urlLookup} from "../../../Lookup";
+import {iconLookup, links} from "../../../Lookup";
 
 // Style
 import "./index.scss";
@@ -8,7 +8,7 @@ function Certificate() {
     return (
         <div className={"programContainer certificate"}>
 
-            <a href={urlLookup("usask")} target={"_blank"}>
+            <a href={links.usask} target={"_blank"}>
                 <img className={"institutionIcon"} src={iconLookup("usask")} alt={"uSask Logo"} />
             </a>
 

@@ -2,7 +2,7 @@
 import React, {Component} from "react";
 
 // Helper functions
-import {iconLookup, urlLookup} from "../../../../Lookup";
+import {iconLookup, links} from "../../../../Lookup";
 
 // Style
 import "./index.scss";
@@ -18,18 +18,18 @@ const NeoResumeLinks = () =>
     <div className={"resumeLinksContainer"}>
         <p className={"resumeKey"}>Resume</p>
         <p>: [&nbsp;</p>
-            {NeoResumeLink("pdf-light", "resume-pdf", "pdf", "PDF icon")}
+            {NeoResumeLink("pdf-light", links.resumePDF, "pdf", "PDF icon")}
                 <p>,&nbsp;</p>
-            {NeoResumeLink("linkedin-light", "linkedin", "LinkedIn", "LinkedIn icon")}
+            {NeoResumeLink("linkedin-light", links.linkedin, "LinkedIn", "LinkedIn icon")}
                 <p>,&nbsp;</p>
-            {NeoResumeLink("github-light", "github", "Github", "Github icon")}
+            {NeoResumeLink("github-light", links.github, "Github", "Github icon")}
         <p>&nbsp;]</p>
     </div>;
 
 const NeoResumeLink = (icon: string, link: string, text: string, alt: string) =>
     <div className={"resumeLink"}>
         <a
-            href={urlLookup(link)}
+            href={link}
             target={"_blank"}
             rel="noopener noreferrer"
         >

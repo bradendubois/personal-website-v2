@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 
 // Helper functions
-import {urlLookup} from "../../Lookup";
+import {links, profileNames} from "../../Lookup";
 
 // Component imports
 import Project, {ProjectProps} from "./Project";
@@ -23,10 +23,10 @@ interface ProjectSectionState {
 const ProjectBlurb = () =>
     <div className={"projectBlurbContainer"}>
         <p>I keep fairly active on
-            my <a href={urlLookup("github")}>Github</a> at <em><a href={urlLookup("github")}>bradendubois</a></em>.
+            my <a href={links.github}>Github</a> at <em><a href={links.github}>{profileNames.github}</a></em>.
             I enjoy using my free time working on projects to learn different languages or technologies, and am
-            always happy to <a href={urlLookup("email")}>receive suggestions/requests/ideas</a>. My favorite
-            project/hobby is <a href={urlLookup("baylor")}><em>competitive programming</em></a> at present.</p>
+            always happy to <a href={links.email}>receive suggestions/requests/ideas</a>. My favorite
+            project/hobby is <a href={links.baylor}><em>competitive programming</em></a> at present.</p>
     </div>;
 
 class ProjectSection extends Component<ProjectSectionProps, ProjectSectionState> {
@@ -54,7 +54,7 @@ class ProjectSection extends Component<ProjectSectionProps, ProjectSectionState>
             title: "Competitive Programming",
             host: "github",
             repo: "competitive-programming",
-            description: <p>A collection of solutions to <em>competitive programming problems</em>, submitted to online judges, such as <a href={urlLookup("kattis")}>Kattis</a>. I enjoy doing these in my free time.</p>,
+            description: <p>A collection of solutions to <em>competitive programming problems</em>, submitted to online judges, such as <a href={links.kattis}>Kattis</a>. I enjoy doing these in my free time.</p>,
             tags: ["cpp", "python"]
         };
 
@@ -63,7 +63,7 @@ class ProjectSection extends Component<ProjectSectionProps, ProjectSectionState>
             title: "arch setup",
             host: "github",
             repo: "arch-setup",
-            description: <p>Installer scripts to quickly <em>set up an Arch-based distro</em> with my custom terminal/shell scripts and install software from the <a href={urlLookup("aur")}>AUR</a>. Sets up any machine to be suitable for my daily workflow. Predecessor to another project that backs up my workspace, <em>arch-backup</em>.</p>,
+            description: <p>Installer scripts to quickly <em>set up an Arch-based distro</em> with my custom terminal/shell scripts and install software from the <a href={links.aur}>AUR</a>. Sets up any machine to be suitable for my daily workflow. Predecessor to another project that backs up my workspace, <em>arch-backup</em>.</p>,
             tags: ["shell", "git"]
         };
 
@@ -99,7 +99,7 @@ class ProjectSection extends Component<ProjectSectionProps, ProjectSectionState>
             title: "Advent of Code Solutions",
             host: "github",
             repo: "advent-of-code",
-            description: <p>A collection of solutions to the incredibly fun <em><a href={urlLookup("adventofcode")}>Advent of Code</a></em> series of problems.</p>,
+            description: <p>A collection of solutions to the incredibly fun <em><a href={links.adventOfCode}>Advent of Code</a></em> series of problems.</p>,
             tags: ["cpp", "holiday spirit"]
         };
 

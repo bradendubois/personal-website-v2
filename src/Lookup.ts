@@ -1,6 +1,4 @@
 
-import linkData from "./json/lookup.json";
-
 export function iconLookup(name: string) : string {
 
     // TODO - Image lookups should maybe support a light/dark mode check
@@ -58,34 +56,24 @@ export function iconLookup(name: string) : string {
     return unknown;
 }
 
-export function urlLookup(name: string) : string {
+export const profileNames = {
+    github: "bradendubois",
+    linkedin: "bradendubois",
+    kattis: "bradendubois"
+};
 
-    switch (name) {
-        case ("github"):
-            return linkData.github;
-        case ("linkedin"):
-            return linkData.linkedin;
-        case ("email"):
-            return linkData.email;
-        case ("usask"):
-            return linkData.usask;
-        case "competitive-programming":
-            return linkData.github + "/competitive-programming";
-        case "kattis":
-            return linkData.kattis;
-        case "reading-list-page":
-            return "reading";
-        case "resume-pdf":
-            return "/resume.pdf";
-        case "eric":
-            return "https://www.cs.usask.ca/faculty/eric/";
-        case "adventofcode":
-            return "https://adventofcode.com/";
-        case "aur":
-            return "https://aur.archlinux.org/";
-        case "baylor":
-            return "https://icpc.baylor.edu/";
-    }
+export const links = {
+    github: "https://www.github.com/" + profileNames.github,
+    linkedin: "https://www.linkedin.com/in/" + profileNames.linkedin,
+    email: "mailto:braden.dubois@usask.ca",
+    usask: "https://www.usask.ca",
+    kattis: "https://open.kattis.com/users/" + profileNames.kattis,
+    competitiveProgramming: "https://www.github.com/" + profileNames.github + "/competitive-programming",
+    resumePDF: "/resume.pdf",
+    neufeld: "https://www.cs.usask.ca/faculty/eric/",
+    adventOfCode: "https://adventofcode.com/",
+    aur: "https://aur.archlinux.org/",
+    baylor: "https://icpc.baylor.edu/"
+};
 
-    return "";
-}
+export const githubRepo = (repoName: string): string => links.github + "/" + repoName;

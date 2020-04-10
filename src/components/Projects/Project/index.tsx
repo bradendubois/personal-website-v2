@@ -3,7 +3,7 @@ import React, {Component, ReactElement} from "react";
 
 // Stylesheet
 import "./index.scss";
-import {iconLookup, urlLookup} from "../../../Lookup";
+import {githubRepo, iconLookup} from "../../../Lookup";
 
 export interface ProjectProps {
     projectIcon: string;
@@ -53,7 +53,7 @@ class Project extends Component<ProjectProps, ProjectState> {
             <div className={"project" + (this.state.hidden ? " hidden" : "")}>
 
                 <a
-                    href={urlLookup(this.props.host) + "/" + this.props.repo}
+                    href={githubRepo(this.props.repo)}
                     target={"_blank"}
                     rel="noopener noreferrer"
                 >
@@ -66,7 +66,7 @@ class Project extends Component<ProjectProps, ProjectState> {
 
                         {this.props.extraLinks ? this.props.extraLinks.map(link =>
                             <a
-                                href={urlLookup(link.url)}
+                                href={link.url}
                                 target={"_blank"}
                                 rel="noopener noreferrer"
                             >

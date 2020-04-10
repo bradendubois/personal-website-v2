@@ -1,6 +1,6 @@
 // React imports
 import React, {ReactElement, useState} from "react";
-import {urlLookup} from "../../../Lookup";
+import {links} from "../../../Lookup";
 
 // Component import
 import ReadingList from "../ReadingList";
@@ -25,9 +25,9 @@ const Bio = () => {
 
     const [displayReadingList, setDisplayReadingList] = useState(false);
     const blurb: ReactElement = <p>I'm an undergraduate student at
-        the <a href={urlLookup("usask")}>University of Saskatchewan</a> pursuing a B.Sc. (Double Honours) in
+        the <a href={links.usask}>University of Saskatchewan</a> pursuing a B.Sc. (Double Honours) in
         Computer Science and Philosophy. My free time is usually
-        spent <a href={urlLookup("competitive-programming")}>making fun projects</a>
+        spent <a href={links.competitiveProgramming}>making fun projects</a>
         , <a
             href={"javascript:void();"}
             onClick={() => setDisplayReadingList(!displayReadingList)}>reading</a>, or solving <a>competitive
