@@ -28,8 +28,7 @@ const Bio = () => {
         the <a href={links.usask}>University of Saskatchewan</a> pursuing a B.Sc. (Double Honours) in
         Computer Science and Philosophy. My free time is usually
         spent <a href={links.competitiveProgramming}>making fun projects</a>
-        , <button
-            onClick={() => setDisplayReadingList(!displayReadingList)}>reading</button>, or solving <a
+        , <button onClick={() => setDisplayReadingList(!displayReadingList)}>reading</button>, or solving <a
             href={links.competitiveProgramming}>competitive
             programming problems</a> through online judges, like <a href={links.kattis}>Kattis</a>.</p>;
 

@@ -39,8 +39,8 @@ const Homepage = () =>
         <NavBar tabs={navOptions}/>
 
         {IntroSection(navOptions[0].id, navOptions[0].display)}
+        {EducationSection(navOptions[1].id, navOptions[1].display)}
 
-        <EducationSection section={navOptions[1]}/>
         <ProjectSection
             id={navOptions[2].id}
             display={navOptions[2].display}

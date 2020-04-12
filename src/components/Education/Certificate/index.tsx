@@ -41,7 +41,6 @@ function Certificate() {
                 <hr />
                 <li>Provided study in fundamental ethical theory and its application in moral, legal, social, and technological contexts. Completed alongside B.Sc. degree.</li>
             </div>
-
         </div>
     )
 }

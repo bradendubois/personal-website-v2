@@ -2,30 +2,28 @@
 
 .certificate {
 
-  grid-auto-columns: 75px auto auto;
+  grid-auto-columns: 75px 3fr 2fr auto;
   grid-auto-rows: auto auto;
 
   grid-column-gap: 15px;
   grid-row-gap: 10px;
 
   grid-template-areas:
-          "logo header timeframe"
-          ". phil desc"
+          "logo header header timeframe"
+          ". phil desc ."
 ;
 
   @media screen and (max-width: 800px) {
-    grid-auto-columns: 75px auto;
+    grid-auto-columns: 40px auto auto;
     grid-auto-rows: auto auto auto auto;
 
     grid-column-gap: 15px;
     grid-row-gap: 10px;
 
     grid-template-areas:
-            "logo timeframe"
-            "header header"
-            "phil phil"
-            "desc desc"
-  ;
+            "logo header timeframe"
+            "phil phil phil"
+            "desc desc desc";
   }
 
   hr {
@@ -46,6 +44,7 @@
     font-size: 11pt;
     list-style-type: circle;
     list-style-position: inside;
+    font-weight: 300;
   }
 
   a { grid-area: logo; }

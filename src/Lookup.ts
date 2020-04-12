@@ -73,7 +73,8 @@ export const links = {
     neufeld: "https://www.cs.usask.ca/faculty/eric/",
     adventOfCode: "https://adventofcode.com/",
     aur: "https://aur.archlinux.org/",
-    baylor: "https://icpc.baylor.edu/"
+    baylor: "https://icpc.baylor.edu/",
+    csss: "http://csss.usask.ca/"
 };
 
 export const githubRepo = (repoName: string): string => links.github + "/" + repoName;

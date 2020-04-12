@@ -13,24 +13,9 @@
           ". groups groups"
 ;
 
-  @media screen and (max-width: 900px) {
-    grid-auto-columns: auto auto;
-    grid-auto-rows: auto auto auto auto auto auto auto auto;
 
-    grid-column-gap: 15px;
-    grid-row-gap: 10px;
 
-    grid-template-areas:
-            "logo timeframe"
-            "header header"
-            "classesTitle classesTitles"
-            "classes classes"
-            "achievementsTitle achievementsTitle"
-            "achievements achievements"
-            "groupsTitle groupsTitle"
-            "groups groups"
-  ;
-  }
+
 }
 
 .programContainer {
@@ -50,9 +35,10 @@
   }
 
   .container {
-    border-left: 2px solid black;
-    border-top: 2px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
     border-top-left-radius: 5px;
+
     padding: 10px 10px 0 10px;
     margin-right: 50px;
   }
@@ -60,7 +46,7 @@
   .subTitle {
     font-size: 15pt;
     margin-top: 10px;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   a {
@@ -147,7 +133,7 @@
       display: grid;
       grid-template-areas:
               "title time"
-              "desc desc";
+              "desc .";
 
       .title {
         grid-area: title;
@@ -178,45 +164,101 @@
 
     .group {
 
-      display: grid;
-      grid-template-areas:
-              "title title"
-              "role membership"
-              "ul ul";
-
-
       .title {
-        grid-area: title;
         font-size: 16pt;
+        margin-bottom: 5px;
       }
 
-      .role {
-        grid-area: role;
-      }
+      div {
 
-      .membership {
-        grid-area: membership;
-        margin: auto 0 auto auto;
-        font-style: italic;
-      }
+        margin-bottom: 2px;
+        display: grid;
+        grid-template-areas:
+                "role membership"
+                "list .";
 
-      ul {
-        grid-area: ul;
-
-        list-style-position: inside;
-        list-style-type: circle;
-        margin-top: 5px;
-
-        font-size: 12pt;
-        font-weight: 300;
-
-        li {
-          margin-left: 5px;
-          font-size: 11pt;
-          font-weight: 300
+        .role {
+          grid-area: role;
+          font-size: 12pt;
         }
 
+        .membership {
+          grid-area: membership;
+          margin: auto 0 auto auto;
+          font-style: italic;
+        }
+
+        ul {
+          grid-area: list;
+
+          list-style-position: inside;
+          list-style-type: circle;
+          margin-top: 5px;
+
+          font-size: 12pt;
+          font-weight: 300;
+
+          li {
+            margin-left: 5px;
+            font-size: 11pt;
+            font-weight: 300
+          }
+
+        }
       }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    grid-auto-columns: auto 1fr auto;
+    grid-auto-rows: auto auto auto auto auto auto auto;
+
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+
+    grid-template-areas:
+            "logo header timeframe"
+            "classesTitle classesTitle classesTitle"
+            "classes classes classes"
+            "achievementsTitle achievementsTitle achievementsTitle"
+            "achievements achievements achievements"
+            "groupsTitle groupsTitle groupsTitle"
+            "groups groups groups";
+
+    img {
+      max-width: 50px;
+    }
+
+    .headerInfo {
+      font-size: 11pt;
+    }
+
+    .timeframeInfo {
+      font-size: 11pt;
+    }
+
+    .container {
+      width: auto;
+      max-width: 100%;
+      margin-right: 0;
+    }
+
+    .achievements .entry {
+      grid-template-areas:
+              "title time"
+              "desc desc";
+
+      width: 100%;
+    }
+
+    .group div {
+      grid-template-areas:
+              "role membership"
+              "list list";
+    }
+
+    .classes {
+      flex-direction: column;
     }
   }
 }

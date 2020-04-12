@@ -3,15 +3,6 @@
   grid-auto-rows: auto auto auto auto auto auto auto;
   grid-template-areas: "logo header timeframe" ". classesTitle classesTitle" ". classes classes" ". achievementsTitle achievementsTitle" ". achievements achievements" ". groupsTitle groupsTitle" ". groups groups";
 }
-@media screen and (max-width: 900px) {
-  .undergrad {
-    grid-auto-columns: auto auto;
-    grid-auto-rows: auto auto auto auto auto auto auto auto;
-    grid-column-gap: 15px;
-    grid-row-gap: 10px;
-    grid-template-areas: "logo timeframe" "header header" "classesTitle classesTitles" "classes classes" "achievementsTitle achievementsTitle" "achievements achievements" "groupsTitle groupsTitle" "groups groups";
-  }
-}
 
 .programContainer {
   display: grid;
@@ -26,8 +17,8 @@
   font-family: Montserrat, sans-serif;
 }
 .programContainer .container {
-  border-left: 2px solid black;
-  border-top: 2px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
   border-top-left-radius: 5px;
   padding: 10px 10px 0 10px;
   margin-right: 50px;
@@ -35,7 +26,7 @@
 .programContainer .subTitle {
   font-size: 15pt;
   margin-top: 10px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .programContainer a {
   grid-area: logo;
@@ -103,7 +94,7 @@
 }
 .programContainer .achievements .entry {
   display: grid;
-  grid-template-areas: "title time" "desc desc";
+  grid-template-areas: "title time" "desc .";
 }
 .programContainer .achievements .entry .title {
   grid-area: title;
@@ -126,50 +117,85 @@
 .programContainer .groups {
   grid-area: groups;
 }
-.programContainer .groups .group {
-  display: grid;
-  grid-template-areas: "title title" "role membership" "ul ul";
-}
 .programContainer .groups .group .title {
-  grid-area: title;
   font-size: 16pt;
+  margin-bottom: 5px;
 }
-.programContainer .groups .group .role {
+.programContainer .groups .group div {
+  margin-bottom: 2px;
+  display: grid;
+  grid-template-areas: "role membership" "list .";
+}
+.programContainer .groups .group div .role {
   grid-area: role;
+  font-size: 12pt;
 }
-.programContainer .groups .group .membership {
+.programContainer .groups .group div .membership {
   grid-area: membership;
   margin: auto 0 auto auto;
   font-style: italic;
 }
-.programContainer .groups .group ul {
-  grid-area: ul;
+.programContainer .groups .group div ul {
+  grid-area: list;
   list-style-position: inside;
   list-style-type: circle;
   margin-top: 5px;
   font-size: 12pt;
   font-weight: 300;
 }
-.programContainer .groups .group ul li {
+.programContainer .groups .group div ul li {
   margin-left: 5px;
   font-size: 11pt;
   font-weight: 300;
 }
+@media screen and (max-width: 900px) {
+  .programContainer {
+    grid-auto-columns: auto 1fr auto;
+    grid-auto-rows: auto auto auto auto auto auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+    grid-template-areas: "logo header timeframe" "classesTitle classesTitle classesTitle" "classes classes classes" "achievementsTitle achievementsTitle achievementsTitle" "achievements achievements achievements" "groupsTitle groupsTitle groupsTitle" "groups groups groups";
+  }
+  .programContainer img {
+    max-width: 50px;
+  }
+  .programContainer .headerInfo {
+    font-size: 11pt;
+  }
+  .programContainer .timeframeInfo {
+    font-size: 11pt;
+  }
+  .programContainer .container {
+    width: auto;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .programContainer .achievements .entry {
+    grid-template-areas: "title time" "desc desc";
+    width: 100%;
+  }
+  .programContainer .group div {
+    grid-template-areas: "role membership" "list list";
+  }
+  .programContainer .classes {
+    flex-direction: column;
+  }
+}
 
 .certificate {
-  grid-auto-columns: 75px auto auto;
+  grid-auto-columns: 75px 3fr 2fr auto;
   grid-auto-rows: auto auto;
   grid-column-gap: 15px;
   grid-row-gap: 10px;
-  grid-template-areas: "logo header timeframe" ". phil desc";
+  grid-template-areas: "logo header header timeframe" ". phil desc .";
 }
 @media screen and (max-width: 800px) {
   .certificate {
-    grid-auto-columns: 75px auto;
+    grid-auto-columns: 40px auto auto;
     grid-auto-rows: auto auto auto auto;
     grid-column-gap: 15px;
     grid-row-gap: 10px;
-    grid-template-areas: "logo timeframe" "header header" "phil phil" "desc desc";
+    grid-template-areas: "logo header timeframe" "phil phil phil" "desc desc desc";
   }
 }
 .certificate hr {
@@ -187,6 +213,7 @@
   font-size: 11pt;
   list-style-type: circle;
   list-style-position: inside;
+  font-weight: 300;
 }
 .certificate a {
   grid-area: logo;
