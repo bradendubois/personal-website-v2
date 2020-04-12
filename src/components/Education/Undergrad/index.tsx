@@ -100,14 +100,15 @@ const Undergrad = () => {
 
     const CST = {
         group: "Cyber Security Team",
-        positions: [{
+        positions: [
+            /*{
             role: "VP Challenges",
             timeframe: "2020 - Present",
             desc: [
                 "Responsible for creating the group's monthly curriculum.",
                 "Responsible for curating end of month challenges, such as capture-the-flag (CTF) events."
             ]
-        }, {
+        }, */{
             role: "Member",
             timeframe: "2019 - Present"
         }]
