@@ -7,11 +7,9 @@ import "./index.scss";
 
 const book = (title: string, author: string) =>
     <div className={"book"}>
-        <p>
-            <span className={"title"}>{title}</span>
-                &nbsp;by&nbsp;
-            <span className={"author"}>{author}</span>
-        </p>
+        <p><span className={"title"}>{title}</span>
+            &nbsp;by&nbsp;
+        <span className={"author"}>{author}</span></p>
     </div>;
 
 const ReadingList = (books: {title: string, author: string}[]) =>

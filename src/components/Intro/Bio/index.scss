@@ -3,32 +3,42 @@
 .bioContainer {
 
   margin: 10px auto;
-  width: auto;
-  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
   .blurb {
     display: inline-flex;
+    max-width: 800px;
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    margin: 10px auto;
     justify-content: stretch;
 
-    p {
-      color: white;
-      transition: 0.3s;
-
+    button {
+      background-color: unset;
+      outline: none;
+      border: none;
+      margin: unset;
+      padding: unset;
       font-size: 12pt;
     }
 
-    a, a:visited {
+    p, button {
+      color: white;
+      transition: 0.3s;
+      font-size: 12pt;
+    }
+
+    a, a:visited, button, button:visited {
       color: #4f87d5;
       transition: 0.1s;
     }
 
-    a:hover {
+    a:hover, button:hover {
       color: #4372b4;
     }
 
-    a:active {
+    a:active, button:active {
       color: #2c4b77;
     }
   }

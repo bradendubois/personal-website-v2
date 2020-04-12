@@ -6,27 +6,28 @@
 
 .readingListContainer {
 
+  width: auto;
   display: flex;
   flex-direction: column;
+  text-align: center;
 
   .book {
 
-    margin-bottom: 20px;
-    display: flex;
+    margin: 10px auto;
+    display: inline-flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    max-width: stretch;
 
     .title {
       font-weight: 600;
-    }
-
-    .by {
-
     }
 
     .author {
       font-style: italic;
     }
   }
+
   // display: none;
   background-color: white;
   border-radius: 3px;

@@ -43,28 +43,38 @@ html, body {
 
 .bioContainer {
   margin: 10px auto;
-  width: auto;
-  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .bioContainer .blurb {
   display: inline-flex;
+  max-width: 800px;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin: 10px auto;
   justify-content: stretch;
 }
-.bioContainer .blurb p {
+.bioContainer .blurb button {
+  background-color: unset;
+  outline: none;
+  border: none;
+  margin: unset;
+  padding: unset;
+  font-size: 12pt;
+}
+.bioContainer .blurb p, .bioContainer .blurb button {
   color: white;
   transition: 0.3s;
   font-size: 12pt;
 }
-.bioContainer .blurb a, .bioContainer .blurb a:visited {
+.bioContainer .blurb a, .bioContainer .blurb a:visited, .bioContainer .blurb button, .bioContainer .blurb button:visited {
   color: #4f87d5;
   transition: 0.1s;
 }
-.bioContainer .blurb a:hover {
+.bioContainer .blurb a:hover, .bioContainer .blurb button:hover {
   color: #4372b4;
 }
-.bioContainer .blurb a:active {
+.bioContainer .blurb a:active, .bioContainer .blurb button:active {
   color: #2c4b77;
 }
 
