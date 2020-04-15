@@ -38,13 +38,21 @@ class ProjectSection extends Component<ProjectSectionProps, ProjectSectionState>
         };
 
         this.increaseShown = this.increaseShown.bind(this);
+        this.decreaseShown = this.decreaseShown.bind(this);
     }
 
     /**
-     * Increase the number projects that will be shown
+     * Increase the number of projects shown
      */
     public increaseShown(): void {
         this.setState({projectsShown: this.state.projectsShown + 2});
+    }
+
+    /**
+     * Decrease the number of projects shown
+     */
+    public decreaseShown(): void {
+        this.setState({projectsShown: Math.min(4, this.state.projectsShown)})
     }
 
     render() {
@@ -103,9 +111,18 @@ class ProjectSection extends Component<ProjectSectionProps, ProjectSectionState>
             tags: ["cpp", "holiday spirit"]
         };
 
+        let animal_crossing_scraper: ProjectProps = {
+            projectIcon: "animal-crossing",
+            title: "Animal Crossing Wiki Villager Scraper",
+            host: "github",
+            repo: "animal-crossing-wiki-villager-scraper",
+            description: <p>A web scraper using <a href={links.beautifulSoup}>BeautifulSoup</a> to scrape a wiki page to collect a list of Animal Crossing villagers, and then scrape their respective villager pages, storing the data in a <code>JSON</code> file and downloading images for each villager.</p>,
+            tags: ["python"]
+        };
+
         // TODO Add 370?
 
-        let projects: ProjectProps[] = [competitive_programming, arch_setup, website_v2, dotfiles, automata, advent_of_code];
+        let projects: ProjectProps[] = [competitive_programming, website_v2, automata, dotfiles, animal_crossing_scraper, arch_setup, advent_of_code];
 
         return (
             <div className={"sectionContainer"} id={this.props.id}>
@@ -129,10 +146,10 @@ class ProjectSection extends Component<ProjectSectionProps, ProjectSectionState>
                     </div>
 
                     <div className={"projectsShownButton"}>
-                        {this.state.projectsShown < projects.length ?
-                            <button
-                                onClick={this.increaseShown}
-                            >Show More</button> : null }
+                        <button
+                            onClick={this.state.projectsShown < projects.length ? this.increaseShown : this.decreaseShown}
+                            >{this.state.projectsShown < projects.length ? "Show More" : "Show Fewer"}
+                        </button>
                     </div>
 
                 </div>

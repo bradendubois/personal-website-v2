@@ -17,6 +17,7 @@ export function iconLookup(name: string) : string {
 
     let terminal = "/terminal.png";
     let website = "/globe_dark.png";
+    let animalCrossing = "/ac_logo.png";
 
     // TODO - Find some generic, default for unknown lookups
     let unknown = "";
@@ -51,6 +52,8 @@ export function iconLookup(name: string) : string {
             return terminal;
         case "website":
             return website;
+        case "animal-crossing":
+            return animalCrossing;
     }
 
     return unknown;
@@ -74,7 +77,8 @@ export const links = {
     adventOfCode: "https://adventofcode.com/",
     aur: "https://aur.archlinux.org/",
     baylor: "https://icpc.baylor.edu/",
-    csss: "http://csss.usask.ca/"
+    csss: "http://csss.usask.ca/",
+    beautifulSoup: "https://pypi.org/project/beautifulsoup4/"
 };
 
 export const githubRepo = (repoName: string): string => links.github + "/" + repoName;
